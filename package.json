@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "typescript": "^5.8.3"
+  },
+  "name": "fhir-models",
+  "version": "4.0.0",
+  "description": "Fhit model based on r4",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martijn-on-fhir/fhir-models.git"
+  },
+  "keywords": [
+    "fhir",
+    "r4",
+    "models",
+    "typescript"
+  ],
+  "author": "Martijn Schimmel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martijn-on-fhir/fhir-models/issues"
+  },
+  "homepage": "https://github.com/martijn-on-fhir/fhir-models#readme"
+}
