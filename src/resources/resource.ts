@@ -1,5 +1,5 @@
-import {Code} from "./code";
-import {Meta} from "./meta";
+import {Meta} from "../elements/meta";
+import {Code} from "../elements/code";
 
 export class Resource {
 
@@ -10,4 +10,5 @@ export class Resource {
     implicitRules?: string
 
     language?: Code
+
 }
