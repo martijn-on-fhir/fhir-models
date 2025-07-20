@@ -8,6 +8,8 @@ import {Attachment} from "../elements/attachment";
 import {Reference} from "../elements/reference";
 import {Resource} from "./resource";
 import {DomainResource} from "./domain-resource";
+import {IsBoolean, IsDateString, IsOptional, ValidateNested} from "class-validator";
+import {Practitioner} from "./practitioner";
 
 export class Patient extends DomainResource {
 
@@ -16,19 +18,24 @@ export class Patient extends DomainResource {
         value: ''
     })]
 
-    active?: boolean = true
+    @IsBoolean()
+    active: boolean = true
 
-    name?: HumanName[] = []
+    @IsOptional()
+    @ValidateNested()
+    name: HumanName[] = []
 
     telecom?: ContactPoint[]
 
     gender?: Code
 
+    @IsOptional()
+    @IsDateString()
     birthDate?: string
 
     // deceased[x]	Σ ?!	0..1
 
-    address?: Address[]
+    address: Address[] = []
 
     maritalStatus?: CodeableConcept
 
