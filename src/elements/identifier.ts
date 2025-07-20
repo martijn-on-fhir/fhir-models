@@ -16,4 +16,8 @@ export class Identifier {
     period?: Period
 
     assigner?: Reference
+
+    constructor(properties: Partial<Identifier>) {
+        Object.assign(this,  properties)
+    }
 }

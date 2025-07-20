@@ -11,11 +11,14 @@ import {DomainResource} from "./domain-resource";
 
 export class Patient extends DomainResource {
 
-    identifier?: Identifier[]
+    identifier?: Identifier[] = [new Identifier({
+        system: 'http://fhir.nl/fhir/NamingSystem/bsn',
+        value: ''
+    })]
 
     active?: boolean = true
 
-    name?: HumanName[]
+    name?: HumanName[] = []
 
     telecom?: ContactPoint[]
 

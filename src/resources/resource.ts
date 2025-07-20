@@ -5,7 +5,7 @@ export class Resource {
 
     id?: string
 
-    meta?: Meta = new Meta()
+    meta: Meta = new Meta()
 
     implicitRules?: string
 

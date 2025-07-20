@@ -12,4 +12,9 @@ export class ContactPoint {
     rank?: number
 
     period?: Period
+
+    constructor(properties: Partial<ContactPoint>) {
+
+        Object.assign(this, properties)
+    }
 }
