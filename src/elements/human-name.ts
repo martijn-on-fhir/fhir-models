@@ -16,4 +16,9 @@ export class HumanName {
     suffix?: string
 
     period?: Period
+
+    constructor(properties: Partial<HumanName>) {
+
+        Object.assign(this,  properties)
+    }
 }

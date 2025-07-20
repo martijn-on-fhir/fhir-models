@@ -5,14 +5,15 @@ import {Code} from "../elements/code";
 import {Address} from "../elements/address";
 import {CodeableConcept} from "../elements/codeable-concept";
 import {Attachment} from "../elements/attachment";
-import { Reference } from "../elements/reference";
+import {Reference} from "../elements/reference";
 import {Resource} from "./resource";
+import {DomainResource} from "./domain-resource";
 
-export class Patient {
+export class Patient extends DomainResource {
 
     identifier?: Identifier[]
 
-    active?: boolean
+    active?: boolean = true
 
     name?: HumanName[]
 
@@ -22,13 +23,13 @@ export class Patient {
 
     birthDate?: string
 
-   // deceased[x]	Σ ?!	0..1
+    // deceased[x]	Σ ?!	0..1
 
     address?: Address[]
 
     maritalStatus?: CodeableConcept
 
- //   multipleBirth[x]		0..1
+    //   multipleBirth[x]		0..1
 
     photo?: Attachment[]
 
@@ -40,5 +41,11 @@ export class Patient {
 
     managingOrganization?: Resource
 
- //   link	Σ ?!	0..*	BackboneElement
+    //   link	Σ ?!	0..*	BackboneElement
+
+    constructor(properties?: Partial<Patient>) {
+
+        super();
+        Object.assign(this, properties)
+    }
 }
