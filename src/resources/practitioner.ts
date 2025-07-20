@@ -6,28 +6,31 @@ import {Code} from "../elements/code";
 import {Attachment} from "../elements/attachment";
 import {CodeableConcept} from "../elements/codeable-concept";
 import {DomainResource} from "./domain-resource";
+import {IsDateString, IsOptional} from "class-validator";
 
 export class Practitioner extends DomainResource {
 
-    identifier?: Identifier
+    identifier: Identifier[] = []
 
-    active?: boolean
+    active: boolean = true
 
-    name?: HumanName[]
+    name: HumanName[] = []
 
-    telecom?: ContactPoint[]
+    telecom: ContactPoint[] = []
 
-    address?: Address[]
+    address: Address[] = []
 
     gender?: Code
 
+    @IsOptional()
+    @IsDateString()
     birthDate?: string
 
-    photo?: Attachment[]
+    photo: Attachment[] = []
 
    //  qualification		0..*	BackboneElement
 
-    communication?: CodeableConcept[]
+    communication: CodeableConcept[] = []
 
     constructor(properties?: Partial<Practitioner>) {
 
