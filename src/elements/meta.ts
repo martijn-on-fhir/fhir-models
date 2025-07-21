@@ -21,8 +21,8 @@ export class Meta {
 
     @ValidateNested()
     tag: Coding[] = []
-    
-    constructor(properties: Partial<Meta>) {
+
+    constructor(properties?: Partial<Meta>) {
         Object.assign(this, properties)
     }
 }
