@@ -2,9 +2,11 @@ import {CodeableConcept} from "./codeable-concept";
 import {Code} from "./code";
 import {Period} from "./period";
 import {Reference} from "./reference";
+import {Type} from 'class-transformer'
 
 export class Identifier {
-
+    
+    @Type(() => Code)
     use?: Code
 
     type?: CodeableConcept
@@ -21,3 +23,4 @@ export class Identifier {
         Object.assign(this,  properties)
     }
 }
+

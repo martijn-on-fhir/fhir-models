@@ -1,6 +1,8 @@
 {
   "dependencies": {
-    "class-validator": "^0.14.2"
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.2",
+    "reflect-metadata": "^0.2.2"
   },
   "name": "fhir-models",
   "version": "4.0.0",
@@ -32,11 +34,11 @@
     "@eslint/js": "^9.31.0",
     "eslint": "^9.31.0",
     "globals": "^16.3.0",
+    "terser-webpack-plugin": "^5.3.14",
     "ts-loader": "^9.5.2",
     "typescript": "^5.8.3",
     "webpack": "^5.100.2",
     "webpack-cli": "^6.0.1",
-    "webpack-node-externals": "^3.0.0",
-    "terser-webpack-plugin": "^5.3.14"
+    "webpack-node-externals": "^3.0.0"
   }
 }

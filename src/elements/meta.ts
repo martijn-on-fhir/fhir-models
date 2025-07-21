@@ -8,9 +8,13 @@ export class Meta {
 
     source?: string
 
-    profile?: string
+    profile: string[] = []
 
-    security?: Coding[]
+    security: Coding[] = []
 
     tag?: Coding[]
+    
+    constructor(properties: Partial<Meta>) {
+        Object.assign(this, properties)
+    }
 }
