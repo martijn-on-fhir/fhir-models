@@ -6,7 +6,7 @@ import {Meta} from './elements/meta'
 import {Identifier} from './elements/identifier'
 
 
-const p = new Patient({
+const patient = new Patient({
   meta: new Meta({
     profile: ['http://fhir.nl/fhir/StructureDefinition/nl-core-patient']
   }),
