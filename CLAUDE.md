@@ -23,7 +23,6 @@ This is a TypeScript-based FHIR R4 model library that provides TypeScript classe
 
 ### Project Structure
 - `src/index.ts` - Main entry point exporting core models (Patient, HumanName, Meta, Identifier)
-- `src/r4.d.ts` - Large FHIR R4 TypeScript definitions file (1.3MB+)
 - `dist/` - Compiled output directory
 
 ### TypeScript Configuration

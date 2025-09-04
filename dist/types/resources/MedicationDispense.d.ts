@@ -1,0 +1,41 @@
+import 'reflect-metadata';
+import { DomainResource } from '../base/DomainResource';
+import { Element } from '../base/Element';
+import { Annotation } from '../elements/Annotation';
+import { CodeableConcept } from '../elements/CodeableConcept';
+import { Dosage } from '../backbone/Dosage';
+import { Identifier } from '../elements/Identifier';
+import { MedicationDispensePerformer } from '../backbone/MedicationDispensePerformer';
+import { MedicationDispenseSubstitution } from '../backbone/MedicationDispenseSubstitution';
+import { Quantity } from '../elements/Quantity';
+import { Reference } from '../elements/Reference';
+export declare class MedicationDispense extends DomainResource {
+    readonly resourceType: "MedicationDispense";
+    authorizingPrescription?: Reference[];
+    category?: CodeableConcept;
+    context?: Reference;
+    daysSupply?: Quantity;
+    destination?: Reference;
+    detectedIssue?: Reference[];
+    dosageInstruction?: Dosage[];
+    eventHistory?: Reference[];
+    identifier?: Identifier[];
+    location?: Reference;
+    medicationCodeableConcept?: CodeableConcept;
+    medicationReference?: Reference;
+    note?: Annotation[];
+    partOf?: Reference[];
+    performer?: MedicationDispensePerformer[];
+    quantity?: Quantity;
+    receiver?: Reference[];
+    status?: ('preparation' | 'in-progress' | 'cancelled' | 'on-hold' | 'completed' | 'entered-in-error' | 'stopped' | 'declined' | 'unknown');
+    _status?: Element;
+    statusReasonCodeableConcept?: CodeableConcept;
+    statusReasonReference?: Reference;
+    subject?: Reference;
+    substitution?: MedicationDispenseSubstitution;
+    supportingInformation?: Reference[];
+    type?: CodeableConcept;
+    constructor(source?: Partial<MedicationDispense>);
+}
+//# sourceMappingURL=MedicationDispense.d.ts.map

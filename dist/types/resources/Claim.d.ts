@@ -1,0 +1,45 @@
+import 'reflect-metadata';
+import { DomainResource } from '../base/DomainResource';
+import { Element } from '../base/Element';
+import { ClaimAccident } from '../backbone/ClaimAccident';
+import { ClaimCareTeam } from '../backbone/ClaimCareTeam';
+import { ClaimDiagnosis } from '../backbone/ClaimDiagnosis';
+import { ClaimInsurance } from '../backbone/ClaimInsurance';
+import { ClaimItem } from '../backbone/ClaimItem';
+import { ClaimPayee } from '../backbone/ClaimPayee';
+import { ClaimProcedure } from '../backbone/ClaimProcedure';
+import { ClaimRelated } from '../backbone/ClaimRelated';
+import { CodeableConcept } from '../elements/CodeableConcept';
+import { Identifier } from '../elements/Identifier';
+import { Period } from '../elements/Period';
+import { Reference } from '../elements/Reference';
+export declare class Claim extends DomainResource {
+    readonly resourceType: "Claim";
+    accident?: ClaimAccident;
+    billablePeriod?: Period;
+    careTeam?: ClaimCareTeam[];
+    created?: string;
+    _created?: Element;
+    diagnosis?: ClaimDiagnosis[];
+    enterer?: Reference;
+    facility?: Reference;
+    fundsReserve?: CodeableConcept;
+    identifier?: Identifier[];
+    insurance?: ClaimInsurance[];
+    insurer?: Reference;
+    item?: ClaimItem[];
+    originalPrescription?: Reference;
+    patient?: Reference;
+    payee?: ClaimPayee;
+    prescription?: Reference;
+    priority?: CodeableConcept;
+    procedure?: ClaimProcedure[];
+    provider?: Reference;
+    referral?: Reference;
+    related?: ClaimRelated[];
+    status?: ('active' | 'cancelled' | 'draft' | 'entered-in-error');
+    _status?: Element;
+    subType?: CodeableConcept;
+    constructor(source?: Partial<Claim>);
+}
+//# sourceMappingURL=Claim.d.ts.map
