@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { Attachment } from '../elements/Attachment';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ContractFriendly extends BackboneElement implements fhir.ContractFriendly {
+export class ContractFriendly extends BackboneElement {
   /**
    * Human readable rendering of this Contract in a format and representation intended to enhance comprehension and ensure un
    */

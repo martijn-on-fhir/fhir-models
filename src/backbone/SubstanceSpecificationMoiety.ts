@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Identifier } from '../elements/Identifier';
 import { Quantity } from '../elements/Quantity';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class SubstanceSpecificationMoiety extends BackboneElement implements fhir.SubstanceSpecificationMoiety {
+export class SubstanceSpecificationMoiety extends BackboneElement {
   /**
    * Quantitative value for this moiety.
    */

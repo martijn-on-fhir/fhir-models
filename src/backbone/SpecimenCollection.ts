@@ -7,12 +7,11 @@ import { Duration } from '../elements/Duration';
 import { Period } from '../elements/Period';
 import { Quantity } from '../elements/Quantity';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class SpecimenCollection extends BackboneElement implements fhir.SpecimenCollection {
+export class SpecimenCollection extends BackboneElement {
   /**
    * If the use case requires  BodySite to be handled as a separate resource instead of an inline coded element (e.g. to iden
    */

@@ -6,12 +6,11 @@ import { Annotation } from '../elements/Annotation';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Quantity } from '../elements/Quantity';
 import { VisionPrescriptionLensSpecificationPrism } from './VisionPrescriptionLensSpecificationPrism';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class VisionPrescriptionLensSpecification extends BackboneElement implements fhir.VisionPrescriptionLensSpecification {
+export class VisionPrescriptionLensSpecification extends BackboneElement {
   /**
    * Power adjustment for multifocal lenses measured in dioptres (0.25 units).
    */

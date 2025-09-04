@@ -3,12 +3,11 @@ import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsI
 import { Type } from 'class-transformer';
 import { Element } from '../base/Element';
 import { Period } from './Period';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiting locations which might not be valid for mail delivery.  There are a variety of postal address form
  */
-export class HumanName extends Element implements fhir.HumanName {
+export class HumanName extends Element {
   /**
    * Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures).
    */

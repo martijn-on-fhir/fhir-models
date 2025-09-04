@@ -1,12 +1,11 @@
 import 'reflect-metadata';
 import { IsOptional, IsString, IsArray, ValidateNested } from 'class-validator';
 import { Type } from 'class-transformer';
-import * as fhir from '../r4';
 
 /**
  * Base definition for all elements in a resource.
  */
-export class Element implements fhir.Element {
+export class Element {
   /**
    * Unique id for the element within a resource (for internal references). 
    * This may be any string value that does not contain spaces.
@@ -44,7 +43,7 @@ export class Element implements fhir.Element {
 }
 
 // Forward declaration to avoid circular dependency
-class Extension extends Element implements fhir.Extension {
+class Extension extends Element {
   @IsString()
   url!: string;
 

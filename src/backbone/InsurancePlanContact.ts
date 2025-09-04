@@ -6,12 +6,11 @@ import { Address } from '../elements/Address';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { ContactPoint } from '../elements/ContactPoint';
 import { HumanName } from '../elements/HumanName';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class InsurancePlanContact extends BackboneElement implements fhir.InsurancePlanContact {
+export class InsurancePlanContact extends BackboneElement {
   /**
    * Visiting or postal addresses for the contact.
    */

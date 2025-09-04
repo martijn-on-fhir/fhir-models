@@ -6,12 +6,11 @@ import { Annotation } from '../elements/Annotation';
 import { CarePlanActivityDetail } from './CarePlanActivityDetail';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class CarePlanActivity extends BackboneElement implements fhir.CarePlanActivity {
+export class CarePlanActivity extends BackboneElement {
   /**
    * A simple summary of a planned activity suitable for a general care plan system (e.g. form driven) that doesn't know abou
    */

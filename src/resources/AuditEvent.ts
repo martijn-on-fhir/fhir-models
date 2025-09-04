@@ -9,12 +9,11 @@ import { AuditEventSource } from '../backbone/AuditEventSource';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Coding } from '../elements/Coding';
 import { Period } from '../elements/Period';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class AuditEvent extends DomainResource implements fhir.AuditEvent {
+export class AuditEvent extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

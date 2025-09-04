@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Quantity } from '../elements/Quantity';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class MedicationKnowledgePackaging extends BackboneElement implements fhir.MedicationKnowledgePackaging {
+export class MedicationKnowledgePackaging extends BackboneElement {
   /**
    * The number of product units the package would contain if fully loaded.
    */

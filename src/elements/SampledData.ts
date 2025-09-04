@@ -3,12 +3,11 @@ import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsI
 import { Type } from 'class-transformer';
 import { Element } from '../base/Element';
 import { Quantity } from './Quantity';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiti
  */
-export class SampledData extends Element implements fhir.SampledData {
+export class SampledData extends Element {
   /**
    * Data may be missing if it is omitted for summarization purposes. In general, data is required for any actual use of a SampledData.
    */

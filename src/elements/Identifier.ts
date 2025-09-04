@@ -5,12 +5,11 @@ import { Element } from '../base/Element';
 import { Reference } from './Reference';
 import { Period } from './Period';
 import { CodeableConcept } from './CodeableConcept';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiting locations which might not be valid for mail delivery.  There are a variety of postal address form
  */
-export class Identifier extends Element implements fhir.Identifier {
+export class Identifier extends Element {
   /**
    * The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.
    */

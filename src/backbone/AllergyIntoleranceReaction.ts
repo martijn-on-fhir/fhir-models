@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { Annotation } from '../elements/Annotation';
 import { CodeableConcept } from '../elements/CodeableConcept';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class AllergyIntoleranceReaction extends BackboneElement implements fhir.AllergyIntoleranceReaction {
+export class AllergyIntoleranceReaction extends BackboneElement {
   /**
    * Use the description to provide any details of a particular event of the occurred reaction such as circumstances, reactio
    */

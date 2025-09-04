@@ -9,12 +9,11 @@ import { Money } from '../elements/Money';
 import { Period } from '../elements/Period';
 import { Quantity } from '../elements/Quantity';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ClaimItem extends BackboneElement implements fhir.ClaimItem {
+export class ClaimItem extends BackboneElement {
   /**
    * For example: Providing a tooth code, allows an insurer to identify a provider performing a filling on a tooth that was p
    */
@@ -29,7 +28,6 @@ export class ClaimItem extends BackboneElement implements fhir.ClaimItem {
   @IsOptional()
   @IsArray()
   @ValidateNested({ each: true })
-  @Type(() => number)
   careTeamSequence?: number[];
 
   /**
@@ -55,7 +53,6 @@ export class ClaimItem extends BackboneElement implements fhir.ClaimItem {
   @IsOptional()
   @IsArray()
   @ValidateNested({ each: true })
-  @Type(() => number)
   diagnosisSequence?: number[];
 
   /**
@@ -80,7 +77,6 @@ export class ClaimItem extends BackboneElement implements fhir.ClaimItem {
   @IsOptional()
   @IsArray()
   @ValidateNested({ each: true })
-  @Type(() => number)
   informationSequence?: number[];
 
   /**
@@ -130,7 +126,6 @@ export class ClaimItem extends BackboneElement implements fhir.ClaimItem {
   @IsOptional()
   @IsArray()
   @ValidateNested({ each: true })
-  @Type(() => number)
   procedureSequence?: number[];
 
   /**

@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { SubstancePolymerRepeatRepeatUnit } from './SubstancePolymerRepeatRepeatUnit';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class SubstancePolymerRepeat extends BackboneElement implements fhir.SubstancePolymerRepeat {
+export class SubstancePolymerRepeat extends BackboneElement {
   /**
    * Todo.
    */

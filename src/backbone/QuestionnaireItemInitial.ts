@@ -6,12 +6,11 @@ import { Attachment } from '../elements/Attachment';
 import { Coding } from '../elements/Coding';
 import { Quantity } from '../elements/Quantity';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class QuestionnaireItemInitial extends BackboneElement implements fhir.QuestionnaireItemInitial {
+export class QuestionnaireItemInitial extends BackboneElement {
   /**
    * The type of the initial value must be consistent with the type of the item.
    */

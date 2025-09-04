@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { ConceptMapGroupElement } from './ConceptMapGroupElement';
 import { ConceptMapGroupUnmapped } from './ConceptMapGroupUnmapped';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ConceptMapGroup extends BackboneElement implements fhir.ConceptMapGroup {
+export class ConceptMapGroup extends BackboneElement {
   /**
    * Generally, the ideal is that there would only be one mapping for each concept in the source value set, but a given conce
    */

@@ -8,7 +8,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SubstanceAmount = void 0;
 require("reflect-metadata");
@@ -69,5 +68,5 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
     (0, class_transformer_1.Type)(() => SubstanceAmountReferenceRange_1.SubstanceAmountReferenceRange),
-    __metadata("design:type", typeof (_a = typeof SubstanceAmountReferenceRange_1.SubstanceAmountReferenceRange !== "undefined" && SubstanceAmountReferenceRange_1.SubstanceAmountReferenceRange) === "function" ? _a : Object)
+    __metadata("design:type", SubstanceAmountReferenceRange_1.SubstanceAmountReferenceRange)
 ], SubstanceAmount.prototype, "referenceRange", void 0);

@@ -1,19 +1,18 @@
 import 'reflect-metadata';
-import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsIn } from 'class-validator';
-import { Type } from 'class-transformer';
-import { BackboneElement } from '../base/BackboneElement';
-import { Dosage } from './Dosage';
-import { CodeableConcept } from '../elements/CodeableConcept';
-import { DosageDoseAndRate } from '../elements/DosageDoseAndRate';
-import { Quantity } from '../elements/Quantity';
-import { Ratio } from '../elements/Ratio';
-import { Timing } from './Timing';
-import * as fhir from '../r4';
+import {IsArray, IsBoolean, IsNumber, IsOptional, IsString, ValidateNested} from 'class-validator';
+import {Type} from 'class-transformer';
+import {BackboneElement} from '../base/BackboneElement';
+import {Element} from '../base/Element';
+import {CodeableConcept} from '../elements/CodeableConcept';
+import {DosageDoseAndRate} from './DosageDoseAndRate';
+import {Quantity} from '../elements/Quantity';
+import {Ratio} from '../elements/Ratio';
+import {Timing} from './Timing';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class Dosage extends BackboneElement implements fhir.Dosage {
+export class Dosage extends BackboneElement {
   /**
    * Information about administration or preparation of the medication (e.g. "infuse as rapidly as possibly via intraperitone
    */

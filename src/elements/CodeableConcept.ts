@@ -3,12 +3,11 @@ import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsI
 import { Type } from 'class-transformer';
 import { Element } from '../base/Element';
 import { Coding } from './Coding';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiting locations which might not be valid for mail delivery.  There are a variety of postal address form
  */
-export class CodeableConcept extends Element implements fhir.CodeableConcept {
+export class CodeableConcept extends Element {
   /**
    * Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefi
    */

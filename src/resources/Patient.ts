@@ -22,9 +22,8 @@ import { CodeableConcept } from '../elements/CodeableConcept';
 import { HumanName } from '../elements/HumanName';
 import { Attachment } from '../elements/Attachment';
 import { ContactPoint } from '../elements/ContactPoint';
-import { Patient as fhir } from '../r4';
 
-export class Patient extends DomainResource implements fhir.Patient {
+export class Patient extends DomainResource {
   readonly resourceType = 'Patient' as const;
 
   @IsOptional()

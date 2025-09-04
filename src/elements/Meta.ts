@@ -3,12 +3,11 @@ import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsI
 import { Type } from 'class-transformer';
 import { Element } from '../base/Element';
 import { Coding } from './Coding';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiting locations which might not be valid for mail delivery.  There are a variety of postal address form
  */
-export class Meta extends Element implements fhir.Meta {
+export class Meta extends Element {
   /**
    * This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant. This is equivalent to the HTTP Last
    */

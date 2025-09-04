@@ -6,12 +6,11 @@ import { Coding } from '../elements/Coding';
 import { ImagingStudySeriesInstance } from './ImagingStudySeriesInstance';
 import { ImagingStudySeriesPerformer } from './ImagingStudySeriesPerformer';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ImagingStudySeries extends BackboneElement implements fhir.ImagingStudySeries {
+export class ImagingStudySeries extends BackboneElement {
   /**
    * The anatomic structures examined. See DICOM Part 16 Annex L (http://dicom.nema.org/medical/dicom/current/output/chtml/pa
    */

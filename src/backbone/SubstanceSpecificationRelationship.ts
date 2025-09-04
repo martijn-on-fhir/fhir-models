@@ -7,12 +7,11 @@ import { Quantity } from '../elements/Quantity';
 import { Range } from '../elements/Range';
 import { Ratio } from '../elements/Ratio';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class SubstanceSpecificationRelationship extends BackboneElement implements fhir.SubstanceSpecificationRelationship {
+export class SubstanceSpecificationRelationship extends BackboneElement {
   /**
    * A numeric factor for the relationship, for instance to express that the salt of a substance has some percentage of the a
    */

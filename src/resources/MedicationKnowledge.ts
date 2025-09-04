@@ -17,12 +17,11 @@ import { MedicationKnowledgeRegulatory } from '../backbone/MedicationKnowledgeRe
 import { MedicationKnowledgeRelatedMedicationKnowledge } from '../backbone/MedicationKnowledgeRelatedMedicationKnowledge';
 import { Quantity } from '../elements/Quantity';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class MedicationKnowledge extends DomainResource implements fhir.MedicationKnowledge {
+export class MedicationKnowledge extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

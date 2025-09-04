@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { StructureMapGroupRuleDependent } from './StructureMapGroupRuleDependent';
 import { StructureMapGroupRuleSource } from './StructureMapGroupRuleSource';
 import { StructureMapGroupRuleTarget } from './StructureMapGroupRuleTarget';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class StructureMapGroupRule extends BackboneElement implements fhir.StructureMapGroupRule {
+export class StructureMapGroupRule extends BackboneElement {
   /**
    * Which other rules to apply in the context of this rule.
    */

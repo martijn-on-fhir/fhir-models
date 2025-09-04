@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { MolecularSequenceStructureVariantInner } from './MolecularSequenceStructureVariantInner';
 import { MolecularSequenceStructureVariantOuter } from './MolecularSequenceStructureVariantOuter';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class MolecularSequenceStructureVariant extends BackboneElement implements fhir.MolecularSequenceStructureVariant {
+export class MolecularSequenceStructureVariant extends BackboneElement {
   /**
    * Used to indicate if the outer and inner start-end values have the same meaning.
    */

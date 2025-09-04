@@ -12,12 +12,11 @@ import { Range } from '../elements/Range';
 import { Ratio } from '../elements/Ratio';
 import { Reference } from '../elements/Reference';
 import { Timing } from '../backbone/Timing';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ServiceRequest extends DomainResource implements fhir.ServiceRequest {
+export class ServiceRequest extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

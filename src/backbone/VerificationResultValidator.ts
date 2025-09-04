@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { Reference } from '../elements/Reference';
 import { Signature } from '../elements/Signature';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class VerificationResultValidator extends BackboneElement implements fhir.VerificationResultValidator {
+export class VerificationResultValidator extends BackboneElement {
   /**
    * Signed assertion by the validator that they have validated the information.
    */

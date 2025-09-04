@@ -3,12 +3,11 @@ import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsI
 import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class PatientLink extends BackboneElement implements fhir.PatientLink {
+export class PatientLink extends BackboneElement {
   /**
    * Referencing a RelatedPerson here removes the need to use a Person record to associate a Patient and RelatedPerson as the
    */

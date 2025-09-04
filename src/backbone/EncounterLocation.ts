@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Period } from '../elements/Period';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class EncounterLocation extends BackboneElement implements fhir.EncounterLocation {
+export class EncounterLocation extends BackboneElement {
   /**
    * The location where the encounter takes place.
    */

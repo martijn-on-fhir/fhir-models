@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { TestScriptMetadataCapability } from './TestScriptMetadataCapability';
 import { TestScriptMetadataLink } from './TestScriptMetadataLink';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class TestScriptMetadata extends BackboneElement implements fhir.TestScriptMetadata {
+export class TestScriptMetadata extends BackboneElement {
   /**
    * When the metadata capabilities section is defined at TestScript.metadata or at TestScript.setup.metadata, and the server
    */

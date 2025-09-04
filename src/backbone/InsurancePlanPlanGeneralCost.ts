@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Money } from '../elements/Money';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class InsurancePlanPlanGeneralCost extends BackboneElement implements fhir.InsurancePlanPlanGeneralCost {
+export class InsurancePlanPlanGeneralCost extends BackboneElement {
   /**
    * Additional information about the general costs associated with this plan.
    */

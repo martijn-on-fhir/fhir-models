@@ -6,12 +6,11 @@ import { CodeableConcept } from '../elements/CodeableConcept';
 import { Identifier } from '../elements/Identifier';
 import { Quantity } from '../elements/Quantity';
 import { SubstanceSpecificationStructureIsotopeMolecularWeight } from './SubstanceSpecificationStructureIsotopeMolecularWeight';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class SubstanceSpecificationStructureIsotope extends BackboneElement implements fhir.SubstanceSpecificationStructureIsotope {
+export class SubstanceSpecificationStructureIsotope extends BackboneElement {
   /**
    * Half life - for a non-natural nuclide.
    */

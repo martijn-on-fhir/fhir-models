@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Reference } from '../elements/Reference';
 import { SubstanceSpecificationNameOfficial } from './SubstanceSpecificationNameOfficial';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class SubstanceSpecificationName extends BackboneElement implements fhir.SubstanceSpecificationName {
+export class SubstanceSpecificationName extends BackboneElement {
   /**
    * The use context of this name for example if there is a different name a drug active ingredient as opposed to a food colo
    */

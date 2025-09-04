@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Quantity } from '../elements/Quantity';
 import { SpecimenDefinitionTypeTestedContainerAdditive } from './SpecimenDefinitionTypeTestedContainerAdditive';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class SpecimenDefinitionTypeTestedContainer extends BackboneElement implements fhir.SpecimenDefinitionTypeTestedContainer {
+export class SpecimenDefinitionTypeTestedContainer extends BackboneElement {
   /**
    * Substance introduced in the kind of container to preserve, maintain or enhance the specimen. Examples: Formalin, Citrate
    */

@@ -7,12 +7,11 @@ import { Identifier } from '../elements/Identifier';
 import { Quantity } from '../elements/Quantity';
 import { Range } from '../elements/Range';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class SubstanceReferenceInformationTarget extends BackboneElement implements fhir.SubstanceReferenceInformationTarget {
+export class SubstanceReferenceInformationTarget extends BackboneElement {
   /**
    * Todo.
    */

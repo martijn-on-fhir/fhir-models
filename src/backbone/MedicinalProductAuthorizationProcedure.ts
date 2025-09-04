@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Identifier } from '../elements/Identifier';
 import { Period } from '../elements/Period';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class MedicinalProductAuthorizationProcedure extends BackboneElement implements fhir.MedicinalProductAuthorizationProcedure {
+export class MedicinalProductAuthorizationProcedure extends BackboneElement {
   /**
    * Applcations submitted to obtain a marketing authorization.
    */

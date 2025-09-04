@@ -6,12 +6,11 @@ import { Element } from '../base/Element';
 import { Identifier } from '../elements/Identifier';
 import { Reference } from '../elements/Reference';
 import { VisionPrescriptionLensSpecification } from '../backbone/VisionPrescriptionLensSpecification';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class VisionPrescription extends DomainResource implements fhir.VisionPrescription {
+export class VisionPrescription extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

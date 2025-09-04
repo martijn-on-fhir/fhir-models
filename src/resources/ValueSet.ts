@@ -9,12 +9,11 @@ import { Identifier } from '../elements/Identifier';
 import { UsageContext } from '../elements/UsageContext';
 import { ValueSetCompose } from '../backbone/ValueSetCompose';
 import { ValueSetExpansion } from '../backbone/ValueSetExpansion';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ValueSet extends DomainResource implements fhir.ValueSet {
+export class ValueSet extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

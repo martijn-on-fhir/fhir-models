@@ -33,12 +33,11 @@ import { Signature } from '../elements/Signature';
 import { Timing } from './Timing';
 import { TriggerDefinition } from '../elements/TriggerDefinition';
 import { UsageContext } from '../elements/UsageContext';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class StructureMapGroupRuleSource extends BackboneElement implements fhir.StructureMapGroupRuleSource {
+export class StructureMapGroupRuleSource extends BackboneElement {
   /**
    * FHIRPath expression  - must be true or the mapping engine throws an error instead of completing.
    */

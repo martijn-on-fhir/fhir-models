@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Duration } from '../elements/Duration';
 import { Range } from '../elements/Range';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class SpecimenDefinitionTypeTestedHandling extends BackboneElement implements fhir.SpecimenDefinitionTypeTestedHandling {
+export class SpecimenDefinitionTypeTestedHandling extends BackboneElement {
   /**
    * Additional textual instructions for the preservation or transport of the specimen. For instance, 'Protect from light exp
    */

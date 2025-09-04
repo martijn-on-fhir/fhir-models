@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { MedicinalProductPharmaceuticalRouteOfAdministrationTargetSpeciesWithdrawalPeriod } from './MedicinalProductPharmaceuticalRouteOfAdministrationTargetSpeciesWithdrawalPeriod';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class MedicinalProductPharmaceuticalRouteOfAdministrationTargetSpecies extends BackboneElement implements fhir.MedicinalProductPharmaceuticalRouteOfAdministrationTargetSpecies {
+export class MedicinalProductPharmaceuticalRouteOfAdministrationTargetSpecies extends BackboneElement {
   /**
    * Coded expression for the species.
    */

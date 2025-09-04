@@ -9,12 +9,11 @@ import { Timing } from '../backbone/Timing';
 import { VerificationResultAttestation } from '../backbone/VerificationResultAttestation';
 import { VerificationResultPrimarySource } from '../backbone/VerificationResultPrimarySource';
 import { VerificationResultValidator } from '../backbone/VerificationResultValidator';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class VerificationResult extends DomainResource implements fhir.VerificationResult {
+export class VerificationResult extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

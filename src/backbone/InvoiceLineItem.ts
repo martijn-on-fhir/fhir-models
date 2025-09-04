@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { InvoiceLineItemPriceComponent } from './InvoiceLineItemPriceComponent';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class InvoiceLineItem extends BackboneElement implements fhir.InvoiceLineItem {
+export class InvoiceLineItem extends BackboneElement {
   /**
    * The ChargeItem contains information such as the billing code, date, amount etc. If no further details are required for t
    */

@@ -3,12 +3,11 @@ import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsI
 import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ClaimResponseError extends BackboneElement implements fhir.ClaimResponseError {
+export class ClaimResponseError extends BackboneElement {
   /**
    * An error code, from a specified code system, which details why the claim could not be adjudicated.
    */

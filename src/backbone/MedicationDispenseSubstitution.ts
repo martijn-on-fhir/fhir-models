@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class MedicationDispenseSubstitution extends BackboneElement implements fhir.MedicationDispenseSubstitution {
+export class MedicationDispenseSubstitution extends BackboneElement {
   /**
    * Indicates the reason for the substitution (or lack of substitution) from what was prescribed.
    */

@@ -8,12 +8,11 @@ import { GroupCharacteristic } from '../backbone/GroupCharacteristic';
 import { GroupMember } from '../backbone/GroupMember';
 import { Identifier } from '../elements/Identifier';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class Group extends DomainResource implements fhir.Group {
+export class Group extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

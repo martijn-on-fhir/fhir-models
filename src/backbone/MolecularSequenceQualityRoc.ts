@@ -2,19 +2,17 @@ import 'reflect-metadata';
 import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsIn } from 'class-validator';
 import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class MolecularSequenceQualityRoc extends BackboneElement implements fhir.MolecularSequenceQualityRoc {
+export class MolecularSequenceQualityRoc extends BackboneElement {
   /**
    * Calculated fScore if the GQ score threshold was set to "score" field value.
    */
   @IsOptional()
   @IsArray()
   @ValidateNested({ each: true })
-  @Type(() => number)
   fMeasure?: number[];
 
   /**
@@ -23,7 +21,6 @@ export class MolecularSequenceQualityRoc extends BackboneElement implements fhir
   @IsOptional()
   @IsArray()
   @ValidateNested({ each: true })
-  @Type(() => number)
   numFN?: number[];
 
   /**
@@ -32,7 +29,6 @@ export class MolecularSequenceQualityRoc extends BackboneElement implements fhir
   @IsOptional()
   @IsArray()
   @ValidateNested({ each: true })
-  @Type(() => number)
   numFP?: number[];
 
   /**
@@ -41,7 +37,6 @@ export class MolecularSequenceQualityRoc extends BackboneElement implements fhir
   @IsOptional()
   @IsArray()
   @ValidateNested({ each: true })
-  @Type(() => number)
   numTP?: number[];
 
   /**
@@ -50,7 +45,6 @@ export class MolecularSequenceQualityRoc extends BackboneElement implements fhir
   @IsOptional()
   @IsArray()
   @ValidateNested({ each: true })
-  @Type(() => number)
   precision?: number[];
 
   /**
@@ -59,7 +53,6 @@ export class MolecularSequenceQualityRoc extends BackboneElement implements fhir
   @IsOptional()
   @IsArray()
   @ValidateNested({ each: true })
-  @Type(() => number)
   score?: number[];
 
   /**
@@ -68,7 +61,6 @@ export class MolecularSequenceQualityRoc extends BackboneElement implements fhir
   @IsOptional()
   @IsArray()
   @ValidateNested({ each: true })
-  @Type(() => number)
   sensitivity?: number[];
 
   /**

@@ -2,12 +2,11 @@ import 'reflect-metadata';
 import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsIn } from 'class-validator';
 import { Type } from 'class-transformer';
 import { Element } from '../base/Element';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiti
  */
-export class Expression extends Element implements fhir.Expression {
+export class Expression extends Element {
   /**
    * A brief, natural language description of the condition that effectively communicates the intended semantics.
    */

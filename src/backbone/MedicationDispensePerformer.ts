@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class MedicationDispensePerformer extends BackboneElement implements fhir.MedicationDispensePerformer {
+export class MedicationDispensePerformer extends BackboneElement {
   /**
    * The device, practitioner, etc. who performed the action.  It should be assumed that the actor is the dispenser of the me
    */

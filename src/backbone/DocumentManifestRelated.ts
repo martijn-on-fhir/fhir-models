@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { Identifier } from '../elements/Identifier';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class DocumentManifestRelated extends BackboneElement implements fhir.DocumentManifestRelated {
+export class DocumentManifestRelated extends BackboneElement {
   /**
    * If both identifier and ref elements are present they shall refer to the same thing.
    */

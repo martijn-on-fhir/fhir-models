@@ -7,12 +7,11 @@ import { CapabilityStatementRestResource } from './CapabilityStatementRestResour
 import { CapabilityStatementRestResourceOperation } from './CapabilityStatementRestResourceOperation';
 import { CapabilityStatementRestResourceSearchParam } from './CapabilityStatementRestResourceSearchParam';
 import { CapabilityStatementRestSecurity } from './CapabilityStatementRestSecurity';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class CapabilityStatementRest extends BackboneElement implements fhir.CapabilityStatementRest {
+export class CapabilityStatementRest extends BackboneElement {
   /**
    * At present, the only defined compartments are at [CompartmentDefinition](compartmentdefinition.html).
    */

@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { ExampleScenarioInstanceContainedInstance } from './ExampleScenarioInstanceContainedInstance';
 import { ExampleScenarioInstanceVersion } from './ExampleScenarioInstanceVersion';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ExampleScenarioInstance extends BackboneElement implements fhir.ExampleScenarioInstance {
+export class ExampleScenarioInstance extends BackboneElement {
   /**
    * Resources contained in the instance (e.g. the observations contained in a bundle).
    */

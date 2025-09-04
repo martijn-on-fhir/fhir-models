@@ -15,12 +15,11 @@ import { Ratio } from '../elements/Ratio';
 import { Reference } from '../elements/Reference';
 import { SampledData } from '../elements/SampledData';
 import { Timing } from '../backbone/Timing';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class Observation extends DomainResource implements fhir.Observation {
+export class Observation extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

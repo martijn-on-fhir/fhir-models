@@ -3,12 +3,11 @@ import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsI
 import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ImplementationGuideDefinitionPage extends BackboneElement implements fhir.ImplementationGuideDefinitionPage {
+export class ImplementationGuideDefinitionPage extends BackboneElement {
   /**
    * A code that indicates how the page is generated.
    */

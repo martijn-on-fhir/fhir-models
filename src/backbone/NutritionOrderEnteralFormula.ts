@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { NutritionOrderEnteralFormulaAdministration } from './NutritionOrderEnteralFormulaAdministration';
 import { Quantity } from '../elements/Quantity';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class NutritionOrderEnteralFormula extends BackboneElement implements fhir.NutritionOrderEnteralFormula {
+export class NutritionOrderEnteralFormula extends BackboneElement {
   /**
    * The product or brand name of the type of modular component to be added to the formula.
    */

@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Quantity } from '../elements/Quantity';
 import { Timing } from './Timing';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class NutritionOrderSupplement extends BackboneElement implements fhir.NutritionOrderSupplement {
+export class NutritionOrderSupplement extends BackboneElement {
   /**
    * Free text dosage instructions can be used for cases where the instructions are too complex to code.
    */

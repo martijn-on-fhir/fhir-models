@@ -1,11 +1,10 @@
 import 'reflect-metadata';
 import { Quantity } from './Quantity';
-import * as fhir from '../r4';
 
 /**
  * A length of time.
  */
-export class Duration extends Quantity implements fhir.Duration {
+export class Duration extends Quantity {
   /**
    * Constructor for Duration
    */

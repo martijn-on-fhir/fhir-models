@@ -3,12 +3,11 @@ import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsI
 import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { ContactPoint } from '../elements/ContactPoint';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class MessageHeaderSource extends BackboneElement implements fhir.MessageHeaderSource {
+export class MessageHeaderSource extends BackboneElement {
   /**
    * An e-mail, phone, website or other contact point to use to resolve issues with message communications.
    */

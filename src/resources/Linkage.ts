@@ -5,12 +5,11 @@ import { DomainResource } from '../base/DomainResource';
 import { Element } from '../base/Element';
 import { LinkageItem } from '../backbone/LinkageItem';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class Linkage extends DomainResource implements fhir.Linkage {
+export class Linkage extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

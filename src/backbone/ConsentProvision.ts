@@ -7,12 +7,11 @@ import { Coding } from '../elements/Coding';
 import { ConsentProvisionActor } from './ConsentProvisionActor';
 import { ConsentProvisionData } from './ConsentProvisionData';
 import { Period } from '../elements/Period';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ConsentProvision extends BackboneElement implements fhir.ConsentProvision {
+export class ConsentProvision extends BackboneElement {
   /**
    * Note that this is the direct action (not the grounds for the action covered in the purpose element). At present, the onl
    */

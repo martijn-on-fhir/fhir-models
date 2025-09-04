@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Quantity } from '../elements/Quantity';
 import { Range } from '../elements/Range';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class DeviceRequestParameter extends BackboneElement implements fhir.DeviceRequestParameter {
+export class DeviceRequestParameter extends BackboneElement {
   /**
    * A code or string that identifies the device detail being asserted.
    */

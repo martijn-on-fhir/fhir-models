@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Quantity } from '../elements/Quantity';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class SubstanceSpecificationStructureIsotopeMolecularWeight extends BackboneElement implements fhir.SubstanceSpecificationStructureIsotopeMolecularWeight {
+export class SubstanceSpecificationStructureIsotopeMolecularWeight extends BackboneElement {
   /**
    * Used to capture quantitative values for a variety of elements. If only limits are given, the arithmetic mean would be th
    */

@@ -6,12 +6,11 @@ import { AuditEventAgentNetwork } from './AuditEventAgentNetwork';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Coding } from '../elements/Coding';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class AuditEventAgent extends BackboneElement implements fhir.AuditEventAgent {
+export class AuditEventAgent extends BackboneElement {
   /**
    * Alternative agent Identifier. For a human, this should be a user identifier text string from authentication system. This
    */

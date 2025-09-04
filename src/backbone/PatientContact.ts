@@ -8,12 +8,11 @@ import { ContactPoint } from '../elements/ContactPoint';
 import { HumanName } from '../elements/HumanName';
 import { Period } from '../elements/Period';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class PatientContact extends BackboneElement implements fhir.PatientContact {
+export class PatientContact extends BackboneElement {
   /**
    * Address for the contact person.
    */

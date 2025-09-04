@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { Annotation } from '../elements/Annotation';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { EffectEvidenceSynthesisCertaintyCertaintySubcomponent } from './EffectEvidenceSynthesisCertaintyCertaintySubcomponent';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class EffectEvidenceSynthesisCertainty extends BackboneElement implements fhir.EffectEvidenceSynthesisCertainty {
+export class EffectEvidenceSynthesisCertainty extends BackboneElement {
   /**
    * A description of a component of the overall certainty.
    */

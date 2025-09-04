@@ -6,12 +6,11 @@ import { MedicationKnowledgeRegulatoryMaxDispense } from './MedicationKnowledgeR
 import { MedicationKnowledgeRegulatorySchedule } from './MedicationKnowledgeRegulatorySchedule';
 import { MedicationKnowledgeRegulatorySubstitution } from './MedicationKnowledgeRegulatorySubstitution';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class MedicationKnowledgeRegulatory extends BackboneElement implements fhir.MedicationKnowledgeRegulatory {
+export class MedicationKnowledgeRegulatory extends BackboneElement {
   /**
    * The maximum number of units of the medication that can be dispensed in a period.
    */

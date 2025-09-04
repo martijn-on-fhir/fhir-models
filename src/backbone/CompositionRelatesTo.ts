@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { Identifier } from '../elements/Identifier';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class CompositionRelatesTo extends BackboneElement implements fhir.CompositionRelatesTo {
+export class CompositionRelatesTo extends BackboneElement {
   /**
    * If this document appends another document, then the document cannot be fully understood without also accessing the refer
    */

@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { MeasureGroupPopulation } from './MeasureGroupPopulation';
 import { MeasureGroupStratifier } from './MeasureGroupStratifier';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class MeasureGroup extends BackboneElement implements fhir.MeasureGroup {
+export class MeasureGroup extends BackboneElement {
   /**
    * Indicates a meaning for the group. This can be as simple as a unique identifier, or it can establish meaning in a broade
    */

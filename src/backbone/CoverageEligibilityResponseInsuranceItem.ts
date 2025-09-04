@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { CoverageEligibilityResponseInsuranceItemBenefit } from './CoverageEligibilityResponseInsuranceItemBenefit';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class CoverageEligibilityResponseInsuranceItem extends BackboneElement implements fhir.CoverageEligibilityResponseInsuranceItem {
+export class CoverageEligibilityResponseInsuranceItem extends BackboneElement {
   /**
    * A boolean flag indicating whether a preauthorization is required prior to actual service delivery.
    */

@@ -2,12 +2,11 @@ import 'reflect-metadata';
 import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsIn } from 'class-validator';
 import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class CodeSystemProperty extends BackboneElement implements fhir.CodeSystemProperty {
+export class CodeSystemProperty extends BackboneElement {
   /**
    * A code that is used to identify the property. The code is used internally (in CodeSystem.concept.property.code) and also
    */

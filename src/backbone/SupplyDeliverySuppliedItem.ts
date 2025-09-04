@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Quantity } from '../elements/Quantity';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class SupplyDeliverySuppliedItem extends BackboneElement implements fhir.SupplyDeliverySuppliedItem {
+export class SupplyDeliverySuppliedItem extends BackboneElement {
   /**
    * Identifies the medication, substance or device being dispensed. This is either a link to a resource representing the det
    */

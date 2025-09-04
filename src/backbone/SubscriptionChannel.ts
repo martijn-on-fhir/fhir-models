@@ -2,12 +2,11 @@ import 'reflect-metadata';
 import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsIn } from 'class-validator';
 import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class SubscriptionChannel extends BackboneElement implements fhir.SubscriptionChannel {
+export class SubscriptionChannel extends BackboneElement {
   /**
    * For rest-hook, and websocket, the end-point must be an http: or https: URL; for email, a mailto: url, for sms, a tel: ur
    */

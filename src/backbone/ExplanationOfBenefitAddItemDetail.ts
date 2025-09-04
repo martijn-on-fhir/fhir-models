@@ -7,12 +7,11 @@ import { ExplanationOfBenefitAddItemDetailSubDetail } from './ExplanationOfBenef
 import { ExplanationOfBenefitItemAdjudication } from './ExplanationOfBenefitItemAdjudication';
 import { Money } from '../elements/Money';
 import { Quantity } from '../elements/Quantity';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ExplanationOfBenefitAddItemDetail extends BackboneElement implements fhir.ExplanationOfBenefitAddItemDetail {
+export class ExplanationOfBenefitAddItemDetail extends BackboneElement {
   /**
    * The adjudication results.
    */
@@ -52,7 +51,6 @@ export class ExplanationOfBenefitAddItemDetail extends BackboneElement implement
   @IsOptional()
   @IsArray()
   @ValidateNested({ each: true })
-  @Type(() => number)
   noteNumber?: number[];
 
   /**

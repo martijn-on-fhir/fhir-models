@@ -2,13 +2,12 @@ import 'reflect-metadata';
 import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsIn } from 'class-validator';
 import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
-import { FhirResource } from '../elements/FhirResource';
-import * as fhir from '../r4';
+import {Resource} from '../base'
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class BundleEntryResponse extends BackboneElement implements fhir.BundleEntryResponse {
+export class BundleEntryResponse extends BackboneElement {
   /**
    * Etags match the Resource.meta.versionId. The ETag has to match the version id in the header if a resource is included.
    */
@@ -50,8 +49,8 @@ export class BundleEntryResponse extends BackboneElement implements fhir.BundleE
    */
   @IsOptional()
   @ValidateNested()
-  @Type(() => FhirResource)
-  outcome?: FhirResource;
+  @Type(() => Resource)
+  outcome?: Resource;
 
   /**
    * The status code returned by processing this entry. The status SHALL start with a 3 digit HTTP code (e.g. 404) and may co

@@ -10,12 +10,11 @@ import { ContactPoint } from '../elements/ContactPoint';
 import { HumanName } from '../elements/HumanName';
 import { Identifier } from '../elements/Identifier';
 import { PractitionerQualification } from '../backbone/PractitionerQualification';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class Practitioner extends DomainResource implements fhir.Practitioner {
+export class Practitioner extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

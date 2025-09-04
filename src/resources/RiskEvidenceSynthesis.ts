@@ -14,12 +14,11 @@ import { RiskEvidenceSynthesisCertainty } from '../backbone/RiskEvidenceSynthesi
 import { RiskEvidenceSynthesisRiskEstimate } from '../backbone/RiskEvidenceSynthesisRiskEstimate';
 import { RiskEvidenceSynthesisSampleSize } from '../backbone/RiskEvidenceSynthesisSampleSize';
 import { UsageContext } from '../elements/UsageContext';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class RiskEvidenceSynthesis extends DomainResource implements fhir.RiskEvidenceSynthesis {
+export class RiskEvidenceSynthesis extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

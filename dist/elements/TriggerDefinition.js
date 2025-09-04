@@ -8,7 +8,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TriggerDefinition = void 0;
 require("reflect-metadata");
@@ -18,7 +17,7 @@ const Element_1 = require("../base/Element");
 const DataRequirement_1 = require("./DataRequirement");
 const Expression_1 = require("./Expression");
 const Reference_1 = require("./Reference");
-const Timing_1 = require("./Timing");
+const backbone_1 = require("../backbone");
 class TriggerDefinition extends Element_1.Element {
     constructor(source = {}) {
         super(source);
@@ -52,8 +51,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Timing_1.Timing),
-    __metadata("design:type", typeof (_a = typeof Timing_1.Timing !== "undefined" && Timing_1.Timing) === "function" ? _a : Object)
+    (0, class_transformer_1.Type)(() => backbone_1.Timing),
+    __metadata("design:type", backbone_1.Timing)
 ], TriggerDefinition.prototype, "timingTiming", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),

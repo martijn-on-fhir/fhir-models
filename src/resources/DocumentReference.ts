@@ -9,12 +9,11 @@ import { DocumentReferenceContext } from '../backbone/DocumentReferenceContext';
 import { DocumentReferenceRelatesTo } from '../backbone/DocumentReferenceRelatesTo';
 import { Identifier } from '../elements/Identifier';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class DocumentReference extends DomainResource implements fhir.DocumentReference {
+export class DocumentReference extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

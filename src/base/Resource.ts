@@ -1,13 +1,12 @@
 import 'reflect-metadata';
 import { IsOptional, IsString, ValidateNested } from 'class-validator';
 import { Type } from 'class-transformer';
-import * as fhir from '../r4';
 import { Element } from './Element';
 
 /**
  * This is the base resource type for everything.
  */
-export abstract class Resource implements fhir.Resource {
+export abstract class Resource {
   /**
    * Resource Type Name (for serialization)
    */
@@ -92,7 +91,7 @@ export abstract class Resource implements fhir.Resource {
 }
 
 // Forward declaration to avoid circular dependency
-class Meta extends Element implements fhir.Meta {
+class Meta extends Element {
   lastUpdated?: string;
   _lastUpdated?: Element;
   profile?: string[];

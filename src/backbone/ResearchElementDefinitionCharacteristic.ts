@@ -9,12 +9,11 @@ import { Expression } from '../elements/Expression';
 import { Period } from '../elements/Period';
 import { Timing } from './Timing';
 import { UsageContext } from '../elements/UsageContext';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ResearchElementDefinitionCharacteristic extends BackboneElement implements fhir.ResearchElementDefinitionCharacteristic {
+export class ResearchElementDefinitionCharacteristic extends BackboneElement {
   /**
    * Define members of the research element using Codes (such as condition, medication, or observation), Expressions ( using 
    */

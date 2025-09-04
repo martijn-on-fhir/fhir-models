@@ -9,12 +9,11 @@ import { Quantity } from '../elements/Quantity';
 import { Range } from '../elements/Range';
 import { Ratio } from '../elements/Ratio';
 import { SampledData } from '../elements/SampledData';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ObservationComponent extends BackboneElement implements fhir.ObservationComponent {
+export class ObservationComponent extends BackboneElement {
   /**
    * *All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the mea
    */

@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { Attachment } from '../elements/Attachment';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Quantity } from '../elements/Quantity';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ProdCharacteristic extends BackboneElement implements fhir.ProdCharacteristic {
+export class ProdCharacteristic extends BackboneElement {
   /**
    * Where applicable, the color can be specified An appropriate controlled vocabulary shall be used The term and the term id
    */

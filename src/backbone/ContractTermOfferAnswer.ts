@@ -6,12 +6,11 @@ import { Attachment } from '../elements/Attachment';
 import { Coding } from '../elements/Coding';
 import { Quantity } from '../elements/Quantity';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ContractTermOfferAnswer extends BackboneElement implements fhir.ContractTermOfferAnswer {
+export class ContractTermOfferAnswer extends BackboneElement {
   /**
    * Response to an offer clause or question text,  which enables selection of values to be agreed to, e.g., the period of pa
    */

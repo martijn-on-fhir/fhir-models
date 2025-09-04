@@ -6,12 +6,11 @@ import { CodeableConcept } from '../elements/CodeableConcept';
 import { CoverageCostToBeneficiaryException } from './CoverageCostToBeneficiaryException';
 import { Money } from '../elements/Money';
 import { Quantity } from '../elements/Quantity';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class CoverageCostToBeneficiary extends BackboneElement implements fhir.CoverageCostToBeneficiary {
+export class CoverageCostToBeneficiary extends BackboneElement {
   /**
    * A suite of codes indicating exceptions or reductions to patient costs and their effective periods.
    */

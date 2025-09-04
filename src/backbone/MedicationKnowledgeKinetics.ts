@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { Duration } from '../elements/Duration';
 import { Quantity } from '../elements/Quantity';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class MedicationKnowledgeKinetics extends BackboneElement implements fhir.MedicationKnowledgeKinetics {
+export class MedicationKnowledgeKinetics extends BackboneElement {
   /**
    * The drug concentration measured at certain discrete points in time.
    */

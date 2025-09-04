@@ -1,29 +1,19 @@
 import 'reflect-metadata';
-import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsIn } from 'class-validator';
-import { Type } from 'class-transformer';
-import { DomainResource } from '../base/DomainResource';
-import { Element } from '../base/Element';
-import { ActivityDefinitionDynamicValue } from '../backbone/ActivityDefinitionDynamicValue';
-import { ActivityDefinitionParticipant } from '../backbone/ActivityDefinitionParticipant';
-import { Age } from '../elements/Age';
-import { CodeableConcept } from '../elements/CodeableConcept';
-import { ContactDetail } from '../elements/ContactDetail';
-import { Dosage } from '../backbone/Dosage';
-import { Duration } from '../elements/Duration';
-import { Identifier } from '../elements/Identifier';
-import { Period } from '../elements/Period';
-import { Quantity } from '../elements/Quantity';
-import { Range } from '../elements/Range';
-import { Reference } from '../elements/Reference';
-import { RelatedArtifact } from '../elements/RelatedArtifact';
-import { Timing } from '../backbone/Timing';
-import { UsageContext } from '../elements/UsageContext';
-import * as fhir from '../r4';
+import {IsArray, IsBoolean, IsIn, IsOptional, IsString, ValidateNested} from 'class-validator';
+import {Type} from 'class-transformer';
+import {DomainResource} from '../base/DomainResource';
+import {Element} from '../base/Element';
+import {ActivityDefinitionDynamicValue} from '../backbone/ActivityDefinitionDynamicValue';
+import {CodeableConcept} from '../elements/CodeableConcept';
+import {ContactDetail} from '../elements/ContactDetail';
+import {Dosage} from '../backbone/Dosage';
+import {Identifier} from '../elements/Identifier';
+import {Period} from '../elements/Period';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ActivityDefinition extends DomainResource implements fhir.ActivityDefinition {
+export class ActivityDefinition extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

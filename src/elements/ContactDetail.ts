@@ -3,12 +3,11 @@ import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsI
 import { Type } from 'class-transformer';
 import { Element } from '../base/Element';
 import { ContactPoint } from './ContactPoint';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiti
  */
-export class ContactDetail extends Element implements fhir.ContactDetail {
+export class ContactDetail extends Element {
   /**
    * If there is no named individual, the telecom information is for the organization as a whole.
    */

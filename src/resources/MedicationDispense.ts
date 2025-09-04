@@ -11,12 +11,11 @@ import { MedicationDispensePerformer } from '../backbone/MedicationDispensePerfo
 import { MedicationDispenseSubstitution } from '../backbone/MedicationDispenseSubstitution';
 import { Quantity } from '../elements/Quantity';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class MedicationDispense extends DomainResource implements fhir.MedicationDispense {
+export class MedicationDispense extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

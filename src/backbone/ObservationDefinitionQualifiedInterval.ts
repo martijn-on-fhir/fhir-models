@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Range } from '../elements/Range';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ObservationDefinitionQualifiedInterval extends BackboneElement implements fhir.ObservationDefinitionQualifiedInterval {
+export class ObservationDefinitionQualifiedInterval extends BackboneElement {
   /**
    * Some analytes vary greatly over age.
    */

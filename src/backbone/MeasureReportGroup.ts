@@ -6,12 +6,11 @@ import { CodeableConcept } from '../elements/CodeableConcept';
 import { MeasureReportGroupPopulation } from './MeasureReportGroupPopulation';
 import { MeasureReportGroupStratifier } from './MeasureReportGroupStratifier';
 import { Quantity } from '../elements/Quantity';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class MeasureReportGroup extends BackboneElement implements fhir.MeasureReportGroup {
+export class MeasureReportGroup extends BackboneElement {
   /**
    * The meaning of the population group as defined in the measure definition.
    */

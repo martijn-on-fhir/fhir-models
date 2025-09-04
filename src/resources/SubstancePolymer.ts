@@ -6,12 +6,11 @@ import { Element } from '../base/Element';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { SubstancePolymerMonomerSet } from '../backbone/SubstancePolymerMonomerSet';
 import { SubstancePolymerRepeat } from '../backbone/SubstancePolymerRepeat';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class SubstancePolymer extends DomainResource implements fhir.SubstancePolymer {
+export class SubstancePolymer extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

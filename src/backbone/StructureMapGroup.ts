@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { StructureMapGroupInput } from './StructureMapGroupInput';
 import { StructureMapGroupRule } from './StructureMapGroupRule';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class StructureMapGroup extends BackboneElement implements fhir.StructureMapGroup {
+export class StructureMapGroup extends BackboneElement {
   /**
    * Additional supporting documentation that explains the purpose of the group and the types of mappings within it.
    */

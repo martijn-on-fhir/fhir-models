@@ -7,12 +7,11 @@ import { CodeableConcept } from '../elements/CodeableConcept';
 import { Money } from '../elements/Money';
 import { Quantity } from '../elements/Quantity';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ClaimItemDetail extends BackboneElement implements fhir.ClaimItemDetail {
+export class ClaimItemDetail extends BackboneElement {
   /**
    * Examples include Medical Care, Periodontics, Renal Dialysis, Vision Coverage.
    */

@@ -7,12 +7,11 @@ import { Period } from '../elements/Period';
 import { Quantity } from '../elements/Quantity';
 import { Range } from '../elements/Range';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class GroupCharacteristic extends BackboneElement implements fhir.GroupCharacteristic {
+export class GroupCharacteristic extends BackboneElement {
   /**
    * A code that identifies the kind of trait being asserted.
    */

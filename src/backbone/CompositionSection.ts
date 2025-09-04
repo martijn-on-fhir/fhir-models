@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Narrative } from '../elements/Narrative';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class CompositionSection extends BackboneElement implements fhir.CompositionSection {
+export class CompositionSection extends BackboneElement {
   /**
    * Identifies who is responsible for the information in this section, not necessarily who typed it in.
    */

@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { Identifier } from '../elements/Identifier';
 import { Quantity } from '../elements/Quantity';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class SubstanceInstance extends BackboneElement implements fhir.SubstanceInstance {
+export class SubstanceInstance extends BackboneElement {
   /**
    * When the substance is no longer valid to use. For some substances, a single arbitrary date is used for expiry.
    */

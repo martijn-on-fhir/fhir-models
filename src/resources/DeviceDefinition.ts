@@ -17,12 +17,11 @@ import { ProdCharacteristic } from '../backbone/ProdCharacteristic';
 import { ProductShelfLife } from '../backbone/ProductShelfLife';
 import { Quantity } from '../elements/Quantity';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class DeviceDefinition extends DomainResource implements fhir.DeviceDefinition {
+export class DeviceDefinition extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

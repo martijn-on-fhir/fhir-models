@@ -7,12 +7,11 @@ import { DataRequirementCodeFilter } from './DataRequirementCodeFilter';
 import { DataRequirementDateFilter } from './DataRequirementDateFilter';
 import { DataRequirementSort } from './DataRequirementSort';
 import { Reference } from './Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiti
  */
-export class DataRequirement extends Element implements fhir.DataRequirement {
+export class DataRequirement extends Element {
   /**
    * Code filters specify additional constraints on the data, specifying the value set of interest for a particular element of the data. Each code filter d
    */

@@ -52,7 +52,6 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => number),
     __metadata("design:type", Array)
 ], ClaimResponseAddItem.prototype, "detailSequence", void 0);
 __decorate([
@@ -64,7 +63,6 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => number),
     __metadata("design:type", Array)
 ], ClaimResponseAddItem.prototype, "itemSequence", void 0);
 __decorate([
@@ -102,7 +100,6 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => number),
     __metadata("design:type", Array)
 ], ClaimResponseAddItem.prototype, "noteNumber", void 0);
 __decorate([
@@ -152,7 +149,6 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => number),
     __metadata("design:type", Array)
 ], ClaimResponseAddItem.prototype, "subdetailSequence", void 0);
 __decorate([

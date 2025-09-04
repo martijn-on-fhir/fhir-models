@@ -3,12 +3,11 @@ import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsI
 import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { Coding } from '../elements/Coding';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class CapabilityStatementMessagingEndpoint extends BackboneElement implements fhir.CapabilityStatementMessagingEndpoint {
+export class CapabilityStatementMessagingEndpoint extends BackboneElement {
   /**
    * The network address of the endpoint. For solutions that do not use network addresses for routing, it can be just an iden
    */

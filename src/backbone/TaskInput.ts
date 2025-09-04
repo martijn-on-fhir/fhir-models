@@ -33,12 +33,11 @@ import { Signature } from '../elements/Signature';
 import { Timing } from './Timing';
 import { TriggerDefinition } from '../elements/TriggerDefinition';
 import { UsageContext } from '../elements/UsageContext';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class TaskInput extends BackboneElement implements fhir.TaskInput {
+export class TaskInput extends BackboneElement {
   /**
    * If referencing a BPMN workflow or Protocol, the "system" is the URL for the workflow definition and the code is the "nam
    */

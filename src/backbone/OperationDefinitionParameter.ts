@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { OperationDefinitionParameterBinding } from './OperationDefinitionParameterBinding';
 import { OperationDefinitionParameterReferencedFrom } from './OperationDefinitionParameterReferencedFrom';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class OperationDefinitionParameter extends BackboneElement implements fhir.OperationDefinitionParameter {
+export class OperationDefinitionParameter extends BackboneElement {
   /**
    * Binds to a value set if this parameter is coded (code, Coding, CodeableConcept).
    */

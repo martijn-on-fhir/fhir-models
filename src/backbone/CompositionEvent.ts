@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Period } from '../elements/Period';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class CompositionEvent extends BackboneElement implements fhir.CompositionEvent {
+export class CompositionEvent extends BackboneElement {
   /**
    * An event can further specialize the act inherent in the typeCode, such as where it is simply "Procedure Report" and the 
    */

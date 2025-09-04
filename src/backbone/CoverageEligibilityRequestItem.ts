@@ -7,12 +7,11 @@ import { CoverageEligibilityRequestItemDiagnosis } from './CoverageEligibilityRe
 import { Money } from '../elements/Money';
 import { Quantity } from '../elements/Quantity';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class CoverageEligibilityRequestItem extends BackboneElement implements fhir.CoverageEligibilityRequestItem {
+export class CoverageEligibilityRequestItem extends BackboneElement {
   /**
    * Examples include Medical Care, Periodontics, Renal Dialysis, Vision Coverage.
    */
@@ -86,7 +85,6 @@ export class CoverageEligibilityRequestItem extends BackboneElement implements f
   @IsOptional()
   @IsArray()
   @ValidateNested({ each: true })
-  @Type(() => number)
   supportingInfoSequence?: number[];
 
   /**

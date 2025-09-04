@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { ExampleScenarioProcess } from './ExampleScenarioProcess';
 import { ExampleScenarioProcessStepAlternative } from './ExampleScenarioProcessStepAlternative';
 import { ExampleScenarioProcessStepOperation } from './ExampleScenarioProcessStepOperation';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ExampleScenarioProcessStep extends BackboneElement implements fhir.ExampleScenarioProcessStep {
+export class ExampleScenarioProcessStep extends BackboneElement {
   /**
    * Indicates an alternative step that can be taken instead of the operations on the base step in exceptional/atypical circu
    */

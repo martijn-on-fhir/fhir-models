@@ -7,12 +7,11 @@ import { Period } from '../elements/Period';
 import { Quantity } from '../elements/Quantity';
 import { Reference } from '../elements/Reference';
 import { Timing } from './Timing';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class CarePlanActivityDetail extends BackboneElement implements fhir.CarePlanActivityDetail {
+export class CarePlanActivityDetail extends BackboneElement {
   /**
    * Tends to be less relevant for activities involving particular products.  Codes should not convey negation - use "prohibi
    */

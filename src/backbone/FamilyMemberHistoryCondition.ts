@@ -7,12 +7,11 @@ import { Annotation } from '../elements/Annotation';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Period } from '../elements/Period';
 import { Range } from '../elements/Range';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class FamilyMemberHistoryCondition extends BackboneElement implements fhir.FamilyMemberHistoryCondition {
+export class FamilyMemberHistoryCondition extends BackboneElement {
   /**
    * The actual condition specified. Could be a coded condition (like MI or Diabetes) or a less specific string like 'cancer'
    */

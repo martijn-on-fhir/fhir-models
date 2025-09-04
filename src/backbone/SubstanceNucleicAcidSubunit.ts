@@ -6,12 +6,11 @@ import { Attachment } from '../elements/Attachment';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { SubstanceNucleicAcidSubunitLinkage } from './SubstanceNucleicAcidSubunitLinkage';
 import { SubstanceNucleicAcidSubunitSugar } from './SubstanceNucleicAcidSubunitSugar';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class SubstanceNucleicAcidSubunit extends BackboneElement implements fhir.SubstanceNucleicAcidSubunit {
+export class SubstanceNucleicAcidSubunit extends BackboneElement {
   /**
    * The nucleotide present at the 5’ terminal shall be specified based on a controlled vocabulary. Since the sequence is rep
    */

@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Reference } from '../elements/Reference';
 import { Signature } from '../elements/Signature';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class VerificationResultAttestation extends BackboneElement implements fhir.VerificationResultAttestation {
+export class VerificationResultAttestation extends BackboneElement {
   /**
    * The method by which attested information was submitted/retrieved (manual; API; Push).
    */

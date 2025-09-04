@@ -37,7 +37,6 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => number),
     __metadata("design:type", Array)
 ], ClaimItem.prototype, "careTeamSequence", void 0);
 __decorate([
@@ -57,7 +56,6 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => number),
     __metadata("design:type", Array)
 ], ClaimItem.prototype, "diagnosisSequence", void 0);
 __decorate([
@@ -76,7 +74,6 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => number),
     __metadata("design:type", Array)
 ], ClaimItem.prototype, "informationSequence", void 0);
 __decorate([
@@ -114,7 +111,6 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => number),
     __metadata("design:type", Array)
 ], ClaimItem.prototype, "procedureSequence", void 0);
 __decorate([

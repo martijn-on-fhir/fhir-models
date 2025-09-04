@@ -10,12 +10,11 @@ import { ImplementationGuideDependsOn } from '../backbone/ImplementationGuideDep
 import { ImplementationGuideGlobal } from '../backbone/ImplementationGuideGlobal';
 import { ImplementationGuideManifest } from '../backbone/ImplementationGuideManifest';
 import { UsageContext } from '../elements/UsageContext';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ImplementationGuide extends DomainResource implements fhir.ImplementationGuide {
+export class ImplementationGuide extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

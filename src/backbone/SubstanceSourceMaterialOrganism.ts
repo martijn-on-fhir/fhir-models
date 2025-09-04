@@ -6,12 +6,11 @@ import { CodeableConcept } from '../elements/CodeableConcept';
 import { SubstanceSourceMaterialOrganismAuthor } from './SubstanceSourceMaterialOrganismAuthor';
 import { SubstanceSourceMaterialOrganismHybrid } from './SubstanceSourceMaterialOrganismHybrid';
 import { SubstanceSourceMaterialOrganismOrganismGeneral } from './SubstanceSourceMaterialOrganismOrganismGeneral';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class SubstanceSourceMaterialOrganism extends BackboneElement implements fhir.SubstanceSourceMaterialOrganism {
+export class SubstanceSourceMaterialOrganism extends BackboneElement {
   /**
    * 4.9.13.6.1 Author type (Conditional).
    */

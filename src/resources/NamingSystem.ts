@@ -7,12 +7,11 @@ import { CodeableConcept } from '../elements/CodeableConcept';
 import { ContactDetail } from '../elements/ContactDetail';
 import { NamingSystemUniqueId } from '../backbone/NamingSystemUniqueId';
 import { UsageContext } from '../elements/UsageContext';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class NamingSystem extends DomainResource implements fhir.NamingSystem {
+export class NamingSystem extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

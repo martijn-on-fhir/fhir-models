@@ -8,7 +8,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Timing = void 0;
 require("reflect-metadata");
@@ -28,23 +27,23 @@ __decorate([
     (0, class_validator_1.ValidateNested)(),
     (0, class_transformer_1.Type)(() => CodeableConcept_1.CodeableConcept),
     __metadata("design:type", CodeableConcept_1.CodeableConcept)
-], Timing_1.Timing.prototype, "code", void 0);
+], Timing.prototype, "code", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.IsString)({ each: true }),
     __metadata("design:type", Array)
-], Timing_1.Timing.prototype, "event", void 0);
+], Timing.prototype, "event", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
     (0, class_transformer_1.Type)(() => Element),
     __metadata("design:type", Array)
-], Timing_1.Timing.prototype, "_event", void 0);
+], Timing.prototype, "_event", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
     (0, class_transformer_1.Type)(() => TimingRepeat_1.TimingRepeat),
-    __metadata("design:type", typeof (_a = typeof TimingRepeat_1.TimingRepeat !== "undefined" && TimingRepeat_1.TimingRepeat) === "function" ? _a : Object)
-], Timing_1.Timing.prototype, "repeat", void 0);
+    __metadata("design:type", TimingRepeat_1.TimingRepeat)
+], Timing.prototype, "repeat", void 0);

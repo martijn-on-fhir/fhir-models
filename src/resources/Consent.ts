@@ -10,12 +10,11 @@ import { ConsentProvision } from '../backbone/ConsentProvision';
 import { ConsentVerification } from '../backbone/ConsentVerification';
 import { Identifier } from '../elements/Identifier';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class Consent extends DomainResource implements fhir.Consent {
+export class Consent extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

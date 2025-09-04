@@ -3,12 +3,11 @@ import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsI
 import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { Coding } from '../elements/Coding';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ContractTermSecurityLabel extends BackboneElement implements fhir.ContractTermSecurityLabel {
+export class ContractTermSecurityLabel extends BackboneElement {
   /**
    * Security label privacy tag that species the applicable privacy and security policies governing this term and/or term ele
    */
@@ -41,7 +40,6 @@ export class ContractTermSecurityLabel extends BackboneElement implements fhir.C
   @IsOptional()
   @IsArray()
   @ValidateNested({ each: true })
-  @Type(() => number)
   number?: number[];
 
   /**

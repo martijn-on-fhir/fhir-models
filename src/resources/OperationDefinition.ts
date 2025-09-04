@@ -8,12 +8,11 @@ import { ContactDetail } from '../elements/ContactDetail';
 import { OperationDefinitionOverload } from '../backbone/OperationDefinitionOverload';
 import { OperationDefinitionParameter } from '../backbone/OperationDefinitionParameter';
 import { UsageContext } from '../elements/UsageContext';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class OperationDefinition extends DomainResource implements fhir.OperationDefinition {
+export class OperationDefinition extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

@@ -9,12 +9,11 @@ import { ProvenanceAgent } from '../backbone/ProvenanceAgent';
 import { ProvenanceEntity } from '../backbone/ProvenanceEntity';
 import { Reference } from '../elements/Reference';
 import { Signature } from '../elements/Signature';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class Provenance extends DomainResource implements fhir.Provenance {
+export class Provenance extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

@@ -10,12 +10,11 @@ import { Period } from '../elements/Period';
 import { Reference } from '../elements/Reference';
 import { RelatedArtifact } from '../elements/RelatedArtifact';
 import { UsageContext } from '../elements/UsageContext';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ResearchDefinition extends DomainResource implements fhir.ResearchDefinition {
+export class ResearchDefinition extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

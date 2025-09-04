@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { Duration } from '../elements/Duration';
 import { Range } from '../elements/Range';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class PlanDefinitionActionRelatedAction extends BackboneElement implements fhir.PlanDefinitionActionRelatedAction {
+export class PlanDefinitionActionRelatedAction extends BackboneElement {
   /**
    * The element id of the related action.
    */

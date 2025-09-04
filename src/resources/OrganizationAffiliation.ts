@@ -8,12 +8,11 @@ import { ContactPoint } from '../elements/ContactPoint';
 import { Identifier } from '../elements/Identifier';
 import { Period } from '../elements/Period';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class OrganizationAffiliation extends DomainResource implements fhir.OrganizationAffiliation {
+export class OrganizationAffiliation extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

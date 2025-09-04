@@ -8,12 +8,11 @@ import { ContractTermActionSubject } from './ContractTermActionSubject';
 import { Period } from '../elements/Period';
 import { Reference } from '../elements/Reference';
 import { Timing } from './Timing';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ContractTermAction extends BackboneElement implements fhir.ContractTermAction {
+export class ContractTermAction extends BackboneElement {
   /**
    * Encounter or Episode with primary association to specified term activity.
    */
@@ -221,7 +220,6 @@ export class ContractTermAction extends BackboneElement implements fhir.Contract
   @IsOptional()
   @IsArray()
   @ValidateNested({ each: true })
-  @Type(() => number)
   securityLabelNumber?: number[];
 
   /**

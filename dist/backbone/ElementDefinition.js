@@ -8,7 +8,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var _a, _b;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ElementDefinition = void 0;
 require("reflect-metadata");
@@ -42,13 +41,13 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
     (0, class_transformer_1.Type)(() => ElementDefinitionBase_1.ElementDefinitionBase),
-    __metadata("design:type", typeof (_a = typeof ElementDefinitionBase_1.ElementDefinitionBase !== "undefined" && ElementDefinitionBase_1.ElementDefinitionBase) === "function" ? _a : Object)
+    __metadata("design:type", ElementDefinitionBase_1.ElementDefinitionBase)
 ], ElementDefinition.prototype, "base", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
     (0, class_transformer_1.Type)(() => ElementDefinitionBinding_1.ElementDefinitionBinding),
-    __metadata("design:type", typeof (_b = typeof ElementDefinitionBinding_1.ElementDefinitionBinding !== "undefined" && ElementDefinitionBinding_1.ElementDefinitionBinding) === "function" ? _b : Object)
+    __metadata("design:type", ElementDefinitionBinding_1.ElementDefinitionBinding)
 ], ElementDefinition.prototype, "binding", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),

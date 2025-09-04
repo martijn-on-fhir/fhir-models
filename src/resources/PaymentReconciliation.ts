@@ -10,12 +10,11 @@ import { PaymentReconciliationDetail } from '../backbone/PaymentReconciliationDe
 import { PaymentReconciliationProcessNote } from '../backbone/PaymentReconciliationProcessNote';
 import { Period } from '../elements/Period';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class PaymentReconciliation extends DomainResource implements fhir.PaymentReconciliation {
+export class PaymentReconciliation extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

@@ -11,12 +11,11 @@ import { Reference } from '../elements/Reference';
 import { TaskInput } from '../backbone/TaskInput';
 import { TaskOutput } from '../backbone/TaskOutput';
 import { TaskRestriction } from '../backbone/TaskRestriction';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class Task extends DomainResource implements fhir.Task {
+export class Task extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

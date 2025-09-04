@@ -3,12 +3,11 @@ import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsI
 import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { TerminologyCapabilitiesCodeSystemVersionFilter } from './TerminologyCapabilitiesCodeSystemVersionFilter';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class TerminologyCapabilitiesCodeSystemVersion extends BackboneElement implements fhir.TerminologyCapabilitiesCodeSystemVersion {
+export class TerminologyCapabilitiesCodeSystemVersion extends BackboneElement {
   /**
    * For version-less code systems, there should be a single version with no identifier.
    */

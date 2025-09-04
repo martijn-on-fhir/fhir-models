@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { CapabilityStatementRestResourceInteraction } from './CapabilityStatementRestResourceInteraction';
 import { CapabilityStatementRestResourceOperation } from './CapabilityStatementRestResourceOperation';
 import { CapabilityStatementRestResourceSearchParam } from './CapabilityStatementRestResourceSearchParam';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class CapabilityStatementRestResource extends BackboneElement implements fhir.CapabilityStatementRestResource {
+export class CapabilityStatementRestResource extends BackboneElement {
   /**
    * Conditional Create is mainly appropriate for interface engine scripts converting from other formats, such as v2.
    */

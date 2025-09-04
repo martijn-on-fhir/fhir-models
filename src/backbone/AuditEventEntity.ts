@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { AuditEventEntityDetail } from './AuditEventEntityDetail';
 import { Coding } from '../elements/Coding';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class AuditEventEntity extends BackboneElement implements fhir.AuditEventEntity {
+export class AuditEventEntity extends BackboneElement {
   /**
    * Text that describes the entity in more detail.
    */

@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { ClaimResponseItemAdjudication } from './ClaimResponseItemAdjudication';
 import { ClaimResponseItemDetail } from './ClaimResponseItemDetail';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ClaimResponseItem extends BackboneElement implements fhir.ClaimResponseItem {
+export class ClaimResponseItem extends BackboneElement {
   /**
    * If this item is a group then the values here are a summary of the adjudication of the detail items. If this item is a si
    */
@@ -41,7 +40,6 @@ export class ClaimResponseItem extends BackboneElement implements fhir.ClaimResp
   @IsOptional()
   @IsArray()
   @ValidateNested({ each: true })
-  @Type(() => number)
   noteNumber?: number[];
 
   /**

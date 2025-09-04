@@ -10,12 +10,11 @@ import { Money } from '../elements/Money';
 import { Period } from '../elements/Period';
 import { Quantity } from '../elements/Quantity';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ExplanationOfBenefitAddItem extends BackboneElement implements fhir.ExplanationOfBenefitAddItem {
+export class ExplanationOfBenefitAddItem extends BackboneElement {
   /**
    * The adjudication results.
    */
@@ -48,7 +47,6 @@ export class ExplanationOfBenefitAddItem extends BackboneElement implements fhir
   @IsOptional()
   @IsArray()
   @ValidateNested({ each: true })
-  @Type(() => number)
   detailSequence?: number[];
 
   /**
@@ -64,7 +62,6 @@ export class ExplanationOfBenefitAddItem extends BackboneElement implements fhir
   @IsOptional()
   @IsArray()
   @ValidateNested({ each: true })
-  @Type(() => number)
   itemSequence?: number[];
 
   /**
@@ -114,7 +111,6 @@ export class ExplanationOfBenefitAddItem extends BackboneElement implements fhir
   @IsOptional()
   @IsArray()
   @ValidateNested({ each: true })
-  @Type(() => number)
   noteNumber?: number[];
 
   /**
@@ -177,7 +173,6 @@ export class ExplanationOfBenefitAddItem extends BackboneElement implements fhir
   @IsOptional()
   @IsArray()
   @ValidateNested({ each: true })
-  @Type(() => number)
   subDetailSequence?: number[];
 
   /**

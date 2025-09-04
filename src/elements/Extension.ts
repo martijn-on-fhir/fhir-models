@@ -2,13 +2,12 @@ import 'reflect-metadata';
 import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsIn } from 'class-validator';
 import { Type } from 'class-transformer';
 import { Element } from '../base/Element';
-import * as fhir from '../r4';
 
 /**
  * Optional Extension Element - a base Element that can be used to introduce additional information 
  * in a resource definition that is not part of the basic definition of the resource.
  */
-export class Extension extends Element implements fhir.Extension {
+export class Extension extends Element {
   /**
    * Source of the definition for the extension code - a logical name or a URL.
    */

@@ -1,14 +1,13 @@
 import 'reflect-metadata';
 import { IsOptional, IsArray, ValidateNested } from 'class-validator';
 import { Type } from 'class-transformer';
-import * as fhir from '../r4';
 import { Resource } from './Resource';
 import { Element } from './Element';
 
 /**
  * A resource that includes narrative, extensions, and contained resources.
  */
-export abstract class DomainResource extends Resource implements fhir.DomainResource {
+export abstract class DomainResource extends Resource {
   /**
    * This should never be done when the content can be identified properly, as once 
    * identification is lost, it is extremely difficult (and context dependent) to restore 
@@ -66,7 +65,7 @@ export abstract class DomainResource extends Resource implements fhir.DomainReso
 }
 
 // Forward declarations to avoid circular dependencies
-class Extension extends Element implements fhir.Extension {
+class Extension extends Element {
   url!: string;
   _url?: Element;
   valueString?: string;
@@ -77,7 +76,7 @@ class Extension extends Element implements fhir.Extension {
   }
 }
 
-class Narrative extends Element implements fhir.Narrative {
+class Narrative extends Element {
   status!: 'generated' | 'extensions' | 'additional' | 'empty';
   _status?: Element;
   div!: string;

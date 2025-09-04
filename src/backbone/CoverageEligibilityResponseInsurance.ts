@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { CoverageEligibilityResponseInsuranceItem } from './CoverageEligibilityResponseInsuranceItem';
 import { Period } from '../elements/Period';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class CoverageEligibilityResponseInsurance extends BackboneElement implements fhir.CoverageEligibilityResponseInsurance {
+export class CoverageEligibilityResponseInsurance extends BackboneElement {
   /**
    * The term of the benefits documented in this response.
    */

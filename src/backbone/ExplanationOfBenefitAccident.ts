@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { Address } from '../elements/Address';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ExplanationOfBenefitAccident extends BackboneElement implements fhir.ExplanationOfBenefitAccident {
+export class ExplanationOfBenefitAccident extends BackboneElement {
   /**
    * The date of the accident has to precede the dates of the products and services but within a reasonable timeframe.
    */

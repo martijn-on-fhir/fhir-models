@@ -11,12 +11,11 @@ import { MedicinalProductManufacturingBusinessOperation } from '../backbone/Medi
 import { MedicinalProductName } from '../backbone/MedicinalProductName';
 import { MedicinalProductSpecialDesignation } from '../backbone/MedicinalProductSpecialDesignation';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class MedicinalProduct extends DomainResource implements fhir.MedicinalProduct {
+export class MedicinalProduct extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

@@ -10,12 +10,11 @@ import { ContractTermSecurityLabel } from './ContractTermSecurityLabel';
 import { Identifier } from '../elements/Identifier';
 import { Period } from '../elements/Period';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ContractTerm extends BackboneElement implements fhir.ContractTerm {
+export class ContractTerm extends BackboneElement {
   /**
    * Several agents may be associated (i.e. has some responsibility for an activity) with an activity and vice-versa. For exa
    */

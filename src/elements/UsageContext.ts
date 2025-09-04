@@ -7,12 +7,11 @@ import { Coding } from './Coding';
 import { Quantity } from './Quantity';
 import { Range } from './Range';
 import { Reference } from './Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiti
  */
-export class UsageContext extends Element implements fhir.UsageContext {
+export class UsageContext extends Element {
   /**
    * A code that identifies the type of context being specified by this usage context.
    */

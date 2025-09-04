@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Period } from '../elements/Period';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class CareTeamParticipant extends BackboneElement implements fhir.CareTeamParticipant {
+export class CareTeamParticipant extends BackboneElement {
   /**
    * Patient only needs to be listed if they have a role other than "subject of care". Member is optional because some partic
    */

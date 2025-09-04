@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { Element } from '../base/Element';
 import { Coding } from './Coding';
 import { Reference } from './Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiti
  */
-export class Signature extends Element implements fhir.Signature {
+export class Signature extends Element {
   /**
    * Where the signature type is an XML DigSig, the signed content is a FHIR Resource(s), the signature is of the XML form of the Resource(s) using  XML-Si
    */

@@ -7,12 +7,11 @@ import { Coding } from '../elements/Coding';
 import { Quantity } from '../elements/Quantity';
 import { QuestionnaireResponseItem } from './QuestionnaireResponseItem';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class QuestionnaireResponseItemAnswer extends BackboneElement implements fhir.QuestionnaireResponseItemAnswer {
+export class QuestionnaireResponseItemAnswer extends BackboneElement {
   /**
    * Nested groups and/or questions found within this particular answer.
    */

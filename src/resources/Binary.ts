@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { Resource } from '../base/Resource';
 import { Element } from '../base/Element';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class Binary extends Resource implements fhir.Binary {
+export class Binary extends Resource {
   /**
    * Resource Type Name (for serialization)
    */

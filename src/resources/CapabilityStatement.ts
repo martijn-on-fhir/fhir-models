@@ -11,12 +11,11 @@ import { CapabilityStatementSoftware } from '../backbone/CapabilityStatementSoft
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { ContactDetail } from '../elements/ContactDetail';
 import { UsageContext } from '../elements/UsageContext';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class CapabilityStatement extends DomainResource implements fhir.CapabilityStatement {
+export class CapabilityStatement extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

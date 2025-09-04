@@ -5,12 +5,11 @@ import { DomainResource } from '../base/DomainResource';
 import { Element } from '../base/Element';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { SubstanceProteinSubunit } from '../backbone/SubstanceProteinSubunit';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class SubstanceProtein extends DomainResource implements fhir.SubstanceProtein {
+export class SubstanceProtein extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

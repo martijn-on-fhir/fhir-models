@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { CodeSystemConceptDesignation } from './CodeSystemConceptDesignation';
 import { CodeSystemConceptProperty } from './CodeSystemConceptProperty';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class CodeSystemConcept extends BackboneElement implements fhir.CodeSystemConcept {
+export class CodeSystemConcept extends BackboneElement {
   /**
    * A code - a text symbol - that uniquely identifies the concept within the code system.
    */

@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { ChargeItemDefinitionApplicability } from './ChargeItemDefinitionApplicability';
 import { ChargeItemDefinitionPropertyGroupPriceComponent } from './ChargeItemDefinitionPropertyGroupPriceComponent';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ChargeItemDefinitionPropertyGroup extends BackboneElement implements fhir.ChargeItemDefinitionPropertyGroup {
+export class ChargeItemDefinitionPropertyGroup extends BackboneElement {
   /**
    * The applicability conditions can be used to ascertain whether a billing item is allowed in a specific context. E.g. some
    */

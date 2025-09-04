@@ -7,12 +7,11 @@ import { SubstanceReferenceInformationClassification } from '../backbone/Substan
 import { SubstanceReferenceInformationGene } from '../backbone/SubstanceReferenceInformationGene';
 import { SubstanceReferenceInformationGeneElement } from '../backbone/SubstanceReferenceInformationGeneElement';
 import { SubstanceReferenceInformationTarget } from '../backbone/SubstanceReferenceInformationTarget';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class SubstanceReferenceInformation extends DomainResource implements fhir.SubstanceReferenceInformation {
+export class SubstanceReferenceInformation extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

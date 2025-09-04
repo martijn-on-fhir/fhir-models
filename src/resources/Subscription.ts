@@ -5,12 +5,11 @@ import { DomainResource } from '../base/DomainResource';
 import { Element } from '../base/Element';
 import { ContactPoint } from '../elements/ContactPoint';
 import { SubscriptionChannel } from '../backbone/SubscriptionChannel';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class Subscription extends DomainResource implements fhir.Subscription {
+export class Subscription extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

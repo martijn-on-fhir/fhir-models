@@ -16,7 +16,10 @@
       "Read(/C:\\projects\\fhir-models\\src/**)",
       "Bash(grep:*)",
       "Bash(find:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(powershell:*)",
+      "Bash(chmod:*)",
+      "Bash(./process_fhir_files.sh:*)"
     ],
     "deny": [],
     "ask": []

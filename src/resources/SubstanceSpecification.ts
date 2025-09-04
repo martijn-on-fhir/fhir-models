@@ -13,12 +13,11 @@ import { SubstanceSpecificationProperty } from '../backbone/SubstanceSpecificati
 import { SubstanceSpecificationRelationship } from '../backbone/SubstanceSpecificationRelationship';
 import { SubstanceSpecificationStructure } from '../backbone/SubstanceSpecificationStructure';
 import { SubstanceSpecificationStructureIsotopeMolecularWeight } from '../backbone/SubstanceSpecificationStructureIsotopeMolecularWeight';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class SubstanceSpecification extends DomainResource implements fhir.SubstanceSpecification {
+export class SubstanceSpecification extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { ImplementationGuideManifestPage } from './ImplementationGuideManifestPage';
 import { ImplementationGuideManifestResource } from './ImplementationGuideManifestResource';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ImplementationGuideManifest extends BackboneElement implements fhir.ImplementationGuideManifest {
+export class ImplementationGuideManifest extends BackboneElement {
   /**
    * Indicates a relative path to an image that exists within the IG.
    */

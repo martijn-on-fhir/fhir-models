@@ -10,12 +10,11 @@ import { Reference } from '../elements/Reference';
 import { SpecimenCollection } from '../backbone/SpecimenCollection';
 import { SpecimenContainer } from '../backbone/SpecimenContainer';
 import { SpecimenProcessing } from '../backbone/SpecimenProcessing';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class Specimen extends DomainResource implements fhir.Specimen {
+export class Specimen extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

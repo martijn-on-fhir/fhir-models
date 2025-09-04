@@ -12,12 +12,11 @@ import { StructureDefinitionDifferential } from '../backbone/StructureDefinition
 import { StructureDefinitionMapping } from '../backbone/StructureDefinitionMapping';
 import { StructureDefinitionSnapshot } from '../backbone/StructureDefinitionSnapshot';
 import { UsageContext } from '../elements/UsageContext';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class StructureDefinition extends DomainResource implements fhir.StructureDefinition {
+export class StructureDefinition extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

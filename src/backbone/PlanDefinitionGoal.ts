@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { PlanDefinitionGoalTarget } from './PlanDefinitionGoalTarget';
 import { RelatedArtifact } from '../elements/RelatedArtifact';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class PlanDefinitionGoal extends BackboneElement implements fhir.PlanDefinitionGoal {
+export class PlanDefinitionGoal extends BackboneElement {
   /**
    * Identifies problems, conditions, issues, or concerns the goal is intended to address.
    */

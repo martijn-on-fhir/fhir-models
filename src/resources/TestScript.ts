@@ -16,12 +16,11 @@ import { TestScriptTeardown } from '../backbone/TestScriptTeardown';
 import { TestScriptTest } from '../backbone/TestScriptTest';
 import { TestScriptVariable } from '../backbone/TestScriptVariable';
 import { UsageContext } from '../elements/UsageContext';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class TestScript extends DomainResource implements fhir.TestScript {
+export class TestScript extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

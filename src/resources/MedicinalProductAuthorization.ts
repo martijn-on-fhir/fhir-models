@@ -9,12 +9,11 @@ import { MedicinalProductAuthorizationJurisdictionalAuthorization } from '../bac
 import { MedicinalProductAuthorizationProcedure } from '../backbone/MedicinalProductAuthorizationProcedure';
 import { Period } from '../elements/Period';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class MedicinalProductAuthorization extends DomainResource implements fhir.MedicinalProductAuthorization {
+export class MedicinalProductAuthorization extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

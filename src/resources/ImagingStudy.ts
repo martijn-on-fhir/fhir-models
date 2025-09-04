@@ -9,12 +9,11 @@ import { Coding } from '../elements/Coding';
 import { Identifier } from '../elements/Identifier';
 import { ImagingStudySeries } from '../backbone/ImagingStudySeries';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ImagingStudy extends DomainResource implements fhir.ImagingStudy {
+export class ImagingStudy extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

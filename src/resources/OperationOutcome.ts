@@ -3,12 +3,11 @@ import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsI
 import { Type } from 'class-transformer';
 import { DomainResource } from '../base/DomainResource';
 import { OperationOutcomeIssue } from '../backbone/OperationOutcomeIssue';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class OperationOutcome extends DomainResource implements fhir.OperationOutcome {
+export class OperationOutcome extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

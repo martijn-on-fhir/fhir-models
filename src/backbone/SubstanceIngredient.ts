@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Ratio } from '../elements/Ratio';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class SubstanceIngredient extends BackboneElement implements fhir.SubstanceIngredient {
+export class SubstanceIngredient extends BackboneElement {
   /**
    * The amount of the ingredient in the substance - a concentration ratio.
    */

@@ -9,12 +9,11 @@ import { Period } from '../elements/Period';
 import { Reference } from '../elements/Reference';
 import { SupplyDeliverySuppliedItem } from '../backbone/SupplyDeliverySuppliedItem';
 import { Timing } from '../backbone/Timing';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class SupplyDelivery extends DomainResource implements fhir.SupplyDelivery {
+export class SupplyDelivery extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

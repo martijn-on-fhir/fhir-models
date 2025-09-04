@@ -10,12 +10,11 @@ import { CompositionRelatesTo } from '../backbone/CompositionRelatesTo';
 import { CompositionSection } from '../backbone/CompositionSection';
 import { Identifier } from '../elements/Identifier';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class Composition extends DomainResource implements fhir.Composition {
+export class Composition extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

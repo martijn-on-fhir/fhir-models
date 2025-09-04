@@ -3,12 +3,11 @@ import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsI
 import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { Expression } from '../elements/Expression';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ActivityDefinitionDynamicValue extends BackboneElement implements fhir.ActivityDefinitionDynamicValue {
+export class ActivityDefinitionDynamicValue extends BackboneElement {
   /**
    * The expression may be inlined, or may be a reference to a named expression within a logic library referenced by the libr
    */

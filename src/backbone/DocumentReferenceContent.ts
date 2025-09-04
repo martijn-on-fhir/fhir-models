@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { Attachment } from '../elements/Attachment';
 import { Coding } from '../elements/Coding';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class DocumentReferenceContent extends BackboneElement implements fhir.DocumentReferenceContent {
+export class DocumentReferenceContent extends BackboneElement {
   /**
    * The document or URL of the document along with critical metadata to prove content has integrity.
    */

@@ -8,12 +8,11 @@ import { Identifier } from '../elements/Identifier';
 import { SubstanceSourceMaterialFractionDescription } from '../backbone/SubstanceSourceMaterialFractionDescription';
 import { SubstanceSourceMaterialOrganism } from '../backbone/SubstanceSourceMaterialOrganism';
 import { SubstanceSourceMaterialPartDescription } from '../backbone/SubstanceSourceMaterialPartDescription';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class SubstanceSourceMaterial extends DomainResource implements fhir.SubstanceSourceMaterial {
+export class SubstanceSourceMaterial extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

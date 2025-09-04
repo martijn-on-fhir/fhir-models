@@ -7,12 +7,11 @@ import { ContractTermOfferAnswer } from './ContractTermOfferAnswer';
 import { ContractTermOfferParty } from './ContractTermOfferParty';
 import { Identifier } from '../elements/Identifier';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ContractTermOffer extends BackboneElement implements fhir.ContractTermOffer {
+export class ContractTermOffer extends BackboneElement {
   /**
    * Response to offer text.
    */
@@ -77,7 +76,6 @@ export class ContractTermOffer extends BackboneElement implements fhir.ContractT
   @IsOptional()
   @IsArray()
   @ValidateNested({ each: true })
-  @Type(() => number)
   securityLabelNumber?: number[];
 
   /**

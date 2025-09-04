@@ -7,12 +7,11 @@ import { CodeableConcept } from '../elements/CodeableConcept';
 import { MedicationKnowledgeAdministrationGuidelinesDosage } from './MedicationKnowledgeAdministrationGuidelinesDosage';
 import { MedicationKnowledgeAdministrationGuidelinesPatientCharacteristics } from './MedicationKnowledgeAdministrationGuidelinesPatientCharacteristics';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class MedicationKnowledgeAdministrationGuidelines extends BackboneElement implements fhir.MedicationKnowledgeAdministrationGuidelines {
+export class MedicationKnowledgeAdministrationGuidelines extends BackboneElement {
   /**
    * Dosage for the medication for the specific guidelines.
    */

@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Identifier } from '../elements/Identifier';
 import { Quantity } from '../elements/Quantity';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ProductShelfLife extends BackboneElement implements fhir.ProductShelfLife {
+export class ProductShelfLife extends BackboneElement {
   /**
    * Unique identifier for the packaged Medicinal Product.
    */

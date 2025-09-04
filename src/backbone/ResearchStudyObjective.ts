@@ -3,12 +3,11 @@ import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsI
 import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ResearchStudyObjective extends BackboneElement implements fhir.ResearchStudyObjective {
+export class ResearchStudyObjective extends BackboneElement {
   /**
    * Unique, human-readable label for this objective of the study.
    */

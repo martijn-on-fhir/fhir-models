@@ -6,12 +6,11 @@ import { Element } from '../base/Element';
 import { CompartmentDefinitionResource } from '../backbone/CompartmentDefinitionResource';
 import { ContactDetail } from '../elements/ContactDetail';
 import { UsageContext } from '../elements/UsageContext';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class CompartmentDefinition extends DomainResource implements fhir.CompartmentDefinition {
+export class CompartmentDefinition extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

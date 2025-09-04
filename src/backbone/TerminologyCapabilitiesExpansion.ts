@@ -3,12 +3,11 @@ import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsI
 import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { TerminologyCapabilitiesExpansionParameter } from './TerminologyCapabilitiesExpansionParameter';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class TerminologyCapabilitiesExpansion extends BackboneElement implements fhir.TerminologyCapabilitiesExpansion {
+export class TerminologyCapabilitiesExpansion extends BackboneElement {
   /**
    * Whether the server can return nested value sets.
    */

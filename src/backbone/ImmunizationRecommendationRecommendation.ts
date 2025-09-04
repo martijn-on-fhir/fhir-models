@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { ImmunizationRecommendationRecommendationDateCriterion } from './ImmunizationRecommendationRecommendationDateCriterion';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ImmunizationRecommendationRecommendation extends BackboneElement implements fhir.ImmunizationRecommendationRecommendation {
+export class ImmunizationRecommendationRecommendation extends BackboneElement {
   /**
    * Vaccine(s) which should not be used to fulfill the recommendation.
    */

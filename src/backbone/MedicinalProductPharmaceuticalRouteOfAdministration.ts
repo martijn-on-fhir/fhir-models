@@ -7,12 +7,11 @@ import { Duration } from '../elements/Duration';
 import { MedicinalProductPharmaceuticalRouteOfAdministrationTargetSpecies } from './MedicinalProductPharmaceuticalRouteOfAdministrationTargetSpecies';
 import { Quantity } from '../elements/Quantity';
 import { Ratio } from '../elements/Ratio';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class MedicinalProductPharmaceuticalRouteOfAdministration extends BackboneElement implements fhir.MedicinalProductPharmaceuticalRouteOfAdministration {
+export class MedicinalProductPharmaceuticalRouteOfAdministration extends BackboneElement {
   /**
    * Coded expression for the route.
    */

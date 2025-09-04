@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class VerificationResultPrimarySource extends BackboneElement implements fhir.VerificationResultPrimarySource {
+export class VerificationResultPrimarySource extends BackboneElement {
   /**
    * Ability of the primary source to push updates/alerts (yes; no; undetermined).
    */

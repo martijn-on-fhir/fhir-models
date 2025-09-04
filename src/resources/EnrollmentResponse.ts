@@ -5,12 +5,11 @@ import { DomainResource } from '../base/DomainResource';
 import { Element } from '../base/Element';
 import { Identifier } from '../elements/Identifier';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class EnrollmentResponse extends DomainResource implements fhir.EnrollmentResponse {
+export class EnrollmentResponse extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

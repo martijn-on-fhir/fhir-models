@@ -7,12 +7,11 @@ import { Duration } from '../elements/Duration';
 import { Quantity } from '../elements/Quantity';
 import { Range } from '../elements/Range';
 import { Ratio } from '../elements/Ratio';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class GoalTarget extends BackboneElement implements fhir.GoalTarget {
+export class GoalTarget extends BackboneElement {
   /**
    * A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type asso
    */

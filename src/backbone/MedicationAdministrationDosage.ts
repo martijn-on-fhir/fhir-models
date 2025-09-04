@@ -6,12 +6,11 @@ import { Dosage } from './Dosage';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Quantity } from '../elements/Quantity';
 import { Ratio } from '../elements/Ratio';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class MedicationAdministrationDosage extends BackboneElement implements fhir.MedicationAdministrationDosage {
+export class MedicationAdministrationDosage extends BackboneElement {
   /**
    * If the administration is not instantaneous (rate is present), this can be specified to convey the total amount administe
    */

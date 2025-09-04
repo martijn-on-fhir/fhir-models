@@ -12,7 +12,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.MolecularSequenceQualityRoc = void 0;
 require("reflect-metadata");
 const class_validator_1 = require("class-validator");
-const class_transformer_1 = require("class-transformer");
 const BackboneElement_1 = require("../base/BackboneElement");
 class MolecularSequenceQualityRoc extends BackboneElement_1.BackboneElement {
     constructor(source = {}) {
@@ -24,48 +23,41 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => number),
     __metadata("design:type", Array)
 ], MolecularSequenceQualityRoc.prototype, "fMeasure", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => number),
     __metadata("design:type", Array)
 ], MolecularSequenceQualityRoc.prototype, "numFN", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => number),
     __metadata("design:type", Array)
 ], MolecularSequenceQualityRoc.prototype, "numFP", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => number),
     __metadata("design:type", Array)
 ], MolecularSequenceQualityRoc.prototype, "numTP", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => number),
     __metadata("design:type", Array)
 ], MolecularSequenceQualityRoc.prototype, "precision", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => number),
     __metadata("design:type", Array)
 ], MolecularSequenceQualityRoc.prototype, "score", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => number),
     __metadata("design:type", Array)
 ], MolecularSequenceQualityRoc.prototype, "sensitivity", void 0);

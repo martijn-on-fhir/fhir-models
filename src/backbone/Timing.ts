@@ -1,16 +1,14 @@
 import 'reflect-metadata';
-import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsIn } from 'class-validator';
-import { Type } from 'class-transformer';
-import { BackboneElement } from '../base/BackboneElement';
-import { Timing } from './Timing';
-import { CodeableConcept } from '../elements/CodeableConcept';
-import { TimingRepeat } from '../elements/TimingRepeat';
-import * as fhir from '../r4';
+import {IsArray, IsOptional, IsString, ValidateNested} from 'class-validator';
+import {Type} from 'class-transformer';
+import {BackboneElement} from '../base/BackboneElement';
+import {CodeableConcept} from '../elements/CodeableConcept';
+import {TimingRepeat} from '../elements/TimingRepeat';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class Timing extends BackboneElement implements fhir.Timing {
+export class Timing extends BackboneElement {
   /**
    * BID etc. are defined as 'at institutionally specified times'. For example, an institution may choose that BID is "always
    */

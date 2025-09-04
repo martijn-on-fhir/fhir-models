@@ -9,12 +9,11 @@ import { TestReportParticipant } from '../backbone/TestReportParticipant';
 import { TestReportSetup } from '../backbone/TestReportSetup';
 import { TestReportTeardown } from '../backbone/TestReportTeardown';
 import { TestReportTest } from '../backbone/TestReportTest';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class TestReport extends DomainResource implements fhir.TestReport {
+export class TestReport extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { Quantity } from '../elements/Quantity';
 import { Ratio } from '../elements/Ratio';
 import { Timing } from './Timing';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class NutritionOrderEnteralFormulaAdministration extends BackboneElement implements fhir.NutritionOrderEnteralFormulaAdministration {
+export class NutritionOrderEnteralFormulaAdministration extends BackboneElement {
   /**
    * The volume of formula to provide to the patient per the specified administration schedule.
    */

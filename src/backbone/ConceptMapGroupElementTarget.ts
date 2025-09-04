@@ -3,12 +3,11 @@ import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsI
 import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { ConceptMapGroupElementTargetDependsOn } from './ConceptMapGroupElementTargetDependsOn';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ConceptMapGroupElementTarget extends BackboneElement implements fhir.ConceptMapGroupElementTarget {
+export class ConceptMapGroupElementTarget extends BackboneElement {
   /**
    * Identity (code or path) or the element/item that the map refers to.
    */

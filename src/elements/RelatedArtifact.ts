@@ -3,12 +3,11 @@ import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsI
 import { Type } from 'class-transformer';
 import { Element } from '../base/Element';
 import { Attachment } from './Attachment';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiti
  */
-export class RelatedArtifact extends Element implements fhir.RelatedArtifact {
+export class RelatedArtifact extends Element {
   /**
    * Additional structured information about citations should be captured as extensions.
    */

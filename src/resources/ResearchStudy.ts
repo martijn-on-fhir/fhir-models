@@ -12,12 +12,11 @@ import { Reference } from '../elements/Reference';
 import { RelatedArtifact } from '../elements/RelatedArtifact';
 import { ResearchStudyArm } from '../backbone/ResearchStudyArm';
 import { ResearchStudyObjective } from '../backbone/ResearchStudyObjective';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ResearchStudy extends DomainResource implements fhir.ResearchStudy {
+export class ResearchStudy extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

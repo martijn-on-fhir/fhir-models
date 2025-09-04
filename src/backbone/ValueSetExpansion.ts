@@ -4,12 +4,11 @@ import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { ValueSetExpansionContains } from './ValueSetExpansionContains';
 import { ValueSetExpansionParameter } from './ValueSetExpansionParameter';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ValueSetExpansion extends BackboneElement implements fhir.ValueSetExpansion {
+export class ValueSetExpansion extends BackboneElement {
   /**
    * The codes that are contained in the value set expansion.
    */

@@ -16,12 +16,11 @@ import { Reference } from '../elements/Reference';
 import { RelatedArtifact } from '../elements/RelatedArtifact';
 import { Timing } from './Timing';
 import { TriggerDefinition } from '../elements/TriggerDefinition';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class PlanDefinitionAction extends BackboneElement implements fhir.PlanDefinitionAction {
+export class PlanDefinitionAction extends BackboneElement {
   /**
    * Sub actions that are contained within the action. The behavior of this action determines the functionality of the sub-ac
    */

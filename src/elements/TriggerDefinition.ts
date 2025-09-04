@@ -1,17 +1,16 @@
 import 'reflect-metadata';
-import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsIn } from 'class-validator';
-import { Type } from 'class-transformer';
-import { Element } from '../base/Element';
-import { DataRequirement } from './DataRequirement';
-import { Expression } from './Expression';
-import { Reference } from './Reference';
-import { Timing } from './Timing';
-import * as fhir from '../r4';
+import {IsArray, IsIn, IsOptional, IsString, ValidateNested} from 'class-validator';
+import {Type} from 'class-transformer';
+import {Element} from '../base/Element';
+import {DataRequirement} from './DataRequirement';
+import {Expression} from './Expression';
+import {Reference} from './Reference';
+import {Timing} from '../backbone'
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiti
  */
-export class TriggerDefinition extends Element implements fhir.TriggerDefinition {
+export class TriggerDefinition extends Element {
   /**
    * This element can be only be specified for data type triggers and provides additional semantics for the trigger. The context available within the condi
    */

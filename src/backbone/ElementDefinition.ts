@@ -1,51 +1,16 @@
 import 'reflect-metadata';
-import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsIn } from 'class-validator';
-import { Type } from 'class-transformer';
-import { BackboneElement } from '../base/BackboneElement';
-import { Address } from '../elements/Address';
-import { Age } from '../elements/Age';
-import { Annotation } from '../elements/Annotation';
-import { Attachment } from '../elements/Attachment';
-import { CodeableConcept } from '../elements/CodeableConcept';
-import { Coding } from '../elements/Coding';
-import { ContactDetail } from '../elements/ContactDetail';
-import { ContactPoint } from '../elements/ContactPoint';
-import { Contributor } from '../elements/Contributor';
-import { Count } from '../elements/Count';
-import { DataRequirement } from '../elements/DataRequirement';
-import { Distance } from '../elements/Distance';
-import { Dosage } from './Dosage';
-import { Duration } from '../elements/Duration';
-import { ElementDefinitionBase } from '../elements/ElementDefinitionBase';
-import { ElementDefinitionBinding } from '../elements/ElementDefinitionBinding';
-import { ElementDefinitionConstraint } from '../elements/ElementDefinitionConstraint';
-import { ElementDefinitionExample } from '../elements/ElementDefinitionExample';
-import { ElementDefinitionMapping } from '../elements/ElementDefinitionMapping';
-import { ElementDefinitionSlicing } from '../elements/ElementDefinitionSlicing';
-import { ElementDefinitionType } from '../elements/ElementDefinitionType';
-import { Expression } from '../elements/Expression';
-import { HumanName } from '../elements/HumanName';
-import { Identifier } from '../elements/Identifier';
-import { Meta } from '../elements/Meta';
-import { Money } from '../elements/Money';
-import { ParameterDefinition } from '../elements/ParameterDefinition';
-import { Period } from '../elements/Period';
-import { Quantity } from '../elements/Quantity';
-import { Range } from '../elements/Range';
-import { Ratio } from '../elements/Ratio';
-import { Reference } from '../elements/Reference';
-import { RelatedArtifact } from '../elements/RelatedArtifact';
-import { SampledData } from '../elements/SampledData';
-import { Signature } from '../elements/Signature';
-import { Timing } from './Timing';
-import { TriggerDefinition } from '../elements/TriggerDefinition';
-import { UsageContext } from '../elements/UsageContext';
-import * as fhir from '../r4';
+import {IsArray, IsBoolean, IsNumber, IsOptional, IsString, ValidateNested} from 'class-validator';
+import {Type} from 'class-transformer';
+import {BackboneElement} from '../base/BackboneElement';
+import {Coding} from '../elements/Coding';
+import {ElementDefinitionBase} from '../elements/ElementDefinitionBase';
+import {ElementDefinitionBinding} from '../elements/ElementDefinitionBinding';
+import {ElementDefinitionConstraint} from '../elements/ElementDefinitionConstraint';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ElementDefinition extends BackboneElement implements fhir.ElementDefinition {
+export class ElementDefinition extends BackboneElement {
   /**
    * Identifies additional names by which this element might also be known.
    */

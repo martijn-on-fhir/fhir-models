@@ -7,12 +7,11 @@ import { ImplementationGuideDefinitionPage } from './ImplementationGuideDefiniti
 import { ImplementationGuideDefinitionParameter } from './ImplementationGuideDefinitionParameter';
 import { ImplementationGuideDefinitionResource } from './ImplementationGuideDefinitionResource';
 import { ImplementationGuideDefinitionTemplate } from './ImplementationGuideDefinitionTemplate';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ImplementationGuideDefinition extends BackboneElement implements fhir.ImplementationGuideDefinition {
+export class ImplementationGuideDefinition extends BackboneElement {
   /**
    * Groupings are arbitrary sub-divisions of content. Typically, they are used to help build Table of Contents automatically
    */

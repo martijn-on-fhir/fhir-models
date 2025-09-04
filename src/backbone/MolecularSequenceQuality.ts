@@ -5,12 +5,11 @@ import { BackboneElement } from '../base/BackboneElement';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { MolecularSequenceQualityRoc } from './MolecularSequenceQualityRoc';
 import { Quantity } from '../elements/Quantity';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class MolecularSequenceQuality extends BackboneElement implements fhir.MolecularSequenceQuality {
+export class MolecularSequenceQuality extends BackboneElement {
   /**
    * End position of the sequence. If the coordinate system is 0-based then end is exclusive and does not include the last po
    */

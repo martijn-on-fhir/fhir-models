@@ -3,12 +3,11 @@ import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsI
 import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
 import { ValueSetComposeInclude } from './ValueSetComposeInclude';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ValueSetCompose extends BackboneElement implements fhir.ValueSetCompose {
+export class ValueSetCompose extends BackboneElement {
   /**
    * Usually this is used to selectively exclude codes that were included by subsumption in the inclusions. Any display names
    */

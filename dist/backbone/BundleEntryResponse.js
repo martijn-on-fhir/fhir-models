@@ -8,14 +8,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.BundleEntryResponse = void 0;
 require("reflect-metadata");
 const class_validator_1 = require("class-validator");
 const class_transformer_1 = require("class-transformer");
 const BackboneElement_1 = require("../base/BackboneElement");
-const FhirResource_1 = require("../elements/FhirResource");
+const base_1 = require("../base");
 class BundleEntryResponse extends BackboneElement_1.BackboneElement {
     constructor(source = {}) {
         super(source);
@@ -58,8 +57,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => FhirResource_1.FhirResource),
-    __metadata("design:type", typeof (_a = typeof FhirResource_1.FhirResource !== "undefined" && FhirResource_1.FhirResource) === "function" ? _a : Object)
+    (0, class_transformer_1.Type)(() => base_1.Resource),
+    __metadata("design:type", base_1.Resource)
 ], BundleEntryResponse.prototype, "outcome", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),

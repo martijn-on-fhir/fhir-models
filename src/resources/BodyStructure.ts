@@ -7,12 +7,11 @@ import { Attachment } from '../elements/Attachment';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Identifier } from '../elements/Identifier';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class BodyStructure extends DomainResource implements fhir.BodyStructure {
+export class BodyStructure extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

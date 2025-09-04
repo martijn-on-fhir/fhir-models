@@ -2,12 +2,11 @@ import 'reflect-metadata';
 import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsIn } from 'class-validator';
 import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class TestScriptMetadataCapability extends BackboneElement implements fhir.TestScriptMetadataCapability {
+export class TestScriptMetadataCapability extends BackboneElement {
   /**
    * The conformance statement of the server has to contain at a minimum the contents of the reference pointed to by this ele
    */
@@ -59,7 +58,6 @@ export class TestScriptMetadataCapability extends BackboneElement implements fhi
   @IsOptional()
   @IsArray()
   @ValidateNested({ each: true })
-  @Type(() => number)
   origin?: number[];
 
   /**

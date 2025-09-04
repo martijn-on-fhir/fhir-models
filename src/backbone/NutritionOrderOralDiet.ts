@@ -6,12 +6,11 @@ import { CodeableConcept } from '../elements/CodeableConcept';
 import { NutritionOrderOralDietNutrient } from './NutritionOrderOralDietNutrient';
 import { NutritionOrderOralDietTexture } from './NutritionOrderOralDietTexture';
 import { Timing } from './Timing';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class NutritionOrderOralDiet extends BackboneElement implements fhir.NutritionOrderOralDiet {
+export class NutritionOrderOralDiet extends BackboneElement {
   /**
    * The required consistency (e.g. honey-thick, nectar-thick, thin, thickened.) of liquids or fluids served to the patient.
    */

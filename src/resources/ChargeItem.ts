@@ -12,12 +12,11 @@ import { Period } from '../elements/Period';
 import { Quantity } from '../elements/Quantity';
 import { Reference } from '../elements/Reference';
 import { Timing } from '../backbone/Timing';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class ChargeItem extends DomainResource implements fhir.ChargeItem {
+export class ChargeItem extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

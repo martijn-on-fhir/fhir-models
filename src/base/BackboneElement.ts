@@ -1,13 +1,12 @@
 import 'reflect-metadata';
 import { IsOptional, IsArray, ValidateNested } from 'class-validator';
 import { Type } from 'class-transformer';
-import * as fhir from '../r4';
 import { Element } from './Element';
 
 /**
  * Base definition for all elements that are defined inside a resource - but not the root element.
  */
-export class BackboneElement extends Element implements fhir.BackboneElement {
+export class BackboneElement extends Element {
   /**
    * There can be no stigma associated with the use of extensions by any application, 
    * project, or standard - regardless of the institution or jurisdiction that uses 
@@ -29,7 +28,7 @@ export class BackboneElement extends Element implements fhir.BackboneElement {
 }
 
 // Forward declaration to avoid circular dependency
-class Extension extends Element implements fhir.Extension {
+class Extension extends Element {
   url!: string;
   _url?: Element;
   valueString?: string;

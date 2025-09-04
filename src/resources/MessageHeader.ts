@@ -9,12 +9,11 @@ import { MessageHeaderDestination } from '../backbone/MessageHeaderDestination';
 import { MessageHeaderResponse } from '../backbone/MessageHeaderResponse';
 import { MessageHeaderSource } from '../backbone/MessageHeaderSource';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class MessageHeader extends DomainResource implements fhir.MessageHeader {
+export class MessageHeader extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */

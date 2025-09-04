@@ -52,7 +52,6 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => number),
     __metadata("design:type", Array)
 ], ExplanationOfBenefitAddItem.prototype, "detailSequence", void 0);
 __decorate([
@@ -64,7 +63,6 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => number),
     __metadata("design:type", Array)
 ], ExplanationOfBenefitAddItem.prototype, "itemSequence", void 0);
 __decorate([
@@ -102,7 +100,6 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => number),
     __metadata("design:type", Array)
 ], ExplanationOfBenefitAddItem.prototype, "noteNumber", void 0);
 __decorate([
@@ -152,7 +149,6 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => number),
     __metadata("design:type", Array)
 ], ExplanationOfBenefitAddItem.prototype, "subDetailSequence", void 0);
 __decorate([

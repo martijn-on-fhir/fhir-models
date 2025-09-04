@@ -6,12 +6,11 @@ import { Coding } from '../elements/Coding';
 import { QuestionnaireItemAnswerOption } from './QuestionnaireItemAnswerOption';
 import { QuestionnaireItemEnableWhen } from './QuestionnaireItemEnableWhen';
 import { QuestionnaireItemInitial } from './QuestionnaireItemInitial';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class QuestionnaireItem extends BackboneElement implements fhir.QuestionnaireItem {
+export class QuestionnaireItem extends BackboneElement {
   /**
    * This element can be used when the value set machinery of answerValueSet is deemed too cumbersome or when there's a need 
    */
