@@ -1,24 +1,17 @@
-import 'reflect-metadata';
+// FHIR R4 TypeScript Classes
+// Generated comprehensive library of all 662 FHIR R4 interfaces
 
-import {Patient} from './resources/patient'
-import {HumanName} from './elements/human-name'
-import {Meta} from './elements/meta'
-import {Identifier} from './elements/identifier'
+// Base classes
+export * from './base';
 
+// Core element types
+export * from './elements';
 
-// const patient = new Patient({
-//   meta: new Meta({
-//     profile: ['http://fhir.nl/fhir/StructureDefinition/nl-core-patient']
-//   }),
-//   identifier: [
-//     new Identifier({
-//       system: 'http://fhir.nl/fhir/NamingSystem/bsn',
-//       value: '1234567890'
-//     })
-//   ],
-//   name: [new HumanName({
-//     text: 'john Doe'
-//   })]
-// })
+// Backbone element types  
+export * from './backbone';
 
-export {Patient, HumanName, Meta, Identifier}
+// Resource types
+export * from './resources';
+
+// Re-export the FHIR interface types for convenience
+export * as fhir from './r4';

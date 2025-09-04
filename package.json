@@ -1,7 +1,9 @@
 {
   "dependencies": {
+    "@types/fhir": "^0.0.41",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.2",
+    "hl7.fhir.r4.core": "^4.0.1",
     "reflect-metadata": "^0.2.2"
   },
   "name": "fhir-models",
