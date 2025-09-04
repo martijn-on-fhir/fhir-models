@@ -10,7 +10,6 @@ module.exports = {
         clean: true
     },
     externals: {
-        'aws-sdk': 'aws-sdk'
     },
     resolve: {
         modules: ['node_modules'],

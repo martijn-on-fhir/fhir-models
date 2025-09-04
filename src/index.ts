@@ -12,6 +12,3 @@ export * from './backbone';
 
 // Resource types
 export * from './resources';
-
-// Re-export the FHIR interface types for convenience
-export * as fhir from './r4';
