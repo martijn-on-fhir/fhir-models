@@ -8,7 +8,7 @@
     "reflect-metadata": "^0.2.2"
   },
   "name": "fhir-models",
-  "version": "4.0.0",
+  "version": "0.0.1",
   "description": "Fhit model based on r4",
   "main": "./dist/main.js",
   "scripts": {
@@ -29,7 +29,7 @@
     "typescript"
   ],
   "author": "Martijn Schimmel",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/martijn-on-fhir/fhir-models/issues"
   },
