@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(/C:\\projects\\fhir-models\\*)",
+      "Read(/C:\\projects\\fhir-models\\src/**)",
+      "Read(/C:\\projects\\fhir-models\\src\\elements/**)",
+      "Read(/C:\\projects\\fhir-models\\src/**)",
+      "Read(/C:\\projects\\fhir-models\\src/**)",
+      "Read(/C:\\projects\\fhir-models\\src/**)",
+      "Read(*)",
+      "Bash(node:*)",
+      "Read(/C:\\projects\\fhir-models\\src/**)",
+      "Read(/C:\\projects\\fhir-models\\interfaces/**)",
+      "Bash(dir:*)",
+      "Read(/C:\\projects\\fhir-models\\interfaces/**)",
+      "Read(/C:\\projects\\fhir-models\\src/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
