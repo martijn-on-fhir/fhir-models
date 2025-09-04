@@ -8,12 +8,11 @@ import { CodeableConcept } from '../elements/CodeableConcept';
 import { CommunicationPayload } from '../backbone/CommunicationPayload';
 import { Identifier } from '../elements/Identifier';
 import { Reference } from '../elements/Reference';
-import * as fhir from '../r4';
 
 /**
  * An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresse
  */
-export class Communication extends DomainResource implements fhir.Communication {
+export class Communication extends DomainResource {
   /**
    * Resource Type Name (for serialization)
    */
@@ -212,7 +211,7 @@ export class Communication extends DomainResource implements fhir.Communication 
    */
   @IsOptional()
   @IsIn(['preparation', 'in-progress', 'not-done', 'on-hold', 'stopped', 'completed', 'entered-in-error', 'unknown'])
-  status?: ('preparation'|'in-progress'|'not-done'|'on-hold'|'stopped'|'completed'|'entered-in-error'|'unknown');
+  status?: ('preparation'|'in-progress'|'not-done'|'on-hold'|'stopped'|'completed'|'entered-in-error'|'unknown') | undefined;
 
   /**
    * Constructor for Communication

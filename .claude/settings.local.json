@@ -13,7 +13,10 @@
       "Read(/C:\\projects\\fhir-models\\interfaces/**)",
       "Bash(dir:*)",
       "Read(/C:\\projects\\fhir-models\\interfaces/**)",
-      "Read(/C:\\projects\\fhir-models\\src/**)"
+      "Read(/C:\\projects\\fhir-models\\src/**)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(npm run build:*)"
     ],
     "deny": [],
     "ask": []
