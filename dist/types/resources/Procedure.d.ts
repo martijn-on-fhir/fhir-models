@@ -1,0 +1,40 @@
+import 'reflect-metadata';
+import { DomainResource } from '../base/DomainResource';
+import { Element } from '../base/Element';
+import { Age } from '../elements/Age';
+import { Annotation } from '../elements/Annotation';
+import { CodeableConcept } from '../elements/CodeableConcept';
+import { Identifier } from '../elements/Identifier';
+import { Period } from '../elements/Period';
+import { ProcedureFocalDevice } from '../backbone/ProcedureFocalDevice';
+import { Reference } from '../elements/Reference';
+export declare class Procedure extends DomainResource {
+    readonly resourceType: "Procedure";
+    asserter?: Reference;
+    basedOn?: Reference[];
+    bodySite?: CodeableConcept[];
+    category?: CodeableConcept;
+    code?: CodeableConcept;
+    complication?: CodeableConcept[];
+    complicationDetail?: Reference[];
+    encounter?: Reference;
+    focalDevice?: ProcedureFocalDevice[];
+    followUp?: CodeableConcept[];
+    identifier?: Identifier[];
+    instantiatesCanonical?: string[];
+    _instantiatesCanonical?: Element[];
+    instantiatesUri?: string[];
+    _instantiatesUri?: Element[];
+    location?: Reference;
+    note?: Annotation[];
+    outcome?: CodeableConcept;
+    partOf?: Reference[];
+    performedDateTime?: string;
+    _performedDateTime?: Element;
+    performedPeriod?: Period;
+    performedString?: string;
+    _performedString?: Element;
+    performedAge?: Age;
+    constructor(source?: Partial<Procedure>);
+}
+//# sourceMappingURL=Procedure.d.ts.map

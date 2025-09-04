@@ -1,0 +1,40 @@
+import 'reflect-metadata';
+import { DomainResource } from '../base/DomainResource';
+import { Element } from '../base/Element';
+import { Annotation } from '../elements/Annotation';
+import { ClinicalImpressionFinding } from '../backbone/ClinicalImpressionFinding';
+import { ClinicalImpressionInvestigation } from '../backbone/ClinicalImpressionInvestigation';
+import { CodeableConcept } from '../elements/CodeableConcept';
+import { Identifier } from '../elements/Identifier';
+import { Period } from '../elements/Period';
+import { Reference } from '../elements/Reference';
+export declare class ClinicalImpression extends DomainResource {
+    readonly resourceType: "ClinicalImpression";
+    assessor?: Reference;
+    code?: CodeableConcept;
+    date?: string;
+    _date?: Element;
+    description?: string;
+    _description?: Element;
+    effectiveDateTime?: string;
+    _effectiveDateTime?: Element;
+    effectivePeriod?: Period;
+    encounter?: Reference;
+    finding?: ClinicalImpressionFinding[];
+    identifier?: Identifier[];
+    investigation?: ClinicalImpressionInvestigation[];
+    note?: Annotation[];
+    previous?: Reference;
+    problem?: Reference[];
+    prognosisCodeableConcept?: CodeableConcept[];
+    prognosisReference?: Reference[];
+    protocol?: string[];
+    _protocol?: Element[];
+    status?: ('in-progress' | 'completed' | 'entered-in-error');
+    _status?: Element;
+    statusReason?: CodeableConcept;
+    subject?: Reference;
+    summary?: string;
+    constructor(source?: Partial<ClinicalImpression>);
+}
+//# sourceMappingURL=ClinicalImpression.d.ts.map

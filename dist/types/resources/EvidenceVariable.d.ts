@@ -1,0 +1,40 @@
+import 'reflect-metadata';
+import { DomainResource } from '../base/DomainResource';
+import { Element } from '../base/Element';
+import { Annotation } from '../elements/Annotation';
+import { CodeableConcept } from '../elements/CodeableConcept';
+import { ContactDetail } from '../elements/ContactDetail';
+import { EvidenceVariableCharacteristic } from '../backbone/EvidenceVariableCharacteristic';
+import { Identifier } from '../elements/Identifier';
+import { Period } from '../elements/Period';
+import { RelatedArtifact } from '../elements/RelatedArtifact';
+export declare class EvidenceVariable extends DomainResource {
+    readonly resourceType: "EvidenceVariable";
+    approvalDate?: string;
+    _approvalDate?: Element;
+    author?: ContactDetail[];
+    characteristic?: EvidenceVariableCharacteristic[];
+    contact?: ContactDetail[];
+    copyright?: string;
+    _copyright?: Element;
+    date?: string;
+    _date?: Element;
+    description?: string;
+    _description?: Element;
+    editor?: ContactDetail[];
+    effectivePeriod?: Period;
+    endorser?: ContactDetail[];
+    identifier?: Identifier[];
+    jurisdiction?: CodeableConcept[];
+    lastReviewDate?: string;
+    _lastReviewDate?: Element;
+    name?: string;
+    _name?: Element;
+    note?: Annotation[];
+    publisher?: string;
+    _publisher?: Element;
+    relatedArtifact?: RelatedArtifact[];
+    reviewer?: ContactDetail[];
+    constructor(source?: Partial<EvidenceVariable>);
+}
+//# sourceMappingURL=EvidenceVariable.d.ts.map
