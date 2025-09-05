@@ -1,3 +1,31 @@
+## [1.0.7](https://github.com/martijn-on-fhir/fhir-models/compare/v1.0.6...v1.0.7) (2025-09-05)
+
+
+### Bug Fixes
+
+* **package:** Wrong import Element ([cab4430](https://github.com/martijn-on-fhir/fhir-models/commit/cab4430a0fe5f91659443be4378a63c75380ce19))
+
+## [1.0.6](https://github.com/martijn-on-fhir/fhir-models/compare/v1.0.5...v1.0.6) (2025-09-05)
+
+
+### Bug Fixes
+
+* **package:** Optimize for nmp ([3f01583](https://github.com/martijn-on-fhir/fhir-models/commit/3f01583d0de225f9368a0c3b508ddd41292e4f0e))
+
+## [1.0.5](https://github.com/martijn-on-fhir/fhir-models/compare/v1.0.4...v1.0.5) (2025-09-05)
+
+
+### Bug Fixes
+
+* **package:** Optimize for nmp ([d58f123](https://github.com/martijn-on-fhir/fhir-models/commit/d58f123542680d4ec7f09fbf6b2d1edfb1041493))
+
+## [1.0.4](https://github.com/martijn-on-fhir/fhir-models/compare/v1.0.3...v1.0.4) (2025-09-05)
+
+
+### Bug Fixes
+
+* **package:** Optimize for nmp ([6d45147](https://github.com/martijn-on-fhir/fhir-models/commit/6d451474eae2fe08362c23d4a72350b191220bc9))
+
 ## [1.0.3](https://github.com/martijn-on-fhir/fhir-models/compare/v1.0.2...v1.0.3) (2025-09-05)
 
 
