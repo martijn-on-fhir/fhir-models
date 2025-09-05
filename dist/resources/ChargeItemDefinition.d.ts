@@ -1,0 +1,40 @@
+import 'reflect-metadata';
+import { DomainResource } from '../base/DomainResource';
+import { Element } from '../base/Element';
+import { ChargeItemDefinitionApplicability } from '../backbone/ChargeItemDefinitionApplicability';
+import { ChargeItemDefinitionPropertyGroup } from '../backbone/ChargeItemDefinitionPropertyGroup';
+import { CodeableConcept } from '../elements/CodeableConcept';
+import { ContactDetail } from '../elements/ContactDetail';
+import { Identifier } from '../elements/Identifier';
+import { Period } from '../elements/Period';
+import { Reference } from '../elements/Reference';
+export declare class ChargeItemDefinition extends DomainResource {
+    readonly resourceType: "ChargeItemDefinition";
+    applicability?: ChargeItemDefinitionApplicability[];
+    approvalDate?: string;
+    _approvalDate?: Element;
+    code?: CodeableConcept;
+    contact?: ContactDetail[];
+    copyright?: string;
+    _copyright?: Element;
+    date?: string;
+    _date?: Element;
+    derivedFromUri?: string[];
+    _derivedFromUri?: Element[];
+    description?: string;
+    _description?: Element;
+    effectivePeriod?: Period;
+    experimental?: boolean;
+    _experimental?: Element;
+    identifier?: Identifier[];
+    instance?: Reference[];
+    jurisdiction?: CodeableConcept[];
+    lastReviewDate?: string;
+    _lastReviewDate?: Element;
+    partOf?: string[];
+    _partOf?: Element[];
+    propertyGroup?: ChargeItemDefinitionPropertyGroup[];
+    publisher?: string;
+    constructor(source?: Partial<ChargeItemDefinition>);
+}
+//# sourceMappingURL=ChargeItemDefinition.d.ts.map

@@ -1,0 +1,40 @@
+import 'reflect-metadata';
+import { DomainResource } from '../base/DomainResource';
+import { Element } from '../base/Element';
+import { Annotation } from '../elements/Annotation';
+import { CodeableConcept } from '../elements/CodeableConcept';
+import { Identifier } from '../elements/Identifier';
+import { ObservationComponent } from '../backbone/ObservationComponent';
+import { Period } from '../elements/Period';
+import { Reference } from '../elements/Reference';
+import { Timing } from '../backbone/Timing';
+export declare class Observation extends DomainResource {
+    readonly resourceType: "Observation";
+    basedOn?: Reference[];
+    bodySite?: CodeableConcept;
+    category?: CodeableConcept[];
+    code?: CodeableConcept;
+    component?: ObservationComponent[];
+    dataAbsentReason?: CodeableConcept;
+    derivedFrom?: Reference[];
+    device?: Reference;
+    effectiveDateTime?: string;
+    _effectiveDateTime?: Element;
+    effectivePeriod?: Period;
+    effectiveTiming?: Timing;
+    effectiveInstant?: string;
+    _effectiveInstant?: Element;
+    encounter?: Reference;
+    focus?: Reference[];
+    hasMember?: Reference[];
+    identifier?: Identifier[];
+    interpretation?: CodeableConcept[];
+    issued?: string;
+    _issued?: Element;
+    method?: CodeableConcept;
+    note?: Annotation[];
+    partOf?: Reference[];
+    performer?: Reference[];
+    constructor(source?: Partial<Observation>);
+}
+//# sourceMappingURL=Observation.d.ts.map

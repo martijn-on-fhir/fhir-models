@@ -1,0 +1,1 @@
+{"version":3,"file":"MolecularSequenceStructureVariantOuter.d.ts","sourceRoot":"","sources":["../../src/backbone/MolecularSequenceStructureVariantOuter.ts"],"names":[],"mappings":"AAAA,OAAO,kBAAkB,CAAC;AAG1B,OAAO,EAAE,eAAe,EAAE,MAAM,yBAAyB,CAAC;AAK1D,qBAAa,sCAAuC,SAAQ,eAAe;IAMzE,GAAG,CAAC,EAAE,MAAM,CAAC;IAOb,KAAK,CAAC,EAAE,MAAM,CAAC;gBAKH,MAAM,GAAE,OAAO,CAAC,sCAAsC,CAAM;CAGzE"}

@@ -1,0 +1,41 @@
+import 'reflect-metadata';
+import { DomainResource } from '../base/DomainResource';
+import { Element } from '../base/Element';
+import { Annotation } from '../elements/Annotation';
+import { CodeableConcept } from '../elements/CodeableConcept';
+import { ContactDetail } from '../elements/ContactDetail';
+import { EffectEvidenceSynthesisCertainty } from '../backbone/EffectEvidenceSynthesisCertainty';
+import { EffectEvidenceSynthesisEffectEstimate } from '../backbone/EffectEvidenceSynthesisEffectEstimate';
+import { Identifier } from '../elements/Identifier';
+import { Period } from '../elements/Period';
+import { Reference } from '../elements/Reference';
+export declare class EffectEvidenceSynthesis extends DomainResource {
+    readonly resourceType: "EffectEvidenceSynthesis";
+    approvalDate?: string;
+    _approvalDate?: Element;
+    author?: ContactDetail[];
+    certainty?: EffectEvidenceSynthesisCertainty[];
+    contact?: ContactDetail[];
+    copyright?: string;
+    _copyright?: Element;
+    date?: string;
+    _date?: Element;
+    description?: string;
+    _description?: Element;
+    editor?: ContactDetail[];
+    effectEstimate?: EffectEvidenceSynthesisEffectEstimate[];
+    effectivePeriod?: Period;
+    endorser?: ContactDetail[];
+    exposure?: Reference;
+    exposureAlternative?: Reference;
+    identifier?: Identifier[];
+    jurisdiction?: CodeableConcept[];
+    lastReviewDate?: string;
+    _lastReviewDate?: Element;
+    name?: string;
+    _name?: Element;
+    note?: Annotation[];
+    outcome?: Reference;
+    constructor(source?: Partial<EffectEvidenceSynthesis>);
+}
+//# sourceMappingURL=EffectEvidenceSynthesis.d.ts.map
