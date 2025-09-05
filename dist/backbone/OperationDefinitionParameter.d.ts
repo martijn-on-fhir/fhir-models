@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { OperationDefinitionParameterBinding } from './OperationDefinitionParameterBinding';
 import { OperationDefinitionParameterReferencedFrom } from './OperationDefinitionParameterReferencedFrom';
 export declare class OperationDefinitionParameter extends BackboneElement {

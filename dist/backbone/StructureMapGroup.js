@@ -14,6 +14,7 @@ require("reflect-metadata");
 const class_validator_1 = require("class-validator");
 const class_transformer_1 = require("class-transformer");
 const BackboneElement_1 = require("../base/BackboneElement");
+const Element_1 = require("../base/Element");
 const StructureMapGroupInput_1 = require("./StructureMapGroupInput");
 const StructureMapGroupRule_1 = require("./StructureMapGroupRule");
 class StructureMapGroup extends BackboneElement_1.BackboneElement {
@@ -30,8 +31,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], StructureMapGroup.prototype, "_documentation", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -41,8 +42,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], StructureMapGroup.prototype, "_extends", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -59,8 +60,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], StructureMapGroup.prototype, "_name", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -77,7 +78,7 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], StructureMapGroup.prototype, "_typeMode", void 0);
 //# sourceMappingURL=StructureMapGroup.js.map

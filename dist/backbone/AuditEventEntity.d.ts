@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { AuditEventEntityDetail } from './AuditEventEntityDetail';
 import { Coding } from '../elements/Coding';
 import { Reference } from '../elements/Reference';

@@ -14,6 +14,7 @@ require("reflect-metadata");
 const class_validator_1 = require("class-validator");
 const class_transformer_1 = require("class-transformer");
 const BackboneElement_1 = require("../base/BackboneElement");
+const Element_1 = require("../base/Element");
 const Annotation_1 = require("../elements/Annotation");
 const CodeableConcept_1 = require("../elements/CodeableConcept");
 const ContractTermActionSubject_1 = require("./ContractTermActionSubject");
@@ -42,7 +43,7 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => Element),
+    (0, class_transformer_1.Type)(() => Element_1.Element),
     __metadata("design:type", Array)
 ], ContractTermAction.prototype, "_contextLinkId", void 0);
 __decorate([
@@ -53,8 +54,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ContractTermAction.prototype, "_doNotPerform", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -72,7 +73,7 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => Element),
+    (0, class_transformer_1.Type)(() => Element_1.Element),
     __metadata("design:type", Array)
 ], ContractTermAction.prototype, "_linkId", void 0);
 __decorate([
@@ -90,8 +91,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ContractTermAction.prototype, "_occurrenceDateTime", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -121,7 +122,7 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => Element),
+    (0, class_transformer_1.Type)(() => Element_1.Element),
     __metadata("design:type", Array)
 ], ContractTermAction.prototype, "_performerLinkId", void 0);
 __decorate([
@@ -147,7 +148,7 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => Element),
+    (0, class_transformer_1.Type)(() => Element_1.Element),
     __metadata("design:type", Array)
 ], ContractTermAction.prototype, "_reason", void 0);
 __decorate([
@@ -167,7 +168,7 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => Element),
+    (0, class_transformer_1.Type)(() => Element_1.Element),
     __metadata("design:type", Array)
 ], ContractTermAction.prototype, "_reasonLinkId", void 0);
 __decorate([
@@ -194,7 +195,7 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => Element),
+    (0, class_transformer_1.Type)(() => Element_1.Element),
     __metadata("design:type", Array)
 ], ContractTermAction.prototype, "_requesterLinkId", void 0);
 __decorate([

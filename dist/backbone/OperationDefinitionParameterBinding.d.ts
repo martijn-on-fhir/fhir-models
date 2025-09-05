@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 export declare class OperationDefinitionParameterBinding extends BackboneElement {
     strength?: ('required' | 'extensible' | 'preferred' | 'example');
     _strength?: Element;

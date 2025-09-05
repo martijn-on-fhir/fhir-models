@@ -2,6 +2,7 @@ import 'reflect-metadata';
 import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsIn } from 'class-validator';
 import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { Address } from '../elements/Address';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { ContactPoint } from '../elements/ContactPoint';

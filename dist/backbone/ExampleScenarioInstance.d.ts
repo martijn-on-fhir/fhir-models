@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { ExampleScenarioInstanceContainedInstance } from './ExampleScenarioInstanceContainedInstance';
 import { ExampleScenarioInstanceVersion } from './ExampleScenarioInstanceVersion';
 export declare class ExampleScenarioInstance extends BackboneElement {

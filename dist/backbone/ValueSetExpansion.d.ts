@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { ValueSetExpansionContains } from './ValueSetExpansionContains';
 import { ValueSetExpansionParameter } from './ValueSetExpansionParameter';
 export declare class ValueSetExpansion extends BackboneElement {

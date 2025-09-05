@@ -14,6 +14,7 @@ require("reflect-metadata");
 const class_validator_1 = require("class-validator");
 const class_transformer_1 = require("class-transformer");
 const BackboneElement_1 = require("../base/BackboneElement");
+const Element_1 = require("../base/Element");
 const Identifier_1 = require("../elements/Identifier");
 const Reference_1 = require("../elements/Reference");
 class ClaimInsurance extends BackboneElement_1.BackboneElement {
@@ -30,8 +31,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ClaimInsurance.prototype, "_businessArrangement", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -53,8 +54,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ClaimInsurance.prototype, "_focal", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -72,7 +73,7 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => Element),
+    (0, class_transformer_1.Type)(() => Element_1.Element),
     __metadata("design:type", Array)
 ], ClaimInsurance.prototype, "_preAuthRef", void 0);
 __decorate([

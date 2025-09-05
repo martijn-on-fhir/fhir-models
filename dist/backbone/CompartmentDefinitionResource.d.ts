@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 export declare class CompartmentDefinitionResource extends BackboneElement {
     code?: string;
     _code?: Element;

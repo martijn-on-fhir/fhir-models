@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { Reference } from '../elements/Reference';
 export declare class ConsentProvisionData extends BackboneElement {
     meaning?: ('instance' | 'related' | 'dependents' | 'authoredby');

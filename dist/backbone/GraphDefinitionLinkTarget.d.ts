@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { GraphDefinitionLink } from './GraphDefinitionLink';
 import { GraphDefinitionLinkTargetCompartment } from './GraphDefinitionLinkTargetCompartment';
 export declare class GraphDefinitionLinkTarget extends BackboneElement {

@@ -14,6 +14,7 @@ require("reflect-metadata");
 const class_validator_1 = require("class-validator");
 const class_transformer_1 = require("class-transformer");
 const BackboneElement_1 = require("../base/BackboneElement");
+const Element_1 = require("../base/Element");
 const CodeableConcept_1 = require("../elements/CodeableConcept");
 const Period_1 = require("../elements/Period");
 const Quantity_1 = require("../elements/Quantity");
@@ -45,8 +46,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], CarePlanActivityDetail.prototype, "_description", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -56,8 +57,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], CarePlanActivityDetail.prototype, "_doNotPerform", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -76,7 +77,7 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => Element),
+    (0, class_transformer_1.Type)(() => Element_1.Element),
     __metadata("design:type", Array)
 ], CarePlanActivityDetail.prototype, "_instantiatesCanonical", void 0);
 __decorate([
@@ -89,7 +90,7 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => Element),
+    (0, class_transformer_1.Type)(() => Element_1.Element),
     __metadata("design:type", Array)
 ], CarePlanActivityDetail.prototype, "_instantiatesUri", void 0);
 __decorate([
@@ -100,8 +101,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], CarePlanActivityDetail.prototype, "_kind", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -168,8 +169,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], CarePlanActivityDetail.prototype, "_scheduledString", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -179,8 +180,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], CarePlanActivityDetail.prototype, "_status", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),

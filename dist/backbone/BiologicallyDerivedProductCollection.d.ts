@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { Period } from '../elements/Period';
 import { Reference } from '../elements/Reference';
 export declare class BiologicallyDerivedProductCollection extends BackboneElement {

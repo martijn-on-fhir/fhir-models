@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { TerminologyCapabilitiesCodeSystemVersionFilter } from './TerminologyCapabilitiesCodeSystemVersionFilter';
 export declare class TerminologyCapabilitiesCodeSystemVersion extends BackboneElement {
     code?: string;

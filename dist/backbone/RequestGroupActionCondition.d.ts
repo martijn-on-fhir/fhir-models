@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { Expression } from '../elements/Expression';
 export declare class RequestGroupActionCondition extends BackboneElement {
     expression?: Expression;

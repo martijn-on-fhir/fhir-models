@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { StructureMapGroupRuleDependent } from './StructureMapGroupRuleDependent';
 import { StructureMapGroupRuleSource } from './StructureMapGroupRuleSource';
 import { StructureMapGroupRuleTarget } from './StructureMapGroupRuleTarget';

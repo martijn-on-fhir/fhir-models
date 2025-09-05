@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { CapabilityStatementRestResourceInteraction } from './CapabilityStatementRestResourceInteraction';
 import { CapabilityStatementRestResourceOperation } from './CapabilityStatementRestResourceOperation';
 import { CapabilityStatementRestResourceSearchParam } from './CapabilityStatementRestResourceSearchParam';

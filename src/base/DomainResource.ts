@@ -3,6 +3,8 @@ import { IsOptional, IsArray, ValidateNested } from 'class-validator';
 import { Type } from 'class-transformer';
 import { Resource } from './Resource';
 import { Element } from './Element';
+import { Extension } from '../elements/Extension';
+import { Narrative } from '../elements/Narrative';
 
 /**
  * A resource that includes narrative, extensions, and contained resources.
@@ -64,25 +66,3 @@ export abstract class DomainResource extends Resource {
   }
 }
 
-// Forward declarations to avoid circular dependencies
-class Extension extends Element {
-  url!: string;
-  _url?: Element;
-  valueString?: string;
-  _valueString?: Element;
-
-  constructor(source: Partial<Extension> = {}) {
-    super(source);
-  }
-}
-
-class Narrative extends Element {
-  status!: 'generated' | 'extensions' | 'additional' | 'empty';
-  _status?: Element;
-  div!: string;
-  _div?: Element;
-
-  constructor(source: Partial<Narrative> = {}) {
-    super(source);
-  }
-}

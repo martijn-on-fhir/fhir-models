@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 export declare class StructureMapStructure extends BackboneElement {
     alias?: string;
     _alias?: Element;

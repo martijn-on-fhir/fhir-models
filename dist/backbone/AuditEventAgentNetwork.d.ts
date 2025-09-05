@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 export declare class AuditEventAgentNetwork extends BackboneElement {
     address?: string;
     _address?: Element;

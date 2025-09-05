@@ -14,6 +14,7 @@ require("reflect-metadata");
 const class_validator_1 = require("class-validator");
 const class_transformer_1 = require("class-transformer");
 const BackboneElement_1 = require("../base/BackboneElement");
+const Element_1 = require("../base/Element");
 class TestScriptVariable extends BackboneElement_1.BackboneElement {
     constructor(source = {}) {
         super(source);
@@ -28,8 +29,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], TestScriptVariable.prototype, "_defaultValue", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -39,8 +40,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], TestScriptVariable.prototype, "_description", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -50,8 +51,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], TestScriptVariable.prototype, "_expression", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -61,8 +62,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], TestScriptVariable.prototype, "_headerField", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -72,8 +73,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], TestScriptVariable.prototype, "_hint", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -83,8 +84,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], TestScriptVariable.prototype, "_name", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -94,8 +95,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], TestScriptVariable.prototype, "_path", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -105,7 +106,7 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], TestScriptVariable.prototype, "_sourceId", void 0);
 //# sourceMappingURL=TestScriptVariable.js.map

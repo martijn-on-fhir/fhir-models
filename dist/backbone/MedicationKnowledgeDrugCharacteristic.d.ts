@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { Quantity } from '../elements/Quantity';
 export declare class MedicationKnowledgeDrugCharacteristic extends BackboneElement {
