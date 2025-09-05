@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/martijn-on-fhir/fhir-models/compare/v1.0.3...v1.0.4) (2025-09-05)
+
+
+### Bug Fixes
+
+* **package:** Optimize for nmp ([6d45147](https://github.com/martijn-on-fhir/fhir-models/commit/6d451474eae2fe08362c23d4a72350b191220bc9))
+
 ## [1.0.3](https://github.com/martijn-on-fhir/fhir-models/compare/v1.0.2...v1.0.3) (2025-09-05)
 
 
