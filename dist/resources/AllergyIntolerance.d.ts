@@ -1,0 +1,41 @@
+import 'reflect-metadata';
+import { DomainResource } from '../base/DomainResource';
+import { Element } from '../base/Element';
+import { Age } from '../elements/Age';
+import { AllergyIntoleranceReaction } from '../backbone/AllergyIntoleranceReaction';
+import { Annotation } from '../elements/Annotation';
+import { CodeableConcept } from '../elements/CodeableConcept';
+import { Identifier } from '../elements/Identifier';
+import { Period } from '../elements/Period';
+import { Range } from '../elements/Range';
+import { Reference } from '../elements/Reference';
+export declare class AllergyIntolerance extends DomainResource {
+    readonly resourceType: "AllergyIntolerance";
+    asserter?: Reference;
+    category?: Array<'food' | 'medication' | 'environment' | 'biologic'>;
+    _category?: Element[];
+    clinicalStatus?: CodeableConcept;
+    code?: CodeableConcept;
+    criticality?: ('low' | 'high' | 'unable-to-assess');
+    _criticality?: Element;
+    encounter?: Reference;
+    identifier?: Identifier[];
+    lastOccurrence?: string;
+    _lastOccurrence?: Element;
+    note?: Annotation[];
+    onsetDateTime?: string;
+    _onsetDateTime?: Element;
+    onsetAge?: Age;
+    onsetPeriod?: Period;
+    onsetRange?: Range;
+    onsetString?: string;
+    _onsetString?: Element;
+    patient?: Reference;
+    reaction?: AllergyIntoleranceReaction[];
+    recordedDate?: string;
+    _recordedDate?: Element;
+    recorder?: Reference;
+    type?: ('allergy' | 'intolerance');
+    constructor(source?: Partial<AllergyIntolerance>);
+}
+//# sourceMappingURL=AllergyIntolerance.d.ts.map

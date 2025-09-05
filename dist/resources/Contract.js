@@ -1,0 +1,190 @@
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Contract = void 0;
+require("reflect-metadata");
+const class_validator_1 = require("class-validator");
+const class_transformer_1 = require("class-transformer");
+const DomainResource_1 = require("../base/DomainResource");
+const Element_1 = require("../base/Element");
+const Attachment_1 = require("../elements/Attachment");
+const CodeableConcept_1 = require("../elements/CodeableConcept");
+const ContractContentDefinition_1 = require("../backbone/ContractContentDefinition");
+const ContractFriendly_1 = require("../backbone/ContractFriendly");
+const ContractLegal_1 = require("../backbone/ContractLegal");
+const ContractRule_1 = require("../backbone/ContractRule");
+const Identifier_1 = require("../elements/Identifier");
+const Period_1 = require("../elements/Period");
+const Reference_1 = require("../elements/Reference");
+class Contract extends DomainResource_1.DomainResource {
+    constructor(source = {}) {
+        super(source);
+        this.resourceType = 'Contract';
+        this.resourceType = 'Contract';
+    }
+}
+exports.Contract = Contract;
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsArray)(),
+    (0, class_validator_1.IsString)({ each: true }),
+    __metadata("design:type", Array)
+], Contract.prototype, "alias", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsArray)(),
+    (0, class_validator_1.ValidateNested)({ each: true }),
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Array)
+], Contract.prototype, "_alias", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.ValidateNested)(),
+    (0, class_transformer_1.Type)(() => Period_1.Period),
+    __metadata("design:type", Period_1.Period)
+], Contract.prototype, "applies", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.ValidateNested)(),
+    (0, class_transformer_1.Type)(() => Reference_1.Reference),
+    __metadata("design:type", Reference_1.Reference)
+], Contract.prototype, "author", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsArray)(),
+    (0, class_validator_1.ValidateNested)({ each: true }),
+    (0, class_transformer_1.Type)(() => Reference_1.Reference),
+    __metadata("design:type", Array)
+], Contract.prototype, "authority", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.ValidateNested)(),
+    (0, class_transformer_1.Type)(() => ContractContentDefinition_1.ContractContentDefinition),
+    __metadata("design:type", ContractContentDefinition_1.ContractContentDefinition)
+], Contract.prototype, "contentDefinition", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.ValidateNested)(),
+    (0, class_transformer_1.Type)(() => CodeableConcept_1.CodeableConcept),
+    __metadata("design:type", CodeableConcept_1.CodeableConcept)
+], Contract.prototype, "contentDerivative", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsArray)(),
+    (0, class_validator_1.ValidateNested)({ each: true }),
+    (0, class_transformer_1.Type)(() => Reference_1.Reference),
+    __metadata("design:type", Array)
+], Contract.prototype, "domain", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.ValidateNested)(),
+    (0, class_transformer_1.Type)(() => CodeableConcept_1.CodeableConcept),
+    __metadata("design:type", CodeableConcept_1.CodeableConcept)
+], Contract.prototype, "expirationType", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsArray)(),
+    (0, class_validator_1.ValidateNested)({ each: true }),
+    (0, class_transformer_1.Type)(() => ContractFriendly_1.ContractFriendly),
+    __metadata("design:type", Array)
+], Contract.prototype, "friendly", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsArray)(),
+    (0, class_validator_1.ValidateNested)({ each: true }),
+    (0, class_transformer_1.Type)(() => Identifier_1.Identifier),
+    __metadata("design:type", Array)
+], Contract.prototype, "identifier", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.ValidateNested)(),
+    (0, class_transformer_1.Type)(() => Reference_1.Reference),
+    __metadata("design:type", Reference_1.Reference)
+], Contract.prototype, "instantiatesCanonical", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsString)(),
+    __metadata("design:type", String)
+], Contract.prototype, "instantiatesUri", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.ValidateNested)(),
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
+], Contract.prototype, "_instantiatesUri", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsString)(),
+    __metadata("design:type", String)
+], Contract.prototype, "issued", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.ValidateNested)(),
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
+], Contract.prototype, "_issued", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsArray)(),
+    (0, class_validator_1.ValidateNested)({ each: true }),
+    (0, class_transformer_1.Type)(() => ContractLegal_1.ContractLegal),
+    __metadata("design:type", Array)
+], Contract.prototype, "legal", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.ValidateNested)(),
+    (0, class_transformer_1.Type)(() => Attachment_1.Attachment),
+    __metadata("design:type", Attachment_1.Attachment)
+], Contract.prototype, "legallyBindingAttachment", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.ValidateNested)(),
+    (0, class_transformer_1.Type)(() => Reference_1.Reference),
+    __metadata("design:type", Reference_1.Reference)
+], Contract.prototype, "legallyBindingReference", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.ValidateNested)(),
+    (0, class_transformer_1.Type)(() => CodeableConcept_1.CodeableConcept),
+    __metadata("design:type", CodeableConcept_1.CodeableConcept)
+], Contract.prototype, "legalState", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsString)(),
+    __metadata("design:type", String)
+], Contract.prototype, "name", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.ValidateNested)(),
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
+], Contract.prototype, "_name", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsArray)(),
+    (0, class_validator_1.ValidateNested)({ each: true }),
+    (0, class_transformer_1.Type)(() => Reference_1.Reference),
+    __metadata("design:type", Array)
+], Contract.prototype, "relevantHistory", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsArray)(),
+    (0, class_validator_1.ValidateNested)({ each: true }),
+    (0, class_transformer_1.Type)(() => ContractRule_1.ContractRule),
+    __metadata("design:type", Array)
+], Contract.prototype, "rule", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.ValidateNested)(),
+    (0, class_transformer_1.Type)(() => CodeableConcept_1.CodeableConcept),
+    __metadata("design:type", CodeableConcept_1.CodeableConcept)
+], Contract.prototype, "scope", void 0);
+//# sourceMappingURL=Contract.js.map

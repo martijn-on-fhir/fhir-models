@@ -1,0 +1,41 @@
+import 'reflect-metadata';
+import { DomainResource } from '../base/DomainResource';
+import { Element } from '../base/Element';
+import { Age } from '../elements/Age';
+import { Annotation } from '../elements/Annotation';
+import { CodeableConcept } from '../elements/CodeableConcept';
+import { ConditionEvidence } from '../backbone/ConditionEvidence';
+import { Identifier } from '../elements/Identifier';
+import { Period } from '../elements/Period';
+import { Range } from '../elements/Range';
+import { Reference } from '../elements/Reference';
+export declare class Condition extends DomainResource {
+    readonly resourceType: "Condition";
+    abatementDateTime?: string;
+    _abatementDateTime?: Element;
+    abatementAge?: Age;
+    abatementPeriod?: Period;
+    abatementRange?: Range;
+    abatementString?: string;
+    _abatementString?: Element;
+    asserter?: Reference;
+    bodySite?: CodeableConcept[];
+    category?: CodeableConcept[];
+    clinicalStatus?: CodeableConcept;
+    code?: CodeableConcept;
+    encounter?: Reference;
+    evidence?: ConditionEvidence[];
+    identifier?: Identifier[];
+    note?: Annotation[];
+    onsetDateTime?: string;
+    _onsetDateTime?: Element;
+    onsetAge?: Age;
+    onsetPeriod?: Period;
+    onsetRange?: Range;
+    onsetString?: string;
+    _onsetString?: Element;
+    recordedDate?: string;
+    _recordedDate?: Element;
+    constructor(source?: Partial<Condition>);
+}
+//# sourceMappingURL=Condition.d.ts.map

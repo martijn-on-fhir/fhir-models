@@ -1,0 +1,1 @@
+{"version":3,"file":"TestScriptOrigin.d.ts","sourceRoot":"","sources":["../../src/backbone/TestScriptOrigin.ts"],"names":[],"mappings":"AAAA,OAAO,kBAAkB,CAAC;AAG1B,OAAO,EAAE,eAAe,EAAE,MAAM,yBAAyB,CAAC;AAC1D,OAAO,EAAE,MAAM,EAAE,MAAM,oBAAoB,CAAC;AAK5C,qBAAa,gBAAiB,SAAQ,eAAe;IAMnD,KAAK,CAAC,EAAE,MAAM,CAAC;IAQf,OAAO,CAAC,EAAE,MAAM,CAAC;gBAKL,MAAM,GAAE,OAAO,CAAC,gBAAgB,CAAM;CAGnD"}

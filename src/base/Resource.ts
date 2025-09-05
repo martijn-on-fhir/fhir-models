@@ -2,6 +2,7 @@ import 'reflect-metadata';
 import { IsOptional, IsString, ValidateNested } from 'class-validator';
 import { Type } from 'class-transformer';
 import { Element } from './Element';
+import {Meta} from '../elements'
 
 /**
  * This is the base resource type for everything.
@@ -87,23 +88,5 @@ export abstract class Resource {
    */
   constructor(source: Partial<Resource> = {}) {
     Object.assign(this, source);
-  }
-}
-
-// Forward declaration to avoid circular dependency
-class Meta extends Element {
-  lastUpdated?: string;
-  _lastUpdated?: Element;
-  profile?: string[];
-  _profile?: Element[];
-  security?: any[];
-  tag?: any[];
-  source?: string;
-  _source?: Element;
-  versionId?: string;
-  _versionId?: Element;
-
-  constructor(source: Partial<Meta> = {}) {
-    super(source);
   }
 }

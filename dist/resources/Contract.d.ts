@@ -1,0 +1,42 @@
+import 'reflect-metadata';
+import { DomainResource } from '../base/DomainResource';
+import { Element } from '../base/Element';
+import { Attachment } from '../elements/Attachment';
+import { CodeableConcept } from '../elements/CodeableConcept';
+import { ContractContentDefinition } from '../backbone/ContractContentDefinition';
+import { ContractFriendly } from '../backbone/ContractFriendly';
+import { ContractLegal } from '../backbone/ContractLegal';
+import { ContractRule } from '../backbone/ContractRule';
+import { Identifier } from '../elements/Identifier';
+import { Period } from '../elements/Period';
+import { Reference } from '../elements/Reference';
+export declare class Contract extends DomainResource {
+    readonly resourceType: "Contract";
+    alias?: string[];
+    _alias?: Element[];
+    applies?: Period;
+    author?: Reference;
+    authority?: Reference[];
+    contentDefinition?: ContractContentDefinition;
+    contentDerivative?: CodeableConcept;
+    domain?: Reference[];
+    expirationType?: CodeableConcept;
+    friendly?: ContractFriendly[];
+    identifier?: Identifier[];
+    instantiatesCanonical?: Reference;
+    instantiatesUri?: string;
+    _instantiatesUri?: Element;
+    issued?: string;
+    _issued?: Element;
+    legal?: ContractLegal[];
+    legallyBindingAttachment?: Attachment;
+    legallyBindingReference?: Reference;
+    legalState?: CodeableConcept;
+    name?: string;
+    _name?: Element;
+    relevantHistory?: Reference[];
+    rule?: ContractRule[];
+    scope?: CodeableConcept;
+    constructor(source?: Partial<Contract>);
+}
+//# sourceMappingURL=Contract.d.ts.map

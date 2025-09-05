@@ -1,0 +1,47 @@
+import 'reflect-metadata';
+import { DomainResource } from '../base/DomainResource';
+import { Element } from '../base/Element';
+import { Annotation } from '../elements/Annotation';
+import { CodeableConcept } from '../elements/CodeableConcept';
+import { ContactPoint } from '../elements/ContactPoint';
+import { DeviceDefinitionCapability } from '../backbone/DeviceDefinitionCapability';
+import { DeviceDefinitionDeviceName } from '../backbone/DeviceDefinitionDeviceName';
+import { DeviceDefinitionMaterial } from '../backbone/DeviceDefinitionMaterial';
+import { DeviceDefinitionProperty } from '../backbone/DeviceDefinitionProperty';
+import { DeviceDefinitionSpecialization } from '../backbone/DeviceDefinitionSpecialization';
+import { DeviceDefinitionUdiDeviceIdentifier } from '../backbone/DeviceDefinitionUdiDeviceIdentifier';
+import { Identifier } from '../elements/Identifier';
+import { ProdCharacteristic } from '../backbone/ProdCharacteristic';
+import { ProductShelfLife } from '../backbone/ProductShelfLife';
+import { Quantity } from '../elements/Quantity';
+import { Reference } from '../elements/Reference';
+export declare class DeviceDefinition extends DomainResource {
+    readonly resourceType: "DeviceDefinition";
+    capability?: DeviceDefinitionCapability[];
+    contact?: ContactPoint[];
+    deviceName?: DeviceDefinitionDeviceName[];
+    identifier?: Identifier[];
+    languageCode?: CodeableConcept[];
+    manufacturerString?: string;
+    _manufacturerString?: Element;
+    manufacturerReference?: Reference;
+    material?: DeviceDefinitionMaterial[];
+    modelNumber?: string;
+    _modelNumber?: Element;
+    note?: Annotation[];
+    onlineInformation?: string;
+    _onlineInformation?: Element;
+    owner?: Reference;
+    parentDevice?: Reference;
+    physicalCharacteristics?: ProdCharacteristic;
+    property?: DeviceDefinitionProperty[];
+    quantity?: Quantity;
+    safety?: CodeableConcept[];
+    shelfLifeStorage?: ProductShelfLife[];
+    specialization?: DeviceDefinitionSpecialization[];
+    type?: CodeableConcept;
+    udiDeviceIdentifier?: DeviceDefinitionUdiDeviceIdentifier[];
+    url?: string;
+    constructor(source?: Partial<DeviceDefinition>);
+}
+//# sourceMappingURL=DeviceDefinition.d.ts.map

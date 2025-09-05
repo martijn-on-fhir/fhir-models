@@ -1,0 +1,44 @@
+import 'reflect-metadata';
+import { DomainResource } from '../base/DomainResource';
+import { Element } from '../base/Element';
+import { CodeableConcept } from '../elements/CodeableConcept';
+import { Coding } from '../elements/Coding';
+import { Duration } from '../elements/Duration';
+import { EncounterClassHistory } from '../backbone/EncounterClassHistory';
+import { EncounterDiagnosis } from '../backbone/EncounterDiagnosis';
+import { EncounterHospitalization } from '../backbone/EncounterHospitalization';
+import { EncounterLocation } from '../backbone/EncounterLocation';
+import { EncounterParticipant } from '../backbone/EncounterParticipant';
+import { EncounterStatusHistory } from '../backbone/EncounterStatusHistory';
+import { Identifier } from '../elements/Identifier';
+import { Period } from '../elements/Period';
+import { Reference } from '../elements/Reference';
+export declare class Encounter extends DomainResource {
+    readonly resourceType: "Encounter";
+    account?: Reference[];
+    appointment?: Reference[];
+    basedOn?: Reference[];
+    class?: Coding;
+    classHistory?: EncounterClassHistory[];
+    diagnosis?: EncounterDiagnosis[];
+    episodeOfCare?: Reference[];
+    hospitalization?: EncounterHospitalization;
+    identifier?: Identifier[];
+    length?: Duration;
+    location?: EncounterLocation[];
+    participant?: EncounterParticipant[];
+    partOf?: Reference;
+    period?: Period;
+    priority?: CodeableConcept;
+    reasonCode?: CodeableConcept[];
+    reasonReference?: Reference[];
+    serviceProvider?: Reference;
+    serviceType?: CodeableConcept;
+    status?: ('planned' | 'arrived' | 'triaged' | 'in-progress' | 'onleave' | 'finished' | 'cancelled' | 'entered-in-error' | 'unknown');
+    _status?: Element;
+    statusHistory?: EncounterStatusHistory[];
+    subject?: Reference;
+    type?: CodeableConcept[];
+    constructor(source?: Partial<Encounter>);
+}
+//# sourceMappingURL=Encounter.d.ts.map

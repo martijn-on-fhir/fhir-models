@@ -1,0 +1,1 @@
+{"version":3,"file":"LocationPosition.d.ts","sourceRoot":"","sources":["../../src/backbone/LocationPosition.ts"],"names":[],"mappings":"AAAA,OAAO,kBAAkB,CAAC;AAG1B,OAAO,EAAE,eAAe,EAAE,MAAM,yBAAyB,CAAC;AAK1D,qBAAa,gBAAiB,SAAQ,eAAe;IAMnD,QAAQ,CAAC,EAAE,MAAM,CAAC;IAOlB,QAAQ,CAAC,EAAE,MAAM,CAAC;IAOlB,SAAS,CAAC,EAAE,MAAM,CAAC;gBAKP,MAAM,GAAE,OAAO,CAAC,gBAAgB,CAAM;CAGnD"}
