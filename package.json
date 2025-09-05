@@ -10,7 +10,7 @@
   "name": "fhir-models",
   "version": "1.0.1",
   "description": "Fhit model based on r4",
-  "main": "./dist/main.js",
+  "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
