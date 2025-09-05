@@ -1,0 +1,46 @@
+import 'reflect-metadata';
+import { DomainResource } from '../base/DomainResource';
+import { Element } from '../base/Element';
+import { Attachment } from '../elements/Attachment';
+import { CodeableConcept } from '../elements/CodeableConcept';
+import { ExplanationOfBenefitAccident } from '../backbone/ExplanationOfBenefitAccident';
+import { ExplanationOfBenefitAddItem } from '../backbone/ExplanationOfBenefitAddItem';
+import { ExplanationOfBenefitBenefitBalance } from '../backbone/ExplanationOfBenefitBenefitBalance';
+import { ExplanationOfBenefitCareTeam } from '../backbone/ExplanationOfBenefitCareTeam';
+import { ExplanationOfBenefitDiagnosis } from '../backbone/ExplanationOfBenefitDiagnosis';
+import { ExplanationOfBenefitInsurance } from '../backbone/ExplanationOfBenefitInsurance';
+import { ExplanationOfBenefitItem } from '../backbone/ExplanationOfBenefitItem';
+import { ExplanationOfBenefitItemAdjudication } from '../backbone/ExplanationOfBenefitItemAdjudication';
+import { Identifier } from '../elements/Identifier';
+import { Period } from '../elements/Period';
+import { Reference } from '../elements/Reference';
+export declare class ExplanationOfBenefit extends DomainResource {
+    readonly resourceType: "ExplanationOfBenefit";
+    accident?: ExplanationOfBenefitAccident;
+    addItem?: ExplanationOfBenefitAddItem[];
+    adjudication?: ExplanationOfBenefitItemAdjudication[];
+    benefitBalance?: ExplanationOfBenefitBenefitBalance[];
+    benefitPeriod?: Period;
+    billablePeriod?: Period;
+    careTeam?: ExplanationOfBenefitCareTeam[];
+    claim?: Reference;
+    claimResponse?: Reference;
+    created?: string;
+    _created?: Element;
+    diagnosis?: ExplanationOfBenefitDiagnosis[];
+    disposition?: string;
+    _disposition?: Element;
+    enterer?: Reference;
+    facility?: Reference;
+    form?: Attachment;
+    formCode?: CodeableConcept;
+    fundsReserve?: CodeableConcept;
+    fundsReserveRequested?: CodeableConcept;
+    identifier?: Identifier[];
+    insurance?: ExplanationOfBenefitInsurance[];
+    insurer?: Reference;
+    item?: ExplanationOfBenefitItem[];
+    originalPrescription?: Reference;
+    constructor(source?: Partial<ExplanationOfBenefit>);
+}
+//# sourceMappingURL=ExplanationOfBenefit.d.ts.map

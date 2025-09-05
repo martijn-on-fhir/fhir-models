@@ -7,27 +7,11 @@ import {Meta} from '../elements'
 /**
  * This is the base resource type for everything.
  */
-export abstract class Resource {
+export abstract class Resource extends Element {
   /**
    * Resource Type Name (for serialization)
    */
   abstract readonly resourceType: string;
-
-  /**
-   * The only time that a resource does not have an id is when it is being 
-   * submitted to the server using a create operation.
-   */
-  @IsOptional()
-  @IsString()
-  id?: string;
-
-  /**
-   * Primitive element extension
-   */
-  @IsOptional()
-  @ValidateNested()
-  @Type(() => Element)
-  _id?: Element;
 
   /**
    * Asserting this rule set restricts the content to be only understood by a 
@@ -87,6 +71,6 @@ export abstract class Resource {
    * Constructor for Resource
    */
   constructor(source: Partial<Resource> = {}) {
-    Object.assign(this, source);
+    super(source);
   }
 }

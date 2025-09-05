@@ -1,0 +1,43 @@
+import 'reflect-metadata';
+import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
+import { CodeableConcept } from '../elements/CodeableConcept';
+import { DataRequirement } from '../elements/DataRequirement';
+import { Duration } from '../elements/Duration';
+import { Expression } from '../elements/Expression';
+import { Period } from '../elements/Period';
+import { Timing } from './Timing';
+import { UsageContext } from '../elements/UsageContext';
+export declare class ResearchElementDefinitionCharacteristic extends BackboneElement {
+    definitionCodeableConcept?: CodeableConcept;
+    definitionCanonical?: string;
+    _definitionCanonical?: Element;
+    definitionExpression?: Expression;
+    definitionDataRequirement?: DataRequirement;
+    exclude?: boolean;
+    _exclude?: Element;
+    participantEffectiveDateTime?: string;
+    _participantEffectiveDateTime?: Element;
+    participantEffectivePeriod?: Period;
+    participantEffectiveDuration?: Duration;
+    participantEffectiveTiming?: Timing;
+    participantEffectiveDescription?: string;
+    _participantEffectiveDescription?: Element;
+    participantEffectiveGroupMeasure?: ('mean' | 'median' | 'mean-of-mean' | 'mean-of-median' | 'median-of-mean' | 'median-of-median');
+    _participantEffectiveGroupMeasure?: Element;
+    participantEffectiveTimeFromStart?: Duration;
+    studyEffectiveDateTime?: string;
+    _studyEffectiveDateTime?: Element;
+    studyEffectivePeriod?: Period;
+    studyEffectiveDuration?: Duration;
+    studyEffectiveTiming?: Timing;
+    studyEffectiveDescription?: string;
+    _studyEffectiveDescription?: Element;
+    studyEffectiveGroupMeasure?: ('mean' | 'median' | 'mean-of-mean' | 'mean-of-median' | 'median-of-mean' | 'median-of-median');
+    _studyEffectiveGroupMeasure?: Element;
+    studyEffectiveTimeFromStart?: Duration;
+    unitOfMeasure?: CodeableConcept;
+    usageContext?: UsageContext[];
+    constructor(source?: Partial<ResearchElementDefinitionCharacteristic>);
+}
+//# sourceMappingURL=ResearchElementDefinitionCharacteristic.d.ts.map

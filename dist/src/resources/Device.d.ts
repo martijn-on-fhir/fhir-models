@@ -1,0 +1,40 @@
+import 'reflect-metadata';
+import { DomainResource } from '../base/DomainResource';
+import { Element } from '../base/Element';
+import { Annotation } from '../elements/Annotation';
+import { CodeableConcept } from '../elements/CodeableConcept';
+import { ContactPoint } from '../elements/ContactPoint';
+import { DeviceDeviceName } from '../backbone/DeviceDeviceName';
+import { DeviceProperty } from '../backbone/DeviceProperty';
+import { Identifier } from '../elements/Identifier';
+import { Reference } from '../elements/Reference';
+export declare class Device extends DomainResource {
+    readonly resourceType: "Device";
+    contact?: ContactPoint[];
+    definition?: Reference;
+    deviceName?: DeviceDeviceName[];
+    distinctIdentifier?: string;
+    _distinctIdentifier?: Element;
+    expirationDate?: string;
+    _expirationDate?: Element;
+    identifier?: Identifier[];
+    location?: Reference;
+    lotNumber?: string;
+    _lotNumber?: Element;
+    manufactureDate?: string;
+    _manufactureDate?: Element;
+    manufacturer?: string;
+    _manufacturer?: Element;
+    modelNumber?: string;
+    _modelNumber?: Element;
+    note?: Annotation[];
+    owner?: Reference;
+    parent?: Reference;
+    partNumber?: string;
+    _partNumber?: Element;
+    patient?: Reference;
+    property?: DeviceProperty[];
+    safety?: CodeableConcept[];
+    constructor(source?: Partial<Device>);
+}
+//# sourceMappingURL=Device.d.ts.map

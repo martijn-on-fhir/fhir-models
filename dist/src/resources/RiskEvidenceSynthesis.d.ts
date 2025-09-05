@@ -1,0 +1,40 @@
+import 'reflect-metadata';
+import { DomainResource } from '../base/DomainResource';
+import { Element } from '../base/Element';
+import { Annotation } from '../elements/Annotation';
+import { CodeableConcept } from '../elements/CodeableConcept';
+import { ContactDetail } from '../elements/ContactDetail';
+import { Identifier } from '../elements/Identifier';
+import { Period } from '../elements/Period';
+import { Reference } from '../elements/Reference';
+import { RiskEvidenceSynthesisCertainty } from '../backbone/RiskEvidenceSynthesisCertainty';
+export declare class RiskEvidenceSynthesis extends DomainResource {
+    readonly resourceType: "RiskEvidenceSynthesis";
+    approvalDate?: string;
+    _approvalDate?: Element;
+    author?: ContactDetail[];
+    certainty?: RiskEvidenceSynthesisCertainty[];
+    contact?: ContactDetail[];
+    copyright?: string;
+    _copyright?: Element;
+    date?: string;
+    _date?: Element;
+    description?: string;
+    _description?: Element;
+    editor?: ContactDetail[];
+    effectivePeriod?: Period;
+    endorser?: ContactDetail[];
+    exposure?: Reference;
+    identifier?: Identifier[];
+    jurisdiction?: CodeableConcept[];
+    lastReviewDate?: string;
+    _lastReviewDate?: Element;
+    name?: string;
+    _name?: Element;
+    note?: Annotation[];
+    outcome?: Reference;
+    population?: Reference;
+    publisher?: string;
+    constructor(source?: Partial<RiskEvidenceSynthesis>);
+}
+//# sourceMappingURL=RiskEvidenceSynthesis.d.ts.map
