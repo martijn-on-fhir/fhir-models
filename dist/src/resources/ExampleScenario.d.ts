@@ -1,0 +1,40 @@
+import 'reflect-metadata';
+import { DomainResource } from '../base/DomainResource';
+import { Element } from '../base/Element';
+import { CodeableConcept } from '../elements/CodeableConcept';
+import { ContactDetail } from '../elements/ContactDetail';
+import { ExampleScenarioActor } from '../backbone/ExampleScenarioActor';
+import { ExampleScenarioInstance } from '../backbone/ExampleScenarioInstance';
+import { ExampleScenarioProcess } from '../backbone/ExampleScenarioProcess';
+import { Identifier } from '../elements/Identifier';
+import { UsageContext } from '../elements/UsageContext';
+export declare class ExampleScenario extends DomainResource {
+    readonly resourceType: "ExampleScenario";
+    actor?: ExampleScenarioActor[];
+    contact?: ContactDetail[];
+    copyright?: string;
+    _copyright?: Element;
+    date?: string;
+    _date?: Element;
+    experimental?: boolean;
+    _experimental?: Element;
+    identifier?: Identifier[];
+    instance?: ExampleScenarioInstance[];
+    jurisdiction?: CodeableConcept[];
+    name?: string;
+    _name?: Element;
+    process?: ExampleScenarioProcess[];
+    publisher?: string;
+    _publisher?: Element;
+    purpose?: string;
+    _purpose?: Element;
+    status?: ('draft' | 'active' | 'retired' | 'unknown');
+    _status?: Element;
+    url?: string;
+    _url?: Element;
+    useContext?: UsageContext[];
+    version?: string;
+    _version?: Element;
+    constructor(source?: Partial<ExampleScenario>);
+}
+//# sourceMappingURL=ExampleScenario.d.ts.map

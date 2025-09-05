@@ -1,0 +1,13 @@
+import 'reflect-metadata';
+import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
+export declare class ImplementationGuideManifestPage extends BackboneElement {
+    anchor?: string[];
+    _anchor?: Element[];
+    name?: string;
+    _name?: Element;
+    title?: string;
+    _title?: Element;
+    constructor(source?: Partial<ImplementationGuideManifestPage>);
+}
+//# sourceMappingURL=ImplementationGuideManifestPage.d.ts.map
