@@ -108,6 +108,7 @@ export { Practitioner } from './Practitioner';
 export { PractitionerRole } from './PractitionerRole';
 export { Procedure } from './Procedure';
 export { Provenance } from './Provenance';
+export { Patient} from './Patient';
 export { Questionnaire } from './Questionnaire';
 export { QuestionnaireResponse } from './QuestionnaireResponse';
 export { RelatedPerson } from './RelatedPerson';
