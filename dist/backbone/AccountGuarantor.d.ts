@@ -2,6 +2,7 @@ import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
 import { Period } from '../elements/Period';
 import { Reference } from '../elements/Reference';
+import { Element } from '../base/Element';
 export declare class AccountGuarantor extends BackboneElement {
     onHold?: boolean;
     _onHold?: Element;
