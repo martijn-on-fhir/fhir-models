@@ -1,0 +1,30 @@
+# Source files
+src/
+*.ts
+!*.d.ts
+
+# Development files
+.github/
+.claude/
+node_modules/
+.eslintrc.js
+tsconfig.json
+.releaserc.json
+.commitlintrc.json
+
+# IDE files
+.vscode/
+.idea/
+
+# Testing
+coverage/
+*.test.*
+*.spec.*
+
+# Logs
+logs/
+*.log
+
+# Other
+.DS_Store
+Thumbs.db

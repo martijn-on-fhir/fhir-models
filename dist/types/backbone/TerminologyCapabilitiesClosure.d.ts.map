@@ -1,1 +1,0 @@
-{"version":3,"file":"TerminologyCapabilitiesClosure.d.ts","sourceRoot":"","sources":["../../../src/backbone/TerminologyCapabilitiesClosure.ts"],"names":[],"mappings":"AAAA,OAAO,kBAAkB,CAAC;AAG1B,OAAO,EAAE,eAAe,EAAE,MAAM,yBAAyB,CAAC;AAK1D,qBAAa,8BAA+B,SAAQ,eAAe;IAMjE,WAAW,CAAC,EAAE,OAAO,CAAC;IAKtB,YAAY,CAAC,EAAE,OAAO,CAAC;gBAKX,MAAM,GAAE,OAAO,CAAC,8BAA8B,CAAM;CAGjE"}
