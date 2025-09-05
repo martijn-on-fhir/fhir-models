@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.DomainResource = exports.Resource = exports.BackboneElement = exports.Element = void 0;
+var Element_1 = require("./Element");
+Object.defineProperty(exports, "Element", { enumerable: true, get: function () { return Element_1.Element; } });
+var BackboneElement_1 = require("./BackboneElement");
+Object.defineProperty(exports, "BackboneElement", { enumerable: true, get: function () { return BackboneElement_1.BackboneElement; } });
+var Resource_1 = require("./Resource");
+Object.defineProperty(exports, "Resource", { enumerable: true, get: function () { return Resource_1.Resource; } });
+var DomainResource_1 = require("./DomainResource");
+Object.defineProperty(exports, "DomainResource", { enumerable: true, get: function () { return DomainResource_1.DomainResource; } });
