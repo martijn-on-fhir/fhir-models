@@ -4,7 +4,9 @@ A TypeScript-based FHIR R4 model library that provides TypeScript classes for FH
 
 ## Overview
 
-This library provides TypeScript classes for FHIR R4 resources and elements with built-in validation capabilities. It leverages decorators for validation and transformation, making it easy to work with FHIR data in TypeScript applications.
+This library provides TypeScript classes for FHIR R4 resources and elements with built-in validation capabilities. 
+It leverages decorators for validation and transformation, making it easy to work with FHIR data in TypeScript
+applications. This project is part of https://github.com/martijn-on-fhir/snapshot-builder and https://github.com/martijn-on-fhir/fhir-server.
 
 ## Features
 
