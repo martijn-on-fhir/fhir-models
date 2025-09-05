@@ -16,6 +16,7 @@ const class_transformer_1 = require("class-transformer");
 const BackboneElement_1 = require("../base/BackboneElement");
 const Period_1 = require("../elements/Period");
 const Reference_1 = require("../elements/Reference");
+const Element_1 = require("../base/Element");
 class AccountGuarantor extends BackboneElement_1.BackboneElement {
     constructor(source = {}) {
         super(source);
@@ -30,8 +31,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], AccountGuarantor.prototype, "_onHold", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
