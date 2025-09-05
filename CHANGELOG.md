@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/martijn-on-fhir/fhir-models/compare/v1.0.7...v1.0.8) (2025-09-05)
+
+
+### Bug Fixes
+
+* **package:** Wrong import Element ([1578401](https://github.com/martijn-on-fhir/fhir-models/commit/15784014375fce58ade75253515307cbcb260a4d))
+
 ## [1.0.7](https://github.com/martijn-on-fhir/fhir-models/compare/v1.0.6...v1.0.7) (2025-09-05)
 
 

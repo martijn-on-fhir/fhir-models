@@ -8,7 +8,7 @@
     "reflect-metadata": "^0.2.2"
   },
   "name": "fhir-models",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "FHIR R4 TypeScript models and interfaces - comprehensive library with class-validator decorators",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
