@@ -14,8 +14,28 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.objectToJson = exports.jsonToObject = void 0;
+const class_transformer_1 = require("class-transformer");
 __exportStar(require("./base"), exports);
 __exportStar(require("./elements"), exports);
 __exportStar(require("./backbone"), exports);
 __exportStar(require("./resources"), exports);
+const jsonToObject = (classConstructor, entity) => {
+    try {
+        return (0, class_transformer_1.plainToInstance)(classConstructor, entity);
+    }
+    catch (e) {
+        return e instanceof Error ? e : new Error(String(e));
+    }
+};
+exports.jsonToObject = jsonToObject;
+const objectToJson = (classConstructor, entity) => {
+    try {
+        return JSON.stringify(entity);
+    }
+    catch (e) {
+        return e instanceof Error ? e : new Error(String(e));
+    }
+};
+exports.objectToJson = objectToJson;
 //# sourceMappingURL=index.js.map
