@@ -14,6 +14,7 @@ require("reflect-metadata");
 const class_validator_1 = require("class-validator");
 const class_transformer_1 = require("class-transformer");
 const BackboneElement_1 = require("../base/BackboneElement");
+const Element_1 = require("../base/Element");
 const StructureMapGroupRuleTargetParameter_1 = require("./StructureMapGroupRuleTargetParameter");
 class StructureMapGroupRuleTarget extends BackboneElement_1.BackboneElement {
     constructor(source = {}) {
@@ -29,8 +30,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], StructureMapGroupRuleTarget.prototype, "_context", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -40,8 +41,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], StructureMapGroupRuleTarget.prototype, "_contextType", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -51,8 +52,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], StructureMapGroupRuleTarget.prototype, "_element", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -63,7 +64,7 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => Element),
+    (0, class_transformer_1.Type)(() => Element_1.Element),
     __metadata("design:type", Array)
 ], StructureMapGroupRuleTarget.prototype, "_listMode", void 0);
 __decorate([
@@ -74,8 +75,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], StructureMapGroupRuleTarget.prototype, "_listRuleId", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -92,8 +93,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], StructureMapGroupRuleTarget.prototype, "_transform", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -103,7 +104,7 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], StructureMapGroupRuleTarget.prototype, "_variable", void 0);
 //# sourceMappingURL=StructureMapGroupRuleTarget.js.map

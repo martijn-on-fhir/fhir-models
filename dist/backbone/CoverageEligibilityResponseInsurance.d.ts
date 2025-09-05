@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { CoverageEligibilityResponseInsuranceItem } from './CoverageEligibilityResponseInsuranceItem';
 import { Period } from '../elements/Period';
 import { Reference } from '../elements/Reference';

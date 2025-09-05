@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { TerminologyCapabilitiesCodeSystemVersion } from './TerminologyCapabilitiesCodeSystemVersion';
 export declare class TerminologyCapabilitiesCodeSystem extends BackboneElement {
     subsumption?: boolean;

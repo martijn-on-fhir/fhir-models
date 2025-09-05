@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { NutritionOrderEnteralFormulaAdministration } from './NutritionOrderEnteralFormulaAdministration';
 import { Quantity } from '../elements/Quantity';

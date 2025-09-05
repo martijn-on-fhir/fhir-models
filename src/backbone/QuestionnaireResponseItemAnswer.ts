@@ -2,6 +2,7 @@ import 'reflect-metadata';
 import { IsOptional, IsString, IsBoolean, IsNumber, IsArray, ValidateNested, IsIn } from 'class-validator';
 import { Type } from 'class-transformer';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { Attachment } from '../elements/Attachment';
 import { Coding } from '../elements/Coding';
 import { Quantity } from '../elements/Quantity';

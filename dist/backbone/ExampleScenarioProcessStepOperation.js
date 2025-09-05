@@ -14,6 +14,7 @@ require("reflect-metadata");
 const class_validator_1 = require("class-validator");
 const class_transformer_1 = require("class-transformer");
 const BackboneElement_1 = require("../base/BackboneElement");
+const Element_1 = require("../base/Element");
 const ExampleScenarioInstanceContainedInstance_1 = require("./ExampleScenarioInstanceContainedInstance");
 class ExampleScenarioProcessStepOperation extends BackboneElement_1.BackboneElement {
     constructor(source = {}) {
@@ -29,8 +30,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ExampleScenarioProcessStepOperation.prototype, "_description", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -40,8 +41,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ExampleScenarioProcessStepOperation.prototype, "_initiator", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -51,8 +52,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ExampleScenarioProcessStepOperation.prototype, "_initiatorActive", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -62,8 +63,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ExampleScenarioProcessStepOperation.prototype, "_name", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -73,8 +74,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ExampleScenarioProcessStepOperation.prototype, "_number", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -84,8 +85,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ExampleScenarioProcessStepOperation.prototype, "_receiver", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -95,8 +96,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ExampleScenarioProcessStepOperation.prototype, "_receiverActive", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -118,7 +119,7 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ExampleScenarioProcessStepOperation.prototype, "_type", void 0);
 //# sourceMappingURL=ExampleScenarioProcessStepOperation.js.map

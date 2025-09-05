@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { Identifier } from '../elements/Identifier';
 export declare class SubstanceNucleicAcidSubunitSugar extends BackboneElement {
     identifier?: Identifier;

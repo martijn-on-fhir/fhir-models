@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { CodeableConcept } from '../elements/CodeableConcept';
 import { DataRequirement } from '../elements/DataRequirement';
 import { PlanDefinitionActionCondition } from './PlanDefinitionActionCondition';

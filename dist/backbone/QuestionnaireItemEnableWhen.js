@@ -14,6 +14,7 @@ require("reflect-metadata");
 const class_validator_1 = require("class-validator");
 const class_transformer_1 = require("class-transformer");
 const BackboneElement_1 = require("../base/BackboneElement");
+const Element_1 = require("../base/Element");
 const Coding_1 = require("../elements/Coding");
 const Quantity_1 = require("../elements/Quantity");
 const Reference_1 = require("../elements/Reference");
@@ -31,8 +32,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], QuestionnaireItemEnableWhen.prototype, "_answerBoolean", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -52,8 +53,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], QuestionnaireItemEnableWhen.prototype, "_answerDate", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -63,8 +64,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], QuestionnaireItemEnableWhen.prototype, "_answerDateTime", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -74,8 +75,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], QuestionnaireItemEnableWhen.prototype, "_answerTime", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -85,8 +86,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], QuestionnaireItemEnableWhen.prototype, "_answerString", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -114,8 +115,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], QuestionnaireItemEnableWhen.prototype, "_operator", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -125,7 +126,7 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], QuestionnaireItemEnableWhen.prototype, "_question", void 0);
 //# sourceMappingURL=QuestionnaireItemEnableWhen.js.map

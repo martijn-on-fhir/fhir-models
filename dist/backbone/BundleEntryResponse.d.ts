@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { Resource } from '../base';
 export declare class BundleEntryResponse extends BackboneElement {
     etag?: string;

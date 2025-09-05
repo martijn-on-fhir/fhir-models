@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { CodeSystemConceptDesignation } from './CodeSystemConceptDesignation';
 import { CodeSystemConceptProperty } from './CodeSystemConceptProperty';
 export declare class CodeSystemConcept extends BackboneElement {

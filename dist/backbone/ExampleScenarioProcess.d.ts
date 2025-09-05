@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { ExampleScenarioProcessStep } from './ExampleScenarioProcessStep';
 export declare class ExampleScenarioProcess extends BackboneElement {
     description?: string;

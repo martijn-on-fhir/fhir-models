@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 export declare class ImplementationGuideDependsOn extends BackboneElement {
     packageId?: string;
     _packageId?: Element;

@@ -14,6 +14,7 @@ require("reflect-metadata");
 const class_validator_1 = require("class-validator");
 const class_transformer_1 = require("class-transformer");
 const BackboneElement_1 = require("../base/BackboneElement");
+const Element_1 = require("../base/Element");
 const ExampleScenarioInstanceContainedInstance_1 = require("./ExampleScenarioInstanceContainedInstance");
 const ExampleScenarioInstanceVersion_1 = require("./ExampleScenarioInstanceVersion");
 class ExampleScenarioInstance extends BackboneElement_1.BackboneElement {
@@ -37,8 +38,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ExampleScenarioInstance.prototype, "_description", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -48,8 +49,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ExampleScenarioInstance.prototype, "_name", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -59,8 +60,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ExampleScenarioInstance.prototype, "_resourceId", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -70,8 +71,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ExampleScenarioInstance.prototype, "_resourceType", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),

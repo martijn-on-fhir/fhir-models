@@ -14,6 +14,7 @@ require("reflect-metadata");
 const class_validator_1 = require("class-validator");
 const class_transformer_1 = require("class-transformer");
 const BackboneElement_1 = require("../base/BackboneElement");
+const Element_1 = require("../base/Element");
 const Coding_1 = require("../elements/Coding");
 const ElementDefinitionBase_1 = require("../elements/ElementDefinitionBase");
 const ElementDefinitionBinding_1 = require("../elements/ElementDefinitionBinding");
@@ -34,7 +35,7 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => Element),
+    (0, class_transformer_1.Type)(() => Element_1.Element),
     __metadata("design:type", Array)
 ], ElementDefinition.prototype, "_alias", void 0);
 __decorate([
@@ -64,8 +65,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ElementDefinition.prototype, "_comment", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -77,7 +78,7 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => Element),
+    (0, class_transformer_1.Type)(() => Element_1.Element),
     __metadata("design:type", Array)
 ], ElementDefinition.prototype, "_condition", void 0);
 __decorate([
@@ -95,8 +96,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ElementDefinition.prototype, "_contentReference", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -106,8 +107,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ElementDefinition.prototype, "_defaultValueBase64Binary", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -117,8 +118,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ElementDefinition.prototype, "_defaultValueBoolean", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -128,8 +129,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ElementDefinition.prototype, "_defaultValueCanonical", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -139,8 +140,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ElementDefinition.prototype, "_defaultValueCode", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -150,8 +151,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ElementDefinition.prototype, "_defaultValueDate", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -161,8 +162,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ElementDefinition.prototype, "_defaultValueDateTime", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -177,8 +178,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ElementDefinition.prototype, "_defaultValueId", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -188,8 +189,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], ElementDefinition.prototype, "_defaultValueInstant", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),

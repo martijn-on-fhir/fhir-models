@@ -14,7 +14,8 @@ require("reflect-metadata");
 const class_validator_1 = require("class-validator");
 const class_transformer_1 = require("class-transformer");
 const Resource_1 = require("./Resource");
-const Element_1 = require("./Element");
+const Extension_1 = require("../elements/Extension");
+const Narrative_1 = require("../elements/Narrative");
 class DomainResource extends Resource_1.Resource {
     constructor(source = {}) {
         super(source);
@@ -32,30 +33,20 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => Extension),
+    (0, class_transformer_1.Type)(() => Extension_1.Extension),
     __metadata("design:type", Array)
 ], DomainResource.prototype, "extension", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => Extension),
+    (0, class_transformer_1.Type)(() => Extension_1.Extension),
     __metadata("design:type", Array)
 ], DomainResource.prototype, "modifierExtension", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Narrative),
-    __metadata("design:type", Narrative)
+    (0, class_transformer_1.Type)(() => Narrative_1.Narrative),
+    __metadata("design:type", Narrative_1.Narrative)
 ], DomainResource.prototype, "text", void 0);
-class Extension extends Element_1.Element {
-    constructor(source = {}) {
-        super(source);
-    }
-}
-class Narrative extends Element_1.Element {
-    constructor(source = {}) {
-        super(source);
-    }
-}
 //# sourceMappingURL=DomainResource.js.map

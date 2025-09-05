@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 export declare class VisionPrescriptionLensSpecificationPrism extends BackboneElement {
     amount?: number;
     base?: ('up' | 'down' | 'in' | 'out');

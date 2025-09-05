@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { Reference } from '../elements/Reference';
 export declare class PersonLink extends BackboneElement {
     assurance?: ('level1' | 'level2' | 'level3' | 'level4');

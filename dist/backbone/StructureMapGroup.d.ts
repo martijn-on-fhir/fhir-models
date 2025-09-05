@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { StructureMapGroupInput } from './StructureMapGroupInput';
 import { StructureMapGroupRule } from './StructureMapGroupRule';
 export declare class StructureMapGroup extends BackboneElement {

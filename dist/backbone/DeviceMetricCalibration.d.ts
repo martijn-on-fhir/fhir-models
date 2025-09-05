@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 export declare class DeviceMetricCalibration extends BackboneElement {
     state?: ('not-calibrated' | 'calibration-required' | 'calibrated' | 'unspecified');
     _state?: Element;

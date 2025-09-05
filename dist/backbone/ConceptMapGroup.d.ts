@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { ConceptMapGroupElement } from './ConceptMapGroupElement';
 import { ConceptMapGroupUnmapped } from './ConceptMapGroupUnmapped';
 export declare class ConceptMapGroup extends BackboneElement {

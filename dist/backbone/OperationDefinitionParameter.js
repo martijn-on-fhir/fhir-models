@@ -14,6 +14,7 @@ require("reflect-metadata");
 const class_validator_1 = require("class-validator");
 const class_transformer_1 = require("class-transformer");
 const BackboneElement_1 = require("../base/BackboneElement");
+const Element_1 = require("../base/Element");
 const OperationDefinitionParameterBinding_1 = require("./OperationDefinitionParameterBinding");
 const OperationDefinitionParameterReferencedFrom_1 = require("./OperationDefinitionParameterReferencedFrom");
 class OperationDefinitionParameter extends BackboneElement_1.BackboneElement {
@@ -36,8 +37,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], OperationDefinitionParameter.prototype, "_documentation", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -47,8 +48,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], OperationDefinitionParameter.prototype, "_max", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -63,8 +64,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], OperationDefinitionParameter.prototype, "_name", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -88,8 +89,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], OperationDefinitionParameter.prototype, "_searchType", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -101,7 +102,7 @@ __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => Element),
+    (0, class_transformer_1.Type)(() => Element_1.Element),
     __metadata("design:type", Array)
 ], OperationDefinitionParameter.prototype, "_targetProfile", void 0);
 __decorate([
@@ -112,8 +113,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], OperationDefinitionParameter.prototype, "_type", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -123,7 +124,7 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], OperationDefinitionParameter.prototype, "_use", void 0);
 //# sourceMappingURL=OperationDefinitionParameter.js.map

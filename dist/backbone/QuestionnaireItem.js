@@ -14,6 +14,7 @@ require("reflect-metadata");
 const class_validator_1 = require("class-validator");
 const class_transformer_1 = require("class-transformer");
 const BackboneElement_1 = require("../base/BackboneElement");
+const Element_1 = require("../base/Element");
 const Coding_1 = require("../elements/Coding");
 const QuestionnaireItemAnswerOption_1 = require("./QuestionnaireItemAnswerOption");
 const QuestionnaireItemEnableWhen_1 = require("./QuestionnaireItemEnableWhen");
@@ -39,8 +40,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], QuestionnaireItem.prototype, "_answerValueSet", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -57,8 +58,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], QuestionnaireItem.prototype, "_definition", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -68,8 +69,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], QuestionnaireItem.prototype, "_enableBehavior", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -100,8 +101,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], QuestionnaireItem.prototype, "_linkId", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -116,8 +117,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], QuestionnaireItem.prototype, "_prefix", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -127,8 +128,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], QuestionnaireItem.prototype, "_readOnly", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -138,8 +139,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], QuestionnaireItem.prototype, "_repeats", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -149,8 +150,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], QuestionnaireItem.prototype, "_required", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -160,8 +161,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], QuestionnaireItem.prototype, "_text", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -171,7 +172,7 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], QuestionnaireItem.prototype, "_type", void 0);
 //# sourceMappingURL=QuestionnaireItem.js.map

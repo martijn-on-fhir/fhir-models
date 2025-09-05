@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { Attachment } from '../elements/Attachment';
 import { Identifier } from '../elements/Identifier';
 export declare class SubstanceProteinSubunit extends BackboneElement {

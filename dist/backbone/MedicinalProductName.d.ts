@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { MedicinalProductNameCountryLanguage } from './MedicinalProductNameCountryLanguage';
 import { MedicinalProductNameNamePart } from './MedicinalProductNameNamePart';
 export declare class MedicinalProductName extends BackboneElement {

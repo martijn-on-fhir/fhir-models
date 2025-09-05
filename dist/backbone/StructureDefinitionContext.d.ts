@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 export declare class StructureDefinitionContext extends BackboneElement {
     expression?: string;
     _expression?: Element;

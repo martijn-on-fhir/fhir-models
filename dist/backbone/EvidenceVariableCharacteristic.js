@@ -14,6 +14,7 @@ require("reflect-metadata");
 const class_validator_1 = require("class-validator");
 const class_transformer_1 = require("class-transformer");
 const BackboneElement_1 = require("../base/BackboneElement");
+const Element_1 = require("../base/Element");
 const CodeableConcept_1 = require("../elements/CodeableConcept");
 const DataRequirement_1 = require("../elements/DataRequirement");
 const Duration_1 = require("../elements/Duration");
@@ -43,8 +44,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], EvidenceVariableCharacteristic.prototype, "_definitionCanonical", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -78,8 +79,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], EvidenceVariableCharacteristic.prototype, "_description", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -89,8 +90,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], EvidenceVariableCharacteristic.prototype, "_exclude", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -100,8 +101,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], EvidenceVariableCharacteristic.prototype, "_groupMeasure", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -111,8 +112,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], EvidenceVariableCharacteristic.prototype, "_participantEffectiveDateTime", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),

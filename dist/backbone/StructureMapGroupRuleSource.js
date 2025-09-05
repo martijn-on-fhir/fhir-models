@@ -14,6 +14,7 @@ require("reflect-metadata");
 const class_validator_1 = require("class-validator");
 const class_transformer_1 = require("class-transformer");
 const BackboneElement_1 = require("../base/BackboneElement");
+const Element_1 = require("../base/Element");
 class StructureMapGroupRuleSource extends BackboneElement_1.BackboneElement {
     constructor(source = {}) {
         super(source);
@@ -28,8 +29,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], StructureMapGroupRuleSource.prototype, "_check", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -39,8 +40,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], StructureMapGroupRuleSource.prototype, "_condition", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -50,8 +51,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], StructureMapGroupRuleSource.prototype, "_context", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -61,8 +62,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], StructureMapGroupRuleSource.prototype, "_defaultValueBase64Binary", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -72,8 +73,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], StructureMapGroupRuleSource.prototype, "_defaultValueBoolean", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -83,8 +84,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], StructureMapGroupRuleSource.prototype, "_defaultValueCanonical", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -94,8 +95,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], StructureMapGroupRuleSource.prototype, "_defaultValueCode", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -105,8 +106,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], StructureMapGroupRuleSource.prototype, "_defaultValueDate", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -116,8 +117,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], StructureMapGroupRuleSource.prototype, "_defaultValueDateTime", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -132,8 +133,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], StructureMapGroupRuleSource.prototype, "_defaultValueId", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -143,8 +144,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], StructureMapGroupRuleSource.prototype, "_defaultValueInstant", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -159,8 +160,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], StructureMapGroupRuleSource.prototype, "_defaultValueMarkdown", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
@@ -170,8 +171,8 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element),
-    __metadata("design:type", Element)
+    (0, class_transformer_1.Type)(() => Element_1.Element),
+    __metadata("design:type", Element_1.Element)
 ], StructureMapGroupRuleSource.prototype, "_defaultValueOid", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),

@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { ValueSetComposeIncludeConcept } from './ValueSetComposeIncludeConcept';
 import { ValueSetComposeIncludeFilter } from './ValueSetComposeIncludeFilter';
 export declare class ValueSetComposeInclude extends BackboneElement {

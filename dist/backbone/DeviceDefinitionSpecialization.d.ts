@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 export declare class DeviceDefinitionSpecialization extends BackboneElement {
     systemType?: string;
     _systemType?: Element;

@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { Coding } from '../elements/Coding';
 import { ImagingStudySeriesInstance } from './ImagingStudySeriesInstance';
 import { ImagingStudySeriesPerformer } from './ImagingStudySeriesPerformer';

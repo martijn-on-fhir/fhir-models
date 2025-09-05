@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { Attachment } from '../elements/Attachment';
 import { Coding } from '../elements/Coding';
 import { Quantity } from '../elements/Quantity';

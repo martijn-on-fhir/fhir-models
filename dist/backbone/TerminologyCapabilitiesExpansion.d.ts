@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { TerminologyCapabilitiesExpansionParameter } from './TerminologyCapabilitiesExpansionParameter';
 export declare class TerminologyCapabilitiesExpansion extends BackboneElement {
     hierarchical?: boolean;

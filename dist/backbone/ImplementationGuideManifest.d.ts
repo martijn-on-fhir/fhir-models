@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { BackboneElement } from '../base/BackboneElement';
+import { Element } from '../base/Element';
 import { ImplementationGuideManifestPage } from './ImplementationGuideManifestPage';
 import { ImplementationGuideManifestResource } from './ImplementationGuideManifestResource';
 export declare class ImplementationGuideManifest extends BackboneElement {
