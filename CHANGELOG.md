@@ -1,3 +1,14 @@
+## [1.0.3](https://github.com/martijn-on-fhir/fhir-models/compare/v1.0.2...v1.0.3) (2025-09-05)
+
+
+### Bug Fixes
+
+* **build:** removed webpack ([e383c4f](https://github.com/martijn-on-fhir/fhir-models/commit/e383c4f92d4c264f16e1d43297469ac0a88d08da))
+* **package:** Typo ([13bae0c](https://github.com/martijn-on-fhir/fhir-models/commit/13bae0c123144190998579e31ee4a08b378e3374))
+* **package:** update main entry point in package.json ([4fd17a2](https://github.com/martijn-on-fhir/fhir-models/commit/4fd17a269df6b9ada96c27a31df138da1f38bfa9))
+* **package:** update main entry point in package.json ([cac53d6](https://github.com/martijn-on-fhir/fhir-models/commit/cac53d69d2fcb64af88c304ccc5b267737017232))
+* **package:** update main entry point in package.json ([012f886](https://github.com/martijn-on-fhir/fhir-models/commit/012f886597d22593f363abf426837ad01277ea37))
+
 ## [1.0.2](https://github.com/martijn-on-fhir/fhir-models/compare/v1.0.1...v1.0.2) (2025-09-05)
 
 
