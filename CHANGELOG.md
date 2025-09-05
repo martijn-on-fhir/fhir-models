@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/martijn-on-fhir/fhir-models/compare/v1.0.6...v1.0.7) (2025-09-05)
+
+
+### Bug Fixes
+
+* **package:** Wrong import Element ([cab4430](https://github.com/martijn-on-fhir/fhir-models/commit/cab4430a0fe5f91659443be4378a63c75380ce19))
+
 ## [1.0.6](https://github.com/martijn-on-fhir/fhir-models/compare/v1.0.5...v1.0.6) (2025-09-05)
 
 
