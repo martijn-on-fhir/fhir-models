@@ -13,9 +13,7 @@
   "main": "./dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc -w",
-    "build-production": "webpack --config webpack.config.js --mode production",
-    "build-debug": "webpack --config webpack.debug.config.js --mode production",
+    "build": "tsc",
     "semantic-release": "semantic-release",
     "release": "semantic-release",
     "release:dry-run": "semantic-release --dry-run"
@@ -45,9 +43,6 @@
     "semantic-release": "^24.2.7",
     "terser-webpack-plugin": "^5.3.14",
     "ts-loader": "^9.5.2",
-    "typescript": "^5.8.3",
-    "webpack": "^5.100.2",
-    "webpack-cli": "^6.0.1",
-    "webpack-node-externals": "^3.0.0"
+    "typescript": "^5.8.3"
   }
 }
