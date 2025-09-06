@@ -1,3 +1,16 @@
+# [1.5.0](https://github.com/martijn-on-fhir/fhir-models/compare/v1.4.0...v1.5.0) (2025-09-06)
+
+
+### Bug Fixes
+
+* **docs:** Fix documentation inconsistencies in README ([c69bae1](https://github.com/martijn-on-fhir/fhir-models/commit/c69bae1a56fc8ea0319a248ab50ee93e9857b4d7))
+* **docs:** Update README with comprehensive usage examples and documentation ([6ae7078](https://github.com/martijn-on-fhir/fhir-models/commit/6ae7078a832bf32be495082c3752fb4f50b90e2c))
+
+
+### Features
+
+* **transform:** Add utility functions for JSON-object conversion using class-transformer ([9ca9ac6](https://github.com/martijn-on-fhir/fhir-models/commit/9ca9ac6826795454d3d37718f0c717e070fb44d3))
+
 # [1.4.0](https://github.com/martijn-on-fhir/fhir-models/compare/v1.3.0...v1.4.0) (2025-09-06)
 
 
