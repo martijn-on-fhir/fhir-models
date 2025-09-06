@@ -18,7 +18,7 @@ applications. This project is part of https://github.com/martijn-on-fhir/snapsho
 ## Installation
 
 ```bash
-npm install
+npm install fhir-models
 ```
 
 ## Usage
@@ -26,9 +26,21 @@ npm install
 ```typescript
 import { Patient} from './dist/main.js';
 
-// Create and use FHIR models with validation
 const patient = new Patient();
-// ... use the models
+
+
+const pat = new Patient({
+    name: [new HumanName({
+        family: 'Schimmel',
+        given: ['Martijn']
+    })],
+    birthDate: '1990-01-01',
+    multipleBirthBoolean: true,
+    generalPractitioner: [new Reference({
+        display: 'Jansen',
+        reference: 'Pratitioner/123'
+    })]
+})
 ```
 
 ## Development
