@@ -48,7 +48,8 @@ const patient = new Patient({
 const json = objectToJson(patient);
 
 // Convert from JSON to typed object
-const patientFromJson = jsonToObject(Patient, jsonData);
+const patientData = { /* FHIR Patient JSON */ };
+const patientFromJson = jsonToObject(Patient, patientData);
 ```
 
 ### Optimized JSON Serialization
