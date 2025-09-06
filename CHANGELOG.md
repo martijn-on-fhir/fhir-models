@@ -1,3 +1,11 @@
+## [1.5.1](https://github.com/martijn-on-fhir/fhir-models/compare/v1.5.0...v1.5.1) (2025-09-06)
+
+
+### Bug Fixes
+
+* **npm:** Configure TypeScript build structure for proper npm package publishing ([ca0504a](https://github.com/martijn-on-fhir/fhir-models/commit/ca0504ad66e8afca9a46cfc9be1ff08d2fc532d9))
+* **npm:** Fix npmignore to include main index files in published package ([bc53027](https://github.com/martijn-on-fhir/fhir-models/commit/bc530272bf1377131ea5e053e12ba8272bb627da))
+
 # [1.5.0](https://github.com/martijn-on-fhir/fhir-models/compare/v1.4.0...v1.5.0) (2025-09-06)
 
 
