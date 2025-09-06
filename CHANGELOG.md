@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/martijn-on-fhir/fhir-models/compare/v1.2.0...v1.3.0) (2025-09-06)
+
+
+### Features
+
+* **transform:** Add utility functions for JSON-object conversion using class-transformer ([a166d3e](https://github.com/martijn-on-fhir/fhir-models/commit/a166d3ea635743061837fe160eef79f24bff4590))
+
 # [1.2.0](https://github.com/martijn-on-fhir/fhir-models/compare/v1.1.0...v1.2.0) (2025-09-05)
 
 
