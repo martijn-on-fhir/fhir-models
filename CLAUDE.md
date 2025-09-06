@@ -30,7 +30,7 @@ This is a TypeScript-based FHIR R4 model library that provides TypeScript classe
 - Decorators enabled (experimental decorators and metadata emission)
 - Strict mode enabled
 - Output directory: `./dist`
-- Main entry: `./dist/main.js`
+- Main entry: `./dist/index.js`
 
 ### Recent Architecture Changes
 Based on git status, the codebase has undergone significant restructuring:

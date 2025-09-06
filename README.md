@@ -38,7 +38,7 @@ const pat = new Patient({
     multipleBirthBoolean: true,
     generalPractitioner: [new Reference({
         display: 'Jansen',
-        reference: 'Pratitioner/123'
+        reference: 'Practitioner/123'
     })]
 })
 ```

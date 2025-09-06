@@ -21,7 +21,8 @@
       "Bash(chmod:*)",
       "Bash(./process_fhir_files.sh:*)",
       "Bash(./check_element_imports.sh:*)",
-      "Bash(./fix_element_imports.sh:*)"
+      "Bash(./fix_element_imports.sh:*)",
+      "Bash(git add:*)"
     ],
     "deny": [],
     "ask": []
