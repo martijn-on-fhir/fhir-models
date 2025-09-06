@@ -40,12 +40,10 @@ const objectToJson = (entity) => {
         if (entity && typeof entity === 'object' && 'resourceType' in entity) {
             const resourceType = entity.resourceType;
             if (resourceType === 'Bundle') {
-                const result = optimized_serializer_1.optimizedStringify.bundle(entity);
-                return typeof result === 'string' ? result : result;
+                return optimized_serializer_1.optimizedStringify.bundle(entity);
             }
             else if (resourceType) {
-                const result = optimized_serializer_1.optimizedStringify.resource(entity);
-                return typeof result === 'string' ? result : result;
+                return optimized_serializer_1.optimizedStringify.resource(entity);
             }
         }
         return JSON.stringify(entity);

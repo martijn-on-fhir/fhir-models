@@ -43,31 +43,19 @@ export const jsonToObject = <T>( classConstructor: ClassConstructor<T>, entity: 
  * @typeParam T - The type of the object to convert
  */
 export const objectToJson = <T>(entity: T ): string | Error => {
-
     try {
-
         if (entity && typeof entity === 'object' && 'resourceType' in entity) {
-
             const resourceType = (entity as any).resourceType;
-
+            
             if (resourceType === 'Bundle') {
-
-                const result = optimizedStringify.bundle(entity);
-
-                return typeof result === 'string' ? result : result;
-
+                return optimizedStringify.bundle(entity);
             } else if (resourceType) {
-
-                const result = optimizedStringify.resource(entity);
-
-                return typeof result === 'string' ? result : result;
+                return optimizedStringify.resource(entity);
             }
         }
-
+        
         return JSON.stringify(entity);
-
     } catch (e) {
         return e instanceof Error ? e : new Error(String(e));
     }
-
 }
