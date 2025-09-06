@@ -1,14 +1,12 @@
-# Source files
+# Source files (exclude source TypeScript but keep compiled outputs)
 src/
-*.ts
-!*.d.ts
+tsconfig.json
 
 # Development files
 .github/
 .claude/
 node_modules/
 .eslintrc.js
-tsconfig.json
 .releaserc.json
 .commitlintrc.json
 
@@ -18,6 +16,7 @@ tsconfig.json
 
 # Testing
 coverage/
+tests/
 *.test.*
 *.spec.*
 
