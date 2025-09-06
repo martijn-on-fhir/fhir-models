@@ -5,11 +5,21 @@
  */
 
 import {ClassConstructor, plainToInstance} from 'class-transformer'
+import { optimizedStringify } from './serialization/optimized-serializer';
 
 export * from './base';
 export * from './elements';
 export * from './backbone';
 export * from './resources';
+
+// Export optimized serialization functions
+export {
+    OptimizedFHIRSerializer,
+    createFHIRSerializer,
+    optimizedStringify,
+    defaultFHIRSerializer,
+    type SerializationOptions
+} from './serialization/optimized-serializer';
 
 /**
  * Converts a JSON object to a typed instance of a specified class
@@ -33,11 +43,19 @@ export const jsonToObject = <T>( classConstructor: ClassConstructor<T>, entity: 
  * @typeParam T - The type of the object to convert
  */
 export const objectToJson = <T>(entity: T ): string | Error => {
-
     try {
+        if (entity && typeof entity === 'object' && 'resourceType' in entity) {
+            const resourceType = (entity as any).resourceType;
+            
+            if (resourceType === 'Bundle') {
+                return optimizedStringify.bundle(entity);
+            } else if (resourceType) {
+                return optimizedStringify.resource(entity);
+            }
+        }
+        
         return JSON.stringify(entity);
-    }
-    catch (e) {
+    } catch (e) {
         return e instanceof Error ? e : new Error(String(e));
     }
 }
