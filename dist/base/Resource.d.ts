@@ -1,10 +1,8 @@
 import 'reflect-metadata';
 import { Element } from './Element';
 import { Meta } from '../elements';
-export declare abstract class Resource {
+export declare abstract class Resource extends Element {
     abstract readonly resourceType: string;
-    id?: string;
-    _id?: Element;
     implicitRules?: string;
     _implicitRules?: Element;
     language?: string;
