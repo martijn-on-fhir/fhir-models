@@ -15,23 +15,12 @@ const class_validator_1 = require("class-validator");
 const class_transformer_1 = require("class-transformer");
 const Element_1 = require("./Element");
 const elements_1 = require("../elements");
-class Resource {
+class Resource extends Element_1.Element {
     constructor(source = {}) {
-        Object.assign(this, source);
+        super(source);
     }
 }
 exports.Resource = Resource;
-__decorate([
-    (0, class_validator_1.IsOptional)(),
-    (0, class_validator_1.IsString)(),
-    __metadata("design:type", String)
-], Resource.prototype, "id", void 0);
-__decorate([
-    (0, class_validator_1.IsOptional)(),
-    (0, class_validator_1.ValidateNested)(),
-    (0, class_transformer_1.Type)(() => Element_1.Element),
-    __metadata("design:type", Element_1.Element)
-], Resource.prototype, "_id", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsString)(),

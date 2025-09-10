@@ -6,6 +6,7 @@
 
 import {ClassConstructor, plainToInstance} from 'class-transformer'
 import { optimizedStringify } from './serialization/optimized-serializer';
+import {validate as v} from 'class-validator';
 
 export * from './base';
 export * from './elements';
@@ -59,3 +60,42 @@ export const objectToJson = <T>(entity: T ): string | Error => {
         return e instanceof Error ? e : new Error(String(e));
     }
 }
+
+/**
+ * Validates a FHIR object using class-validator decorators
+ * @param entity - The object to validate
+ * @returns true if valid, array of error messages if invalid
+ * @typeParam T - The type of the object to validate
+ */
+export const validate = async <T>(entity: T): Promise<true | string[]> => {
+
+    if (entity === null || entity === undefined) {
+        return ['Entity cannot be null or undefined'];
+    }
+
+    if (typeof entity !== 'object') {
+        return ['Entity must be an object'];
+    }
+
+    try {
+        const errors = await v(entity as object);
+
+        if (errors.length === 0) {
+            return true;
+        }
+
+        return errors.map(error =>
+            Object.values(error.constraints || {}).join('; ')
+        )
+
+    } catch (error) {
+
+        if (error instanceof Error) {
+            return [error.message];
+        }
+
+        return ['Validation failed with unknown error'];
+    }
+}
+
+

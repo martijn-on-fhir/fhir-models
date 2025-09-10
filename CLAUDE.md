@@ -35,11 +35,9 @@ This is a TypeScript-based FHIR R4 model library that provides TypeScript classe
 ### Recent Architecture Changes
 Based on git status, the codebase has undergone significant restructuring:
 - Many element and resource files have been deleted from `src/elements/` and `src/resources/`
-- New consolidated type definitions in `src/r4.d.ts`
 - Package entry point updated to `./dist/main.js`
 
 ### Development Notes
-- Uses webpack for bundling with separate production and debug configurations
 - ESLint configured for code quality
 - The project relies heavily on decorators for validation, so `experimentalDecorators` and `emitDecoratorMetadata` are essential
 - Current exports are minimal (Patient, HumanName, Meta, Identifier) suggesting the project is in early development phase
